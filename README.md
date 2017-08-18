@@ -11,7 +11,7 @@ Each exercise includes 3 files, a markdown file with a description of the task, 
 The first exercise, `helloWorld` will walk you through the process in more depth.
 
 
-##planned exercises (in no particular order for the moment):
+## planned exercises (in no particular order for the moment):
 1. calculate factorial
 1. temperature conversion
 1. book titles
