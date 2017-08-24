@@ -19,8 +19,6 @@ The first exercise, `helloWorld` will walk you through the process in more depth
 1. Caesar Cipher
 1. Palindromes
 1. Pangrams
-1. Remove specific elements from array: remove([1,2,3,4], 3) <= remove 3 from that array
-1. repeat string given number of times
 1. sum numbers in range: sumAll(1,4) (sums all numbers between and including 1 and 4)
 1. pig latin
 1. fibonacci 
