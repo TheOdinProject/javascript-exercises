@@ -12,14 +12,11 @@ The first exercise, `helloWorld` will walk you through the process in more depth
 
 
 ## planned exercises (in no particular order for the moment):
-1. calculate factorial
-1. temperature conversion
 1. book titles
 1. leap years
 1. Caesar Cipher
 1. Palindromes
 1. Pangrams
-1. sum numbers in range: sumAll(1,4) (sums all numbers between and including 1 and 4)
 1. pig latin
 1. fibonacci 
 1. convert to snake case
