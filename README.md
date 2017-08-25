@@ -13,8 +13,6 @@ The first exercise, `helloWorld` will walk you through the process in more depth
 
 ## planned exercises (in no particular order for the moment):
 1. book titles (MC)
-1. Palindromes
-1. Pangrams
 1. pig latin (MC)
 1. fibonacci 
 1. convert to snake case
