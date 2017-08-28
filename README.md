@@ -14,3 +14,8 @@ The first exercise, `helloWorld` will walk you through the process in more depth
 ## planned exercises (in no particular order for the moment):
 1. book titles (MC)
 1. pig latin (MC)
+1. count vowels, count specific letter
+1. book tracker.  save books, return unread, read, books by rating etc.
+1. credit card number validation
+1. Scrabble Score
+
