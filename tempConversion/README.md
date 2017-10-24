@@ -10,3 +10,5 @@ ctof(0) // celsius to fahrenheit, should return 32
 ```
 
 
+## hints
+The math here is fairly straightforward.. just google the formula and implement it in the code
