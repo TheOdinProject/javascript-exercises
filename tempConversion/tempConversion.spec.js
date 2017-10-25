@@ -10,9 +10,6 @@ describe('ftoc', function() {
   xit('works with negatives', function() {
     expect(ftoc(-100)).toEqual(-73.3);
   });
-  xit('works', function() {
-    expect(ctof()).toEqual('ctof');
-  });
 });
 
 describe('ctof', function() {
