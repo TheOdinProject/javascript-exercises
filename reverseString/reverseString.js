@@ -1,5 +1,5 @@
-var reverseString = function(string) {
-  return string.split('').reverse().join('')
+var reverseString = function() {
+
 }
 
 module.exports = reverseString

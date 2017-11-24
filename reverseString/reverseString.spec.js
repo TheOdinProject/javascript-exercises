@@ -5,11 +5,11 @@ describe('Hello World', function() {
     expect(reverseString('hello')).toEqual('olleh');
   });
 
-  it('reverses multiple words', function() {
+  xit('reverses multiple words', function() {
     expect(reverseString('hello there')).toEqual('ereht olleh')
   })
 
-  it('works with numbers and punctuation', function() {
+  xit('works with numbers and punctuation', function() {
     expect(reverseString('123! abc!')).toEqual('!cba !321')
   })
 });
