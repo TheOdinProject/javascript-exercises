@@ -6,7 +6,10 @@ Write a function that simply repeats the string a given number of times:
 repeatString('hey', 3) // returns 'heyheyhey'
 ```
 
-You will notice in this exercise that there are multiple tests, after making the first one pass, enable the others one by one by deleting the x in front of the it() function.
+
+
+
+
 
 ## hints
 
