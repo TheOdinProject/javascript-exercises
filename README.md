@@ -15,10 +15,6 @@ Each exercise includes 3 files, a markdown file with a description of the task, 
 
 The first exercise, `helloWorld` will walk you through the process in more depth.
 
+## Solutions
 
-## planned exercises (in no particular order for the moment):
-1. count vowels, count specific letter
-1. book tracker.  save books, return unread, read, books by rating etc.
-1. credit card number validation
-1. Scrabble Score
-
+Solutions for these exercises can be found in this repo on the 'solutions' branch.
