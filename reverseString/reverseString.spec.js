@@ -1,6 +1,6 @@
 var reverseString = require('./reverseString')
 
-describe('Hello World', function() {
+describe('reverseString', function() {
   it('reverses single word', function() {
     expect(reverseString('hello')).toEqual('olleh');
   });
