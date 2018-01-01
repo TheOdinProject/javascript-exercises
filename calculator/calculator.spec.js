@@ -56,7 +56,7 @@ describe('power', function() {
 
 describe('factorial', function() {
 	it('computes the factorial of 0', function() {
-		expect(calculator.factorial(0)).toEqual(0);
+		expect(calculator.factorial(0)).toEqual(1); // 0! = 1
 	});
 
 	it('computes the factorial of 1', function() {
