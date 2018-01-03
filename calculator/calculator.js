@@ -19,12 +19,10 @@ function power(a, b) {
 }
 
 function factorial(n) {
-  if (n == 0) return 0;
-  let product = 1;
-  for (let i = n; i > 0; i--) {
-    product *= i;
-  }
-  return product;
+  if (n===0){
+    return 1;
+}
+  return n * factorial (n-1);
 }
 
 module.exports = {
