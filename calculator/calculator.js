@@ -19,12 +19,21 @@ function power(a, b) {
 }
 
 function factorial(n) {
-  if (n == 0) return 0;
+  if (n == 0) return 1;
   let product = 1;
   for (let i = n; i > 0; i--) {
     product *= i;
   }
   return product;
+}
+
+// This is another implementation of Factorial that uses recursion
+// THANKS to @ThirtyThreeB!
+function recursiveFactorial(n) {
+  if (n===0){
+    return 1;
+  }
+  return n * factorial (n-1);
 }
 
 module.exports = {
