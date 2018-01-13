@@ -29,7 +29,7 @@ describe('sum', function() {
 		expect(calculator.sum([7])).toEqual(7);
 	});
 
-	it('computes the sum of an array of one number', function() {
+	it('computes the sum of an array of two numbers', function() {
 		expect(calculator.sum([7,11])).toEqual(18);
 	});
 
