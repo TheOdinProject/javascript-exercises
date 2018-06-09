@@ -7,7 +7,7 @@ sumAll(1, 4) // returns the sum of 1 + 2 + 3 + 4 which is 10
 ```
 
 
-## hints
+## Hints
 
 Think about how you would do this on pen and paper and then how you might translate that process into code:
 - create a variable to hold the final sum

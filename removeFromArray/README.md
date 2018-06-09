@@ -8,7 +8,7 @@ remove([1,2,3,4], 3) // should remove 3 and return [1,2,4]
 
 
 
-## hints
+## Hints
 the first test on this one is fairly easy, but there are a few things to think about(or google) here for the later tests:
 - how to remove a single element from an array
 - how to deal with multiple optional arguments in a javascript function
