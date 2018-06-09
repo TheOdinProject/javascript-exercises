@@ -1,4 +1,4 @@
-var reverseString = require('./reverseString')
+let reverseString = require('./reverseString')
 
 describe('reverseString', function() {
   it('reverses single word', function() {

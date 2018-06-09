@@ -1,4 +1,4 @@
-var repeatString = function() {
+let repeatString = function() {
 
 }
 

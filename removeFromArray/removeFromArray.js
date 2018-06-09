@@ -1,4 +1,4 @@
-var removeFromArray = function() {
+let removeFromArray = function() {
 
 }
 

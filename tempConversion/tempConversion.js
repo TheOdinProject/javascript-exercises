@@ -1,8 +1,8 @@
-var ftoc = function() {
+let ftoc = function() {
   
 }
 
-var ctof = function() {
+let ctof = function() {
   
 }
 

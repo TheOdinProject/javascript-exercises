@@ -15,7 +15,7 @@
 
 // See https://en.wikipedia.org/wiki/Pig_Latin for more details.
 
-var pigLatin = require("./pigLatin.js");
+let pigLatin = require("./pigLatin.js");
 
 describe('#translate', function() {
 	it('translates a word beginning with a vowel', function() {

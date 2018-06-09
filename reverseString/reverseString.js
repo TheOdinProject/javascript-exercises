@@ -1,4 +1,4 @@
-var reverseString = function() {
+let reverseString = function() {
 
 }
 

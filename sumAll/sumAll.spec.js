@@ -1,4 +1,4 @@
-var sumAll = require('./sumAll')
+let sumAll = require('./sumAll')
 
 describe('sumAll', function() {
   it('sums numbers within the range', function() {
