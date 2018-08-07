@@ -1,4 +1,4 @@
-let repeatString = function() {
+const repeatString = function() {
 
 }
 

@@ -1,4 +1,4 @@
-let calculator = require ('./calculator.js');
+const calculator = require ('./calculator.js');
 
 describe('add', function() {
 	it('adds 0 and 0', function() {

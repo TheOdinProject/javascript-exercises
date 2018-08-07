@@ -1,4 +1,4 @@
-let reverseString = function() {
+const reverseString = function() {
 
 }
 

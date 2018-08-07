@@ -1,4 +1,4 @@
-let repeatString = require('./repeatString')
+const repeatString = require('./repeatString')
 
 describe('repeatString', function() {
   it('repeats the string', function() {

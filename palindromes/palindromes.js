@@ -1,4 +1,4 @@
-let palindromes = function() {
+const palindromes = function() {
 
 }
 

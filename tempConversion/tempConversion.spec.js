@@ -1,4 +1,4 @@
-let {ftoc, ctof} = require('./tempConversion')
+const {ftoc, ctof} = require('./tempConversion')
 
 describe('ftoc', function() {
   it('works', function() {

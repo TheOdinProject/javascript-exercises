@@ -1,4 +1,4 @@
-let caesar = require('./caesar')
+const caesar = require('./caesar')
 
 describe('caesar', function() {
   it('works with single letters', function() {
