@@ -1,4 +1,4 @@
-var snakeCase = require('./snakeCase')
+const snakeCase = require('./snakeCase')
 
 describe('snakeCase', function() {
   it('works with simple lowercased phrases', function() {

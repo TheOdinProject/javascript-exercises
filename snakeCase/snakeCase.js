@@ -1,4 +1,4 @@
-var snakeCase = function() {
+const snakeCase = function() {
 
 }
 

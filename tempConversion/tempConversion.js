@@ -1,9 +1,9 @@
-var ftoc = function() {
-  
+const ftoc = function() {
+
 }
 
-var ctof = function() {
-  
+const ctof = function() {
+
 }
 
 module.exports = {

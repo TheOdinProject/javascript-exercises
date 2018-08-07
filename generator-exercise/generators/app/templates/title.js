@@ -1,4 +1,4 @@
-var <%= title %> = function() {
+let <%= title %> = function() {
 
 }
 

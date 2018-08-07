@@ -1,4 +1,4 @@
-var palindromes = require('./palindromes')
+const palindromes = require('./palindromes')
 
 describe('palindromes', function() {
   it('works with single words', function() {

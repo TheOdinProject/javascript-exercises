@@ -1,4 +1,4 @@
-var fibonacci = function() {
+const fibonacci = function() {
 
 }
 

@@ -1,4 +1,4 @@
-var caesar = function() {
+const caesar = function() {
 
 }
 
