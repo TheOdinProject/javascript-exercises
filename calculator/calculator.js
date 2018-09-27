@@ -10,8 +10,9 @@ function sum(array) {
   return array.reduce((current, total) => total + current, 0);
 }
 
-function multiply(array) {
-  return array.reduce((current, total) => total * current, 1);
+function multipy (array) {
+    return array.length
+      ? array.reduce((accumulator, nextItem) => accumulator * nextItem): 0;
 }
 
 function power(a, b) {
