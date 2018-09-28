@@ -10,7 +10,7 @@ function sum(array) {
   return array.reduce((current, total) => total + current, 0);
 }
 
-function multipy (array) {
+function multiply (array) {
     return array.length
       ? array.reduce((accumulator, nextItem) => accumulator * nextItem): 0;
 }
