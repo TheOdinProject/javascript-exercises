@@ -11,7 +11,9 @@ function sum(array) {
 }
 
 function multiply(array) {
-  return array.reduce((current, total) => total * current, 1);
+    return array.length
+      ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
+      : 0;
 }
 
 function power(a, b) {
