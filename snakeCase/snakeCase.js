@@ -1,6 +1,6 @@
 const snakeCase = function(string) {
   // wtf case
-  string = string.replace(/\.\./g, " ");
+  string= string.replace(/[(\.\.)-]/g, " ");
 
   // this splits up camelcase IF there are no spaces in the word
   if (string.indexOf(" ") < 0) {
@@ -13,7 +13,8 @@ const snakeCase = function(string) {
     .replace(/[,\?\.]/g, "")
     .replace(/\-/g, " ")
     .split(" ")
-    .join("_");
+    .join("_")
+    .replace(/(__)/g,'_');
 };
 
 module.exports = snakeCase;
