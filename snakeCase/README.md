@@ -1,3 +1,7 @@
+This exercise is tricky and was removed from our recommendations because it mostly leverages regular expressions for the solution, and those aren't really taught at this point in our curriculum.
+
+Leaving it here for posterity, or a good challenge for anyone that wants to give it a shot.
+
 # Exercise XX - snakeCase
 
 Convert phrases and words into snake case
