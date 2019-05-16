@@ -7,7 +7,7 @@ function subtract(a, b) {
 }
 
 function sum(array) {
-  return array.reduce((current, total) => total + current, 0);
+  return array.reduce((total, current) => total + current, 0);
 }
 
 function multiply(array) {
