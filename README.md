@@ -8,7 +8,7 @@ There will eventually be a suggested order of completion, but at this time since
 
 ## HOW TO USE THESE EXERCISES
 Before you start you should have a few things installed on your machine:
-1. NPM.  To check if you have NPM, type `npm --version` in a terminal. If you get back `Command 'npm' not found, but can be installed with:`, do NOT follow the instructions in the terminal to install with `apt-get` (this causes permission issues). Instead, install NPM/Node with NVM by following the instructions [here](https://github.com/TheOdinProject/curriculum/blob/e97a0ff94e6db16d47a9c5237c6909b6383e54c8/web_development_101/installations/installing_node.md).
+1. NPM.  To check if you have NPM, type `npm --version` in a terminal. If you get back `Command 'npm' not found, but can be installed with:`, do NOT follow the instructions in the terminal to install with `apt-get` (this causes permission issues). Instead, install NPM/Node with NVM by following the instructions [here](https://github.com/TheOdinProject/curriculum/blob/master/web_development_101/installations/installing_node.md).
 3. Jasmine.  Jasmine is a testing framework for Javascript.  Type `jasmine -v` to check for it.  If you need to install it, type `npm install -g jasmine` to do so.
 4. Clone this repo and get started.
 
