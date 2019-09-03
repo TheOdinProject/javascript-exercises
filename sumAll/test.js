@@ -1,5 +1,6 @@
-const sumAll = function(first, second) {
-  if (first < 0 || typeof second === "string" || Array.isArray(second)) {
+function sumAll(first, second) {
+
+  if(first < 0 || typeof(second) === 'string' || Array.isArray(second) ) {
     return "ERROR";
   } else {
     let sum = 0;
@@ -18,5 +19,5 @@ const sumAll = function(first, second) {
   }
   
 }
-
-module.exports = sumAll
+// let result = sumAll(1,4);
+console.log(sumAll(10,[90,1]));
