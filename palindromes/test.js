@@ -1,14 +1,9 @@
-const palindromes = function(word) {
+function palindrome(word) {
   let array = [];
   let readThis = word.toLowerCase();
 
   for (i = 0; i < readThis.length; i++) {
-    if (
-      word.charAt(i) === "!" ||
-      word.charAt(i) === " " ||
-      word.charAt(i) === "," ||
-      word.charAt(i) === "."
-    ) {
+    if (word.charAt(i) === "!" || word.charAt(i) === " " || word.charAt(i) === "," || word.charAt(i) === '.') {
       continue;
     }
     array.push(readThis.charAt(i));
@@ -28,12 +23,10 @@ const palindromes = function(word) {
   let word2 = newArray.toString();
 
   if (word1 == word2) {
-    // console.log("it's a palindrome!");
-    return true;
+    console.log("it's a palindrome!");
   } else {
-    // console.log("it's NOT a palindrome!");
-    return false;
+    console.log("it's NOT a palindrome!");
   }
 }
 
-module.exports = palindromes
+palindrome("ZZZZ car, a man, a maraca.");
