@@ -1,8 +1,8 @@
 const caesar = require('./caesar')
 
 describe('caesar', function() {
-  xit('works with single letters', function() {
-    expect(caesar('Y', 1)).toEqual('Z');
+  it('works with single letters', function() {
+    expect(caesar('A', 1)).toEqual('B');
   });
 
   it('works with words', function() {
