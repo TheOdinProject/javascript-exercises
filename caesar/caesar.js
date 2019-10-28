@@ -1,19 +1,24 @@
 const caesar = function(value, addBy) {
 
-	const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+	const lowerCaseAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+	const upperCaseAlphabet = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
 	const specialChars = [' ', '!', ','];
-	const valueLowerCase = value.toLowerCase();
-	const valueArray = valueLowerCase.split('');
-
+	
+	const valueArray = value.split('');
 	var newArr = [];
 
 	for (var i = 0; i < valueArray.length; i++) {
 		
-		if (alphabet.includes(valueArray[i])) {
-			let letterIndex = alphabet.indexOf(valueArray[i]);
+		if (lowerCaseAlphabet.includes(valueArray[i])) {
+			let letterIndex = lowerCaseAlphabet.indexOf(valueArray[i]);
 			let finalIndex = letterIndex + addBy;
 
-			newArr.push(alphabet[finalIndex]);
+			newArr.push(lowerCaseAlphabet[finalIndex]);
+		} else if (upperCaseAlphabet.includes(valueArray[i])) {
+			let letterIndex = upperCaseAlphabet.indexOf(valueArray[i]);
+			let finalIndex = letterIndex + addBy;
+
+			newArr.push(upperCaseAlphabet[finalIndex]);
 		} else if (specialChars.includes(valueArray[i])) {
 			newArr.push(valueArray[i]);
 		} else {
