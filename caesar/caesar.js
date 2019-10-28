@@ -1,6 +1,7 @@
 const caesar = function(value, addBy) {
 
 	const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+	const specialChars = [' ', '!', ','];
 	const valueLowerCase = value.toLowerCase();
 	const valueArray = valueLowerCase.split('');
 
@@ -12,12 +13,8 @@ const caesar = function(value, addBy) {
 			let finalIndex = letterIndex + addBy;			
 
 			newArr.push(alphabet[finalIndex]);
-		} else if (valueArray[i].includes(' ')) {
-			newArr.push(' ');
-		} else if (valueArray[i].includes('!')) {
-			newArr.push('!');
-		} else if (valueArray[i].includes(',')) {
-			newArr.push(',');
+		} else if (specialChars.includes(valueArray[i])) {
+			newArr.push(valueArray[i]);
 		} else {
 				// return 'is not a part of the alphabet';
 			return 'no';
