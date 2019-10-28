@@ -12,6 +12,12 @@ const caesar = function(value, addBy) {
 			let finalIndex = letterIndex + addBy;			
 
 			newArr.push(alphabet[finalIndex]);
+		} else if (valueArray[i].includes(' ')) {
+			newArr.push(' ');
+		} else if (valueArray[i].includes('!')) {
+			newArr.push('!');
+		} else if (valueArray[i].includes(',')) {
+			newArr.push(',');
 		} else {
 				// return 'is not a part of the alphabet';
 			return 'no';
