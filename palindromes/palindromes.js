@@ -1,5 +1,5 @@
 const palindromes = function(word) {
-	const wordArr = word.replace().toLowerCase().split('');
+	const wordArr = word.replace(/\W/g, '').toLowerCase().split('');
 	const reversedArray = wordArr.reverse();
 
 	newArray = [];
@@ -11,7 +11,7 @@ const palindromes = function(word) {
 			break;
 		}
 	}
-	return true ? newArray.join('') === word : false;
+	return true ? newArray.join('') === word.replace(/\W/g, '').toLowerCase() : false;
 }
 
 module.exports = palindromes
