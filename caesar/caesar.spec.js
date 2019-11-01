@@ -9,11 +9,11 @@ describe('caesar', function() {
     expect(caesar('Aaa', 1)).toEqual('Bbb');
   });
 
-  xit('works with phrases', function() {
-    expect(caesar('Hello, World!', 5)).toEqual('Mjqqt, Btwqi!');
+  it('works with phrases', function() {
+    expect(caesar('Hello, World!', 1)).toEqual('Ifmmp, Xpsme!');
   });
 
-  xit('works with negative shift', function() {
+  it('works with negative shift', function() {
     expect(caesar('Mjqqt, Btwqi!', -5)).toEqual('Hello, World!');
   });
 
@@ -27,5 +27,9 @@ describe('caesar', function() {
 
   xit('works with large negative shift factors', function() {
     expect(caesar('Hello, World!', -29)).toEqual('Ebiil, Tloia!');
+  });
+
+  it('does not work with a number', function() {
+    expect(caesar('1', 5)).toContain('1');
   });
 });
