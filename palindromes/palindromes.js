@@ -1,17 +1,17 @@
 const palindromes = function(word) {
 	const wordArr = word.replace(/\W/g, '').toLowerCase().split('');
-	const reversedArray = wordArr.reverse();
+	const reversedArr = wordArr.slice().reverse();
 
-	newArray = [];
+	var status = false;
 
 	for (var i = 0; i < wordArr.length; i++) {
-		if (wordArr[i] === reversedArray[i]) {
-			newArray.push(wordArr[i])
+		if (wordArr[i] === reversedArr[i]) {
+			status = true;
 		} else {
 			break;
 		}
 	}
-	return true ? newArray.join('') === word.replace(/\W/g, '').toLowerCase() : false;
+	return status;
 }
 
-module.exports = palindromes
+module.exports = palindromes;
