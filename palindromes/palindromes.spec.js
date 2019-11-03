@@ -2,7 +2,9 @@ const palindromes = require('./palindromes')
 
 describe('palindromes', function() {
   it('works with single words', function() {
-    expect(palindromes('racecar')).toEqual(true);
+    expect(
+      palindromes('racecar')
+      ).toEqual(true);
   });
   
   it('works with punctuation', function() {
@@ -19,5 +21,9 @@ describe('palindromes', function() {
   
   it('doesn\'t just always return true', function() {
     expect(palindromes('ZZZZ car, a man, a maraca.')).toEqual(false);
+  });
+
+  it('Not matching letters can be in the middle and still fail', function() {
+    expect(palindromes('A car, Zzz a man, a maraca.')).toEqual(false);
   });
 });
