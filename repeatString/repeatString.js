@@ -1,7 +1,8 @@
 const repeatString = function(word, times) {
-	let arr = word.split(' ');
+	let arr = [];
 	
-	for (let i = 1; i < times; i++) {
+	
+	for (let i = 0; i < times; i++) {
 		arr.push(word);
 	}
 
