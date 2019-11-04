@@ -1,8 +1,12 @@
 const repeatString = function(word, times) {
-	let arr = word.split(' ');
-	
-	for (let i = 1; i < times; i++) {
-		arr.push(word);
+	let arr = [];
+
+	if (times < 0) {
+		return 'ERROR';
+	} else {
+		for (let i = 0; i < times; i++) {
+			arr.push(word);
+		}
 	}
 
 	return arr.join('');
