@@ -9,7 +9,7 @@ describe('repeatString', function() {
     expect(repeatString('hey', 10)).toEqual('heyheyheyheyheyheyheyheyheyhey');
   });
   
-  it('repeats the string 1 times', function() {
+  it('repeats the string 1 time', function() {
     expect(repeatString('hey', 1)).toEqual('hey');
   });
   
