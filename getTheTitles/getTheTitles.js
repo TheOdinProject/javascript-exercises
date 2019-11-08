@@ -1,11 +1,7 @@
 const getTheTitles = function(books) {
-	let bookTitles = [];
+	const mappedBooks = books.map(book => book.title);
 
-	books.forEach((book) => {
-		bookTitles.push(book.title);
-	})
-	
-	return bookTitles;
+	return mappedBooks;
 }
 
 module.exports = getTheTitles;
