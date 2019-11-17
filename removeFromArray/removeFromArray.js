@@ -1,16 +1,14 @@
 const removeFromArray = function(arr, ...args) {
-	const filteredArray = [];
-	// const array = args;
-	const array = [3];
+	const filteredArray = arr;
 
-	for (let i = 0; i < array.length; i++) {
-		if (arr.includes(array[i])) {
-			// filteredArray.push(5);
-		} else if (arr.includes(array[0])) {			
-			// continue;
+	for (let i = 0; i < args.length; i++) {
+		if (arr.includes(args[i])) {
+			let index = arr.indexOf(args[i]);
+			filteredArray.splice(index, 1);
+		} else if (arr.includes(args[i])) {			
+			continue;
 		}
 	}
-
 	return filteredArray;
 }
 
