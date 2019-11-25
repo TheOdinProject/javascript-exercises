@@ -17,7 +17,7 @@ Each exercise includes 3 files, a markdown file with a description of the task, 
 ```
 jasmine filename.spec.js > report.txt
 ```  
-This should find and run the test file and write the output into the same folder in a file called `report.txt`.  It's this report file that your coaches will check to make sure your code passess all of the tests.
+This should find and run the test file and write the output into a file called `report.txt`.  It's this report file that your coaches will check to make sure your code passess all of the tests.
 
 Upon first running the tests you will find that the tests fail: this is by design!  Your task is to open up the javascript file and write the code needed to get all of the tests to pass. Some of the exercises have test conditions defined in the spec file that are defined as 'xit' compared to 'it'. This is purposeful, and as you test your solution against the first 'it', on success you will change the next 'xit' to an 'it' and test your code again, until all conditions are satisfied.
 
