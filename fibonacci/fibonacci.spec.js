@@ -20,6 +20,12 @@ describe('fibonacci', function() {
     expect(fibonacci(-25)).toEqual("OOPS");
   });
   xit('DOES accept strings', function() {
+    expect(fibonacci("1")).toEqual(1);
+  });
+  xit('DOES accept strings', function() {
+    expect(fibonacci("2")).toEqual(1);
+  });
+  xit('DOES accept strings', function() {
     expect(fibonacci("8")).toEqual(21);
   });
 });
