@@ -20,7 +20,7 @@
     "yeoman-test": "^1.6.0",
     "yeoman-assert": "^3.0.0",
     "nsp": "^2.6.3",
-    "eslint": "^4.1.0",
+    "eslint": "^4.18.2",
     "eslint-config-xo-space": "^0.16.0",
     "jest": "^19.0.2",
     "jest-cli": "^20.0.0"
