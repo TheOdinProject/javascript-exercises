@@ -6,24 +6,34 @@ There will eventually be a suggested order of completion, but at this time since
 1. Repeat String
 1. Reverse String
 
-## HOW TO USE THESE EXERCISES & GENERATE REPORT
+## HOW TO USE THESE EXERCISES
 
 Before you start you should have a few things installed on your machine:
 1. NPM.  To check if you have NPM, type `npm --version` in a terminal. If you get back `Command 'npm' not found, but can be installed with:`, do NOT follow the instructions in the terminal to install with `apt-get` (this causes permission issues). Instead, install NPM/Node with NVM by following the instructions [here](https://github.com/TheOdinProject/curriculum/blob/master/web_development_101/installations/installing_node.md).
 3. Jasmine.  Jasmine is a testing framework for Javascript.  Type `jasmine -v` to check for it.  If you need to install it, type `npm install -g jasmine` to do so.
 4. Clone this repo and get started.
 
-Each exercise includes 3 files, a markdown file with a description of the task, an empty (or mostly empty) javascript file, and a set of tests.  To complete the exercise go to the exercise directory in a terminal and run:  
+Each exercise includes 3 files, a markdown file with a description of the task, an empty (or mostly empty) javascript file, and a set of tests.  To complete the exercise go to the exercise directory in a terminal and run:
 ```
 jasmine filename.spec.js > report.txt
-```  
-This should find and run the test file and write the output into a file called `report.txt`.  It's this report file that your coaches will check to make sure your code passess all of the tests.
+```
+This should find and run the test file, then write the output into a file called `report.txt`.  It's this report file that your coaches will be checking to confirm that you've completed the exercises.
 
 Upon first running the tests you will find that the tests fail: this is by design!  Your task is to open up the javascript file and write the code needed to get all of the tests to pass. Some of the exercises have test conditions defined in the spec file that are defined as 'xit' compared to 'it'. This is purposeful, and as you test your solution against the first 'it', on success you will change the next 'xit' to an 'it' and test your code again, until all conditions are satisfied.
 
+## Suggested Exercises
+
 The first exercise, `helloWorld` will walk you through the process in more depth.
 
+After `helloWorld`, these are the exercises your coaches will be checking for:
+* `repeatString`
+* `reverseString`
+* `tempConversion`
+* `getTheTitles`
+* `findTheOldest`
+* `calculator`
 
+But all the exercises are great.  Don't stop just because you've finished these 7!
 
 ## a quick note!
 
