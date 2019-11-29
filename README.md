@@ -32,6 +32,8 @@ After `helloWorld`, these are the exercises your coaches will be checking for:
 * `getTheTitles`
 * `findTheOldest`
 * `calculator`
+* `fibonacci`
+* `sumAll`
 
 But all the exercises are great.  Don't stop just because you've finished these 7!
 
