@@ -17,25 +17,10 @@ Each exercise includes 3 files, a markdown file with a description of the task, 
 ```
 jasmine filename.spec.js > report.txt
 ```
-This should find and run the test file, then write the output into a file called `report.txt`.  It's this report file that your coaches will be checking to confirm that you've completed the exercises.
+This should find and run the test file, then write the output into a file called `report.txt`.  Now your test results are saved next to the code for easy study and review!
 
 Upon first running the tests you will find that the tests fail: this is by design!  Your task is to open up the javascript file and write the code needed to get all of the tests to pass. Some of the exercises have test conditions defined in the spec file that are defined as 'xit' compared to 'it'. This is purposeful, and as you test your solution against the first 'it', on success you will change the next 'xit' to an 'it' and test your code again, until all conditions are satisfied.
 
-## Suggested Exercises
-
-The first exercise, `helloWorld` will walk you through the process in more depth.
-
-After `helloWorld`, these are the exercises your coaches will be checking for:
-* `repeatString`
-* `reverseString`
-* `tempConversion`
-* `getTheTitles`
-* `findTheOldest`
-* `calculator`
-* `fibonacci`
-* `sumAll`
-
-But all the exercises are great.  Don't stop just because you've finished these 7!
 
 ## a quick note!
 
