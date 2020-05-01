@@ -16,4 +16,8 @@ describe('repeatString', function() {
   xit('returns ERROR with negative numbers', function() {
     expect(repeatString('hey', -1)).toEqual('ERROR');
   });
+  xit('repeats the string a random amount of times', function () {
+    let number = Math.floor(Math.random() * 1000)
+    expect(repeatString('hey', number).match(/((hey))/g).length).toEqual(number);
+  });
 });
