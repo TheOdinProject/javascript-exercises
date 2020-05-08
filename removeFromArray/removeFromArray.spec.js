@@ -19,4 +19,7 @@ describe('removeFromArray', function() {
   xit('works with strings', function() {
     expect(removeFromArray(["hey", 2, 3, "ho"], "hey", 3)).toEqual([2, "ho"]);
   });
+  xit('only removes same type', function() {
+    expect(removeFromArray([1, 2, 3], "1", 3)).toEqual([1, 2]);
+  });
 });
