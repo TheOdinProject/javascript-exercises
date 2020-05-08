@@ -27,4 +27,7 @@ describe('repeatString', function() {
     was randomaly generated. */
     expect(repeatString('hey', number).match(/((hey))/g).length).toEqual(number);
   });
+  xit('works with blank strings', function() {
+    expect(repeatString('', 10)).toEqual('');
+  });
 });
