@@ -13,7 +13,7 @@ describe('repeatString', function() {
     it('repeats the string 0 times', function() {
         expect(repeatString('hey', 0)).toEqual('');
     });
-    xit('returns ERROR with negative numbers', function() {
+    it('returns ERROR with negative numbers', function() {
         expect(repeatString('hey', -1)).toEqual('ERROR');
     });
     xit('repeats the string a random amount of times', function() {
