@@ -4,7 +4,7 @@ describe('repeatString', function() {
     it('repeats the string', function() {
         expect(repeatString('hey', 3)).toEqual('heyheyhey');
     });
-    xit('repeats the string many times', function() {
+    it('repeats the string many times', function() {
         expect(repeatString('hey', 10)).toEqual('heyheyheyheyheyheyheyheyheyhey');
     });
     xit('repeats the string 1 times', function() {
