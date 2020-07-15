@@ -4,7 +4,7 @@ describe('removeFromArray', function() {
     it('removes a single value', function() {
         expect(removeFromArray([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
     });
-    xit('removes multiple values', function() {
+    it('removes multiple values', function() {
         expect(removeFromArray([1, 2, 3, 4], 3, 2)).toEqual([1, 4]);
     });
     xit('ignores non present values', function() {
