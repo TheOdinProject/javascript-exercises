@@ -7,7 +7,7 @@ const removeFromArray = function(...args) {
     // Remove all the remaining elements from the array 
     for (let i = 1; i < args.length; i++) {
         pos = myArray.indexOf(args[i]);
-        if (pos >= 0 && myArray[pos] === args[i]) { //Is it a valid argument
+        if (pos >= 0 && myArray[pos] === args[i]) { //Check argument and type
             myArray.splice(pos, 1);
         }
     }
