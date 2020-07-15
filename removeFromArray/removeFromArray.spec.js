@@ -13,13 +13,13 @@ describe('removeFromArray', function() {
     it('ignores non present values, but still works', function() {
         expect(removeFromArray([1, 2, 3, 4], 7, 2)).toEqual([1, 3, 4]);
     });
-    xit('can remove all values', function() {
+    it('can remove all values', function() {
         expect(removeFromArray([1, 2, 3, 4], 1, 2, 3, 4)).toEqual([]);
     });
-    xit('works with strings', function() {
+    it('works with strings', function() {
         expect(removeFromArray(["hey", 2, 3, "ho"], "hey", 3)).toEqual([2, "ho"]);
     });
-    xit('only removes same type', function() {
+    it('only removes same type', function() {
         expect(removeFromArray([1, 2, 3], "1", 3)).toEqual([1, 2]);
     });
 });
