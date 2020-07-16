@@ -51,4 +51,4 @@ For the most part we've set up these tests in such a way that you only have to w
 
 Mohammed Nabeel's solutions:
 https://github.com/mnabeelp/javascript-exercises/tree/master/helloWorld/
-https://github.com/mnabeelp/javascript-exercises/tree/master/repeatString
+https://github.com/mnabeelp/javascript-exercises/tree/master/repeatString/
