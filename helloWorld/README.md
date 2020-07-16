@@ -49,4 +49,6 @@ module.exports = helloWorld
 
 For the most part we've set up these tests in such a way that you only have to write the code being tested.  You should not have to worry about importing or exporting anything at this stage.. so just work around that bit of the code and write what it takes to make them pass!
 
-Mohammed Nabeel's solution https://github.com/mnabeelp/javascript-exercises/tree/master/helloWorld/
+Mohammed Nabeel's solutions:
+https://github.com/mnabeelp/javascript-exercises/tree/master/helloWorld/
+https://github.com/mnabeelp/javascript-exercises/tree/master/repeatString
