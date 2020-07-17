@@ -16,6 +16,11 @@ const sumAll = function(...args) {
         lastNumber = tempNumber;
     }
 
+    /*If either number is negative, return 'ERROR' */
+    if (firstNumber < 0 || lastNumber < 0) {
+        return 'ERROR';
+    }
+
     for (let i = firstNumber; i <= lastNumber; i++) {
         totalOfNumbers += i;
     }
