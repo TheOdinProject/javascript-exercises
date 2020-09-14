@@ -8,7 +8,7 @@ const sumAll = function(min, max) {
   }
   let sum = 0;
   for (let i = min; i < max + 1; i++) {
-    sum += i;
+    sum += (((max-min)+1)/1)*((max+min)/2);
   }
   return sum;
 };
