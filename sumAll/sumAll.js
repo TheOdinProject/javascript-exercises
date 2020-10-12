@@ -1,5 +1,5 @@
 const sumAll = function(min, max) {
-  if (typeof min !== "number" || typeof max !== "number") return "ERROR";
+  if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
   if (min < 0 || max < 0) return "ERROR";
   if (min > max) {
     const temp = min;
