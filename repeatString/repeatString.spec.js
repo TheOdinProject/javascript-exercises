@@ -21,6 +21,10 @@ describe('repeatString', function() {
     0 to 1, when this is multiplied by 1000 and rounded down with Math.floor it 
     equals a number between 0 to 999 (this number will change everytime you run
     the test).*/
+
+    // DO NOT use Math.floor(Math.random() * 1000) in your code, 
+    // this test generates a random number, then passes it into your code with a function parameter.
+    // If this doesn't make sense, you should go read about functions here: https://www.theodinproject.com/courses/web-development-101/lessons/fundamentals-part-3
     const number = Math.floor(Math.random() * 1000)
     /*The .match(/((hey))/g).length is a regex that will count the number of heys
     in the result, which if your function works correctly will equal the number that
