@@ -1,4 +1,4 @@
-const sumAll = require('./sumAll')
+const expect = require('expect');const sumAll = require('./sumAll')
 
 describe('sumAll', function() {
   it('sums numbers within the range', function() {
