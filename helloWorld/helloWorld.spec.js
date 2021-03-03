@@ -1,4 +1,4 @@
-const expect = require('expect');const { expect } = require('@jest/globals');
+const expect = require('expect');
 const helloWorld = require('./helloWorld');
 
 // describe('Hello World', function() {
@@ -7,6 +7,8 @@ const helloWorld = require('./helloWorld');
 //   });
 // });
 
-test('says "Hello, World!"', () => {
-  expect(helloWorld()).toBe("Hello, World!");
+describe('helloWorld', function() {
+  test('says "Hello, World!"', function() {
+    expect(helloWorld()).toBe("Hello, World!");
+  })
 });
