@@ -1,9 +1,0 @@
-{
-  "generator-node": {
-    "promptValues": {
-      "authorName": "Cody Loyd",
-      "authorEmail": "codyloyd@gmail.com",
-      "authorUrl": "codyloyd.com"
-    }
-  }
-}
