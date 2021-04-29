@@ -1,4 +1,4 @@
-const {ftoc, ctof} = require('./tempConversion')
+const expect = require('expect');const {ftoc, ctof} = require('./tempConversion')
 
 describe('ftoc', function() {
   it('works', function() {
