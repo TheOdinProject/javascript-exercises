@@ -1,25 +1,25 @@
-function add () {
-	
+const add = function() {
+
 }
 
-function subtract () {
-	
+const subtract = function() {
+
 }
 
-function sum () {
-	
+const sum = function() {
+
 }
 
-function multiply () {
-	
+const mulitply = function() {
+
 }
 
-function power() {
-	
+const power = function() {
+
 }
 
-function factorial() {
-	
+const factorial = function() {
+
 }
 
 module.exports = {
