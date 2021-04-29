@@ -1,4 +1,4 @@
-const caesar = require('./caesar')
+const caesar = require('./caesar.js')
 
 test('works with single letters', () => {
   expect(caesar('A', 1)).toBe('B');
