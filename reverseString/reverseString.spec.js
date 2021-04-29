@@ -1,4 +1,4 @@
-const reverseString = require('./reverseString')
+const expect = require('expect');const reverseString = require('./reverseString')
 
 describe('reverseString', function() {
   it('reverses single word', function() {
