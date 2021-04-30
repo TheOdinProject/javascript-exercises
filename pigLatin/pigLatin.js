@@ -1,5 +1,5 @@
-const translate = function() {
-	// body...
-}
+function pigLatin(string) {
 
-module.exports = translate
+  }
+  
+  module.exports = pigLatin
