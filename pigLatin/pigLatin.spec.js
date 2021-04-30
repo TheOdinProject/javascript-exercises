@@ -1,4 +1,4 @@
-const pigLtain = require('./translate')
+const pigLatin = require('./pigLatin')
 
 //  Topics
 
