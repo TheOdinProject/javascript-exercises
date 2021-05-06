@@ -1,8 +1,8 @@
-const ftoc = function() {
+const fToC = function() {
 
 }
 
-const ctof = function() {
+const cToF = function() {
 
 }
 
