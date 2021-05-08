@@ -10,7 +10,7 @@ const sum = function() {
 
 }
 
-const mulitply = function() {
+const multiply = function() {
 
 }
 

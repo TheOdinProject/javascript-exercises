@@ -10,10 +10,25 @@ var assignInWith = require('./assignInWith'),
     templateSettings = require('./templateSettings'),
     toString = require('./toString');
 
+/** Error message constants. */
+var INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.template`';
+
 /** Used to match empty string literals in compiled template source. */
 var reEmptyStringLeading = /\b__p \+= '';/g,
     reEmptyStringMiddle = /\b(__p \+=) '' \+/g,
     reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
+
+/**
+ * Used to validate the `validate` option in `_.template` variable.
+ *
+ * Forbids characters which could potentially change the meaning of the function argument definition:
+ * - "()," (modification of function parameters)
+ * - "=" (default value)
+ * - "[]{}" (destructuring of function parameters)
+ * - "/" (beginning of a comment)
+ * - whitespace
+ */
+var reForbiddenIdentifierChars = /[()=,{}\[\]\/\s]/;
 
 /**
  * Used to match
@@ -26,6 +41,12 @@ var reNoMatch = /($^)/;
 
 /** Used to match unescaped characters in compiled string literals. */
 var reUnescapedString = /['\n\r\u2028\u2029\\]/g;
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
  * Creates a compiled template function that can interpolate data properties
@@ -162,7 +183,14 @@ function template(string, options, guard) {
   , 'g');
 
   // Use a sourceURL for easier debugging.
-  var sourceURL = 'sourceURL' in options ? '//# sourceURL=' + options.sourceURL + '\n' : '';
+  // The sourceURL gets injected into the source that's eval-ed, so be careful
+  // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
+  // and escape the comment, thus injecting code that gets evaled.
+  var sourceURL = hasOwnProperty.call(options, 'sourceURL')
+    ? ('//# sourceURL=' +
+       (options.sourceURL + '').replace(/\s/g, ' ') +
+       '\n')
+    : '';
 
   string.replace(reDelimiters, function(match, escapeValue, interpolateValue, esTemplateValue, evaluateValue, offset) {
     interpolateValue || (interpolateValue = esTemplateValue);
@@ -193,10 +221,16 @@ function template(string, options, guard) {
 
   // If `variable` is not specified wrap a with-statement around the generated
   // code to add the data object to the top of the scope chain.
-  var variable = options.variable;
+  var variable = hasOwnProperty.call(options, 'variable') && options.variable;
   if (!variable) {
     source = 'with (obj) {\n' + source + '\n}\n';
   }
+  // Throw an error if a forbidden character was found in `variable`, to prevent
+  // potential command injection attacks.
+  else if (reForbiddenIdentifierChars.test(variable)) {
+    throw new Error(INVALID_TEMPL_VAR_ERROR_TEXT);
+  }
+
   // Cleanup code by stripping empty strings.
   source = (isEvaluating ? source.replace(reEmptyStringLeading, '') : source)
     .replace(reEmptyStringMiddle, '$1')

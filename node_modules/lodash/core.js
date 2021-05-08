@@ -2,7 +2,7 @@
  * @license
  * Lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash core -o ./dist/lodash.core.js`
- * Copyright JS Foundation and other contributors <https://js.foundation/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
  * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -13,7 +13,7 @@
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.4';
+  var VERSION = '4.17.21';
 
   /** Error message constants. */
   var FUNC_ERROR_TEXT = 'Expected a function';
@@ -48,6 +48,9 @@
   /** Used to match HTML entities and HTML characters. */
   var reUnescapedHtml = /[&<>"']/g,
       reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
+
+  /** Used to detect unsigned integer values. */
+  var reIsUint = /^(?:0|[1-9]\d*)$/;
 
   /** Used to map characters to HTML entities. */
   var htmlEscapes = {
@@ -1160,26 +1163,6 @@
   }
 
   /**
-   * Used by `_.defaults` to customize its `_.assignIn` use to assign properties
-   * of source objects to the destination object for all destination properties
-   * that resolve to `undefined`.
-   *
-   * @private
-   * @param {*} objValue The destination value.
-   * @param {*} srcValue The source value.
-   * @param {string} key The key of the property to assign.
-   * @param {Object} object The parent object of `objValue`.
-   * @returns {*} Returns the value to assign.
-   */
-  function customDefaultsAssignIn(objValue, srcValue, key, object) {
-    if (objValue === undefined ||
-        (eq(objValue, objectProto[key]) && !hasOwnProperty.call(object, key))) {
-      return srcValue;
-    }
-    return objValue;
-  }
-
-  /**
    * A specialized version of `baseIsEqualDeep` for arrays with support for
    * partial deep comparisons.
    *
@@ -1199,6 +1182,12 @@
 
     if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
       return false;
+    }
+    // Check that cyclic values are equal.
+    var arrStacked = stack.get(array);
+    var othStacked = stack.get(other);
+    if (arrStacked && othStacked) {
+      return arrStacked == other && othStacked == array;
     }
     var index = -1,
         result = true,
@@ -1310,6 +1299,12 @@
         return false;
       }
     }
+    // Check that cyclic values are equal.
+    var objStacked = stack.get(object);
+    var othStacked = stack.get(other);
+    if (objStacked && othStacked) {
+      return objStacked == other && othStacked == object;
+    }
     var result = true;
 
     var skipCtor = isPartial;
@@ -1364,6 +1359,48 @@
    */
   function isFlattenable(value) {
     return isArray(value) || isArguments(value);
+  }
+
+  /**
+   * Checks if `value` is a valid array-like index.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+   * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+   */
+  function isIndex(value, length) {
+    var type = typeof value;
+    length = length == null ? MAX_SAFE_INTEGER : length;
+
+    return !!length &&
+      (type == 'number' ||
+        (type != 'symbol' && reIsUint.test(value))) &&
+          (value > -1 && value % 1 == 0 && value < length);
+  }
+
+  /**
+   * Checks if the given arguments are from an iteratee call.
+   *
+   * @private
+   * @param {*} value The potential iteratee value argument.
+   * @param {*} index The potential iteratee index or key argument.
+   * @param {*} object The potential iteratee object argument.
+   * @returns {boolean} Returns `true` if the arguments are from an iteratee call,
+   *  else `false`.
+   */
+  function isIterateeCall(value, index, object) {
+    if (!isObject(object)) {
+      return false;
+    }
+    var type = typeof index;
+    if (type == 'number'
+          ? (isArrayLike(object) && isIndex(index, object.length))
+          : (type == 'string' && index in object)
+        ) {
+      return eq(object[index], value);
+    }
+    return false;
   }
 
   /**
@@ -1910,6 +1947,10 @@
    * // The `_.property` iteratee shorthand.
    * _.filter(users, 'active');
    * // => objects for ['barney']
+   *
+   * // Combining several predicates using `_.overEvery` or `_.overSome`.
+   * _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
+   * // => objects for ['fred', 'barney']
    */
   function filter(collection, predicate) {
     return baseFilter(collection, baseIteratee(predicate));
@@ -2163,15 +2204,15 @@
    * var users = [
    *   { 'user': 'fred',   'age': 48 },
    *   { 'user': 'barney', 'age': 36 },
-   *   { 'user': 'fred',   'age': 40 },
+   *   { 'user': 'fred',   'age': 30 },
    *   { 'user': 'barney', 'age': 34 }
    * ];
    *
    * _.sortBy(users, [function(o) { return o.user; }]);
-   * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+   * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 30]]
    *
    * _.sortBy(users, ['user', 'age']);
-   * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+   * // => objects for [['barney', 34], ['barney', 36], ['fred', 30], ['fred', 48]]
    */
   function sortBy(collection, iteratee) {
     var index = 0;
@@ -3099,39 +3140,6 @@
   });
 
   /**
-   * This method is like `_.assignIn` except that it accepts `customizer`
-   * which is invoked to produce the assigned values. If `customizer` returns
-   * `undefined`, assignment is handled by the method instead. The `customizer`
-   * is invoked with five arguments: (objValue, srcValue, key, object, source).
-   *
-   * **Note:** This method mutates `object`.
-   *
-   * @static
-   * @memberOf _
-   * @since 4.0.0
-   * @alias extendWith
-   * @category Object
-   * @param {Object} object The destination object.
-   * @param {...Object} sources The source objects.
-   * @param {Function} [customizer] The function to customize assigned values.
-   * @returns {Object} Returns `object`.
-   * @see _.assignWith
-   * @example
-   *
-   * function customizer(objValue, srcValue) {
-   *   return _.isUndefined(objValue) ? srcValue : objValue;
-   * }
-   *
-   * var defaults = _.partialRight(_.assignInWith, customizer);
-   *
-   * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
-   * // => { 'a': 1, 'b': 2 }
-   */
-  var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
-    copyObject(source, keysIn(source), object, customizer);
-  });
-
-  /**
    * Creates an object that inherits from the `prototype` object. If a
    * `properties` object is given, its own enumerable string keyed properties
    * are assigned to the created object.
@@ -3191,9 +3199,35 @@
    * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
    * // => { 'a': 1, 'b': 2 }
    */
-  var defaults = baseRest(function(args) {
-    args.push(undefined, customDefaultsAssignIn);
-    return assignInWith.apply(undefined, args);
+  var defaults = baseRest(function(object, sources) {
+    object = Object(object);
+
+    var index = -1;
+    var length = sources.length;
+    var guard = length > 2 ? sources[2] : undefined;
+
+    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+      length = 1;
+    }
+
+    while (++index < length) {
+      var source = sources[index];
+      var props = keysIn(source);
+      var propsIndex = -1;
+      var propsLength = props.length;
+
+      while (++propsIndex < propsLength) {
+        var key = props[propsIndex];
+        var value = object[key];
+
+        if (value === undefined ||
+            (eq(value, objectProto[key]) && !hasOwnProperty.call(object, key))) {
+          object[key] = source[key];
+        }
+      }
+    }
+
+    return object;
   });
 
   /**
@@ -3485,6 +3519,9 @@
    * values against any array or object value, respectively. See `_.isEqual`
    * for a list of supported value comparisons.
    *
+   * **Note:** Multiple values can be checked by combining several matchers
+   * using `_.overSome`
+   *
    * @static
    * @memberOf _
    * @since 3.0.0
@@ -3500,6 +3537,10 @@
    *
    * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
    * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+   *
+   * // Checking for several possible values
+   * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+   * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
    */
   function matches(source) {
     return baseMatches(assign({}, source));
