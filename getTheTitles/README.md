@@ -1,4 +1,4 @@
-# Get the Titles!
+# GET THE TITLES!
 
 You are given an array of objects that represent books with an author and a title that looks like this:
 
@@ -24,3 +24,4 @@ getTheTitles(books) // ['Book','Book2']
 ## Hints
 
 - You should use a built-in javascript method to do most of the work for you!
+<Paste>
