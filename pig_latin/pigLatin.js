@@ -1,7 +1,9 @@
 function translate() {
-  // body...
+	// body...
 }
 
+
 module.exports = {
-  translate,
-};
+	translate
+}
+

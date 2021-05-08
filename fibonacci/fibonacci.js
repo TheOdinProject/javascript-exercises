@@ -1,3 +1,3 @@
 const fibonacci = function () {};
 
-module.exports = fibonacci
+module.exports = fibonacci;
