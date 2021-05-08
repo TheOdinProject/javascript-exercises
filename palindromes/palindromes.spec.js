@@ -1,23 +1,22 @@
-const palindromes = require("./palindromes");
+const palindromes = require('./palindromes')
 
-describe('palindromes', () => {
-  test('works with single words', () => {
-    expect(palindromes('racecar')).toBe(true);
+describe('palindromes', function() {
+  it('works with single words', function() {
+    expect(palindromes('racecar')).toEqual(true);
   });
-  test.skip('works with punctuation ', () => {
-    expect(palindromes('racecar!')).toBe(true);
+  xit('works with punctuation ', function() {
+    expect(palindromes('racecar!')).toEqual(true);
   });
-  test.skip('works with upper-case letters ', () => {
-    expect(palindromes('Racecar!')).toBe(true);
+  xit('works with upper-case letters ', function() {
+    expect(palindromes('Racecar!')).toEqual(true);
   });
-  test.skip('works with multiple words', () => {
-    expect(palindromes('A car, a man, a maraca.')).toBe(true);
+  xit('works with multiple words', function() {
+    expect(palindromes('A car, a man, a maraca.')).toEqual(true);
   });
-  test.skip('works with multiple words', () => {
-    expect(palindromes('Animal loots foliated detail of stool lamina.')).toBe(true);
+  xit('works with multiple words', function() {
+    expect(palindromes('Animal loots foliated detail of stool lamina.')).toEqual(true);
   });
-  test.skip('doesn\'t just always return true', () => {
-    expect(palindromes('ZZZZ car, a man, a maraca.')).toBe(false);
+  xit('doesn\'t just always return true', function() {
+    expect(palindromes('ZZZZ car, a man, a maraca.')).toEqual(false);
   });
-
 });

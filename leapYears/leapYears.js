@@ -1,4 +1,4 @@
-var leapYears = function() {
+const leapYears = function() {
 
 }
 

@@ -1,5 +1,9 @@
-const translate = function() {
-
+function translate() {
+	// body...
 }
 
-module.exports = translate
+
+module.exports = {
+	translate
+}
+

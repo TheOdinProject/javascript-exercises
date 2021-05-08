@@ -1,5 +1,3 @@
-const findTheOldest = function() {
-
+let findTheOldest = function() {
 }
-
-module.exports = findTheOldest
+module.exports = findTheOldest;

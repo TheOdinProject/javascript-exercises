@@ -1,5 +1,5 @@
 const caesar = function() {
 
-};
+}
 
-module.exports = caesar;
+module.exports = caesar

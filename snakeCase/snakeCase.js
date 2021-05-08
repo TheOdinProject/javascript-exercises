@@ -2,4 +2,4 @@ const snakeCase = function() {
 
 }
 
-module.exports = snakeCase;
+module.exports = snakeCase

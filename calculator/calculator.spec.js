@@ -1,77 +1,77 @@
 const calculator = require ('./calculator.js');
 
-describe('add', () => {
-	test('adds 0 and 0', () => {
-		expect(calculator.add(0,0)).toBe(0);
+describe('add', function() {
+	it('adds 0 and 0', function() {
+		expect(calculator.add(0,0)).toEqual(0);
 	});
 
-	test('adds 2 and 2', () => {
-		expect(calculator.add(2,2)).toBe(4);
+	xit('adds 2 and 2', function() {
+		expect(calculator.add(2,2)).toEqual(4);
 	});
 
-	test('adds positive numbers', () => {
-		expect(calculator.add(2,6)).toBe(8);
-	});
-});
-
-describe('subtract', () => {
-	test('subtracts numbers', () => {
-		expect(calculator.subtract(10,4)).toBe(6);
+	xit('adds positive numbers', function() {
+		expect(calculator.add(2,6)).toEqual(8);
 	});
 });
 
-describe('sum', () => {
-	test('computes the sum of an empty array', () => {
-		expect(calculator.sum([])).toBe(0);
-	});
-
-	test('computes the sum of an array of one number', () => {
-		expect(calculator.sum([7])).toBe(7);
-	});
-
-	test('computes the sum of an array of two numbers', () => {
-		expect(calculator.sum([7,11])).toBe(18);
-	});
-
-	test('computes the sum of an array of many numbers', () => {
-		expect(calculator.sum([1,3,5,7,9])).toBe(25);
+describe('subtract', function() {
+	xit('subtracts numbers', function() {
+		expect(calculator.subtract(10,4)).toEqual(6);
 	});
 });
 
-describe('multiply', () => {
-	test('multiplies two numbers', () => {
-		expect(calculator.multiply([2,4])).toBe(8);
+describe('sum', function() {
+	xit('computes the sum of an empty array', function() {
+		expect(calculator.sum([])).toEqual(0);
 	});
 
-	test('multiplies several numbers', () => {
-		expect(calculator.multiply([2,4,6,8,10,12,14])).toBe(645120);
+	xit('computes the sum of an array of one number', function() {
+		expect(calculator.sum([7])).toEqual(7);
+	});
+
+	xit('computes the sum of an array of two numbers', function() {
+		expect(calculator.sum([7,11])).toEqual(18);
+	});
+
+	xit('computes the sum of an array of many numbers', function() {
+		expect(calculator.sum([1,3,5,7,9])).toEqual(25);
 	});
 });
 
-describe('power', () => {
-	test('raises one number to the power of another number', () => {
-		expect(calculator.power(4,3)).toBe(64); // 4 to third power is 64
+describe('multiply', function() {
+	xit('multiplies two numbers', function() {
+		expect(calculator.multiply([2,4])).toEqual(8);
+	});
+
+	xit('multiplies several numbers', function() {
+		expect(calculator.multiply([2,4,6,8,10,12,14])).toEqual(645120);
 	});
 });
 
-describe('factorial', () => {
-	test.skip('computes the factorial of 0', () => {
-		expect(calculator.factorial(0)).toBe(1); // 0! = 1
+describe('power', function() {
+	xit('raises one number to the power of another number', function() {
+		expect(calculator.power(4,3)).toEqual(64); // 4 to third power is 64
+	});
+});
+
+describe('factorial', function() {
+	xit('computes the factorial of 0', function() {
+		expect(calculator.factorial(0)).toEqual(1); // 0! = 1
 	});
 
-	test.skip('computes the factorial of 1', () => {
-		expect(calculator.factorial(1)).toBe(1);
+	xit('computes the factorial of 1', function() {
+		expect(calculator.factorial(1)).toEqual(1);
 	});
 
-	test.skip('computes the factorial of 2', () => {
-		expect(calculator.factorial(2)).toBe(2);
+	xit('computes the factorial of 2', function() {
+		expect(calculator.factorial(2)).toEqual(2);
 	});
 
-	test.skip('computes the factorial of 5', () => {
-		expect(calculator.factorial(5)).toBe(120);
+	xit('computes the factorial of 5', function() {
+		expect(calculator.factorial(5)).toEqual(120);
 	});
 
-	test.skip('computes the factorial of 10', () => {
-		expect(calculator.factorial(10)).toBe(3628800);
+	xit('computes the factorial of 10', function() {
+		expect(calculator.factorial(10)).toEqual(3628800);
 	});
 });

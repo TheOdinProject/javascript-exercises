@@ -1,5 +1,7 @@
 const helloWorld = require('./helloWorld');
 
-test('says "Hello, World!"', function() {
-  expect(helloWorld()).toBe("Hello, World!");
+describe('Hello World', function() {
+  it('says hello world', function() {
+    expect(helloWorld()).toEqual('Hello, World!');
+  });
 });

@@ -1,5 +1,3 @@
-const expect = require("expect");
-
 //  Topics
 
 //  * modules
@@ -7,11 +5,11 @@ const expect = require("expect");
 
 //  Pig Latin
 
-// Pig Latin is a made-up children's language that's intended to be confusing. test obeys a few simple rules (below) but when test's spoken quickly test's really difficult for non-children (and non-native speakers) to understand.
+// Pig Latin is a made-up children's language that's intended to be confusing. It obeys a few simple rules (below) but when it's spoken quickly it's really difficult for non-children (and non-native speakers) to understand.
 
 // Rule 1: If a word begins with a vowel sound, add an "ay" sound to the end of the word.
 
-// Rule 2: If a word begins with a consonant sound, move test to the end of the word, and then add an "ay" sound to the end of the word.
+// Rule 2: If a word begins with a consonant sound, move it to the end of the word, and then add an "ay" sound to the end of the word.
 
 // (There are a few more rules for edge cases, and there are regional variants too, but that should be enough to understand the tests.)
 
@@ -19,48 +17,48 @@ const expect = require("expect");
 
 const pigLatin = require("./pigLatin.js");
 
-describe('translate', () => {
-	test('translates a word beginning with a vowel', () => {
+describe('#translate', function() {
+	it('translates a word beginning with a vowel', function() {
 		s = pigLatin.translate("apple");
-		expect(s).toBe('appleay');
+		expect(s).toEqual('appleay');
 	});
 
-	test.skip('translates a word beginning with a consonant', () => {
+	xit('translates a word beginning with a consonant', function() {
 		s = pigLatin.translate("banana");
-		expect(s).toBe("ananabay");
+		expect(s).toEqual("ananabay");
 	});
 
-	test.skip('translates a word beginning with two consonants', () => {
+	xit('translates a word beginning with two consonants', function() {
 		s = pigLatin.translate("cherry");
-		expect(s).toBe('errychay');
+		expect(s).toEqual('errychay');
 	});
 
-	test.skip('translates two words', () => {
+	xit('translates two words', function() {
 		s = pigLatin.translate("eat pie");
-		expect(s).toBe('eatay iepay');
+		expect(s).toEqual('eatay iepay');
 	});
 
-	test.skip('translates a word beginning with three consonants', () => {
-		expect(pigLatin.translate("three")).toBe("eethray");
+	xit('translates a word beginning with three consonants', function() {
+		expect(pigLatin.translate("three")).toEqual("eethray");
 	});
 
-	test.skip('counts "sch" as a single phoneme', () => {
+	xit('counts "sch" as a single phoneme', function() {
 		s = pigLatin.translate("school");
-		expect(s).toBe("oolschay");
+		expect(s).toEqual("oolschay");
 	});
 
-	test.skip('counts "qu" as a single phoneme', () => {
+	xit('counts "qu" as a single phoneme', function() {
 		s = pigLatin.translate("quiet");
-		expect(s).toBe("ietquay");
+		expect(s).toEqual("ietquay");
 	});
 
-	test.skip('counts "qu" as a consonant even when its preceded by a consonant', () => {
+	xit('counts "qu" as a consonant even when its preceded by a consonant', function() {
 		s = pigLatin.translate("square");
-		expect(s).toBe("aresquay");
+		expect(s).toEqual("aresquay");
 	});
 
-	test.skip('translates many words', () => {
+	xit('translates many words', function() {
 		s = pigLatin.translate("the quick brown fox");
-		expect(s).toBe("ethay ickquay ownbray oxfay");
+		expect(s).toEqual("ethay ickquay ownbray oxfay");
 	});
 });
