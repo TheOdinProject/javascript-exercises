@@ -1,4 +1,4 @@
-const expect = require("expect");//  Topics
+//  Topics
 
 //  * modules
 //  * strings

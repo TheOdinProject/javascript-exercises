@@ -1,4 +1,4 @@
-const expect = require('expect');const { expect } = require('@jest/globals');
+const { expect } = require('@jest/globals');
 const helloWorld = require('./helloWorld');
 
 // describe('Hello World', function() {
