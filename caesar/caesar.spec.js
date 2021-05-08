@@ -1,26 +1,25 @@
-const expect = require('expect');
-const caesar = require('./caesar')
+const expect = require('expect');const caesar = require('./caesar')
 
 describe('caesar', function() {
-  test('works with single letters', function() {
-    expect(caesar('A', 1)).toBe('B');
+  it('works with single letters', function() {
+    expect(caesar('A', 1)).toEqual('B');
   });
-  test.skip('works with words', function() {
-    expect(caesar('Aaa', 1)).toBe('Bbb');
+  xit('works with words', function() {
+    expect(caesar('Aaa', 1)).toEqual('Bbb');
   });
-  test.skip('works with phrases', function() {
-    expect(caesar('Hello, World!', 5)).toBe('Mjqqt, Btwqi!');
+  xit('works with phrases', function() {
+    expect(caesar('Hello, World!', 5)).toEqual('Mjqqt, Btwqi!');
   });
-  test.skip('works with negative shift', function() {
-    expect(caesar('Mjqqt, Btwqi!', -5)).toBe('Hello, World!');
+  xit('works with negative shift', function() {
+    expect(caesar('Mjqqt, Btwqi!', -5)).toEqual('Hello, World!');
   });
-  test.skip('wraps', function() {
-    expect(caesar('Z', 1)).toBe('A');
+  xit('wraps', function() {
+    expect(caesar('Z', 1)).toEqual('A');
   });
-  test.skip('works with large shift factors', function() {
-    expect(caesar('Hello, World!', 75)).toBe('Ebiil, Tloia!');
+  xit('works with large shift factors', function() {
+    expect(caesar('Hello, World!', 75)).toEqual('Ebiil, Tloia!');
   });
-  test.skip('works with large negative shift factors', function() {
-    expect(caesar('Hello, World!', -29)).toBe('Ebiil, Tloia!');
+  xit('works with large negative shift factors', function() {
+    expect(caesar('Hello, World!', -29)).toEqual('Ebiil, Tloia!');
   });
 });
