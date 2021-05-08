@@ -1,31 +1,25 @@
-const fibonacci = require('./fibonacci')
+const fibonacci = require("./fibonacci");
 
-describe('fibonacci', function() {
-  it('works', function() {
+describe("fibonacci", () => {
+  it("works", () => {
     expect(fibonacci(4)).toEqual(3);
   });
-  xit('works', function() {
+  it("works", () => {
     expect(fibonacci(6)).toEqual(8);
   });
-  xit('works', function() {
+  it("works", () => {
     expect(fibonacci(10)).toEqual(55);
   });
-  xit('works', function() {
+  it("works", () => {
     expect(fibonacci(15)).toEqual(610);
   });
-  xit('works', function() {
+  it("works", () => {
     expect(fibonacci(25)).toEqual(75025);
   });
-  xit('doesn\'t accept negatives', function() {
+  it("doesn't accept negatives", () => {
     expect(fibonacci(-25)).toEqual("OOPS");
   });
-  xit('DOES accept strings', function() {
-    expect(fibonacci("1")).toEqual(1);
-  });
-  xit('DOES accept strings', function() {
-    expect(fibonacci("2")).toEqual(1);
-  });
-  xit('DOES accept strings', function() {
+  it("DOES accept strings", () => {
     expect(fibonacci("8")).toEqual(21);
   });
 });
