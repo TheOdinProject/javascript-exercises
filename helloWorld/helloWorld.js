@@ -1,4 +1,4 @@
-var helloWorld = function() {
+const helloWorld = function() {
   return ''
 }
 

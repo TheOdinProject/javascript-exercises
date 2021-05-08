@@ -1,5 +1,5 @@
-var getTheTitles = function() {
+const getTheTitles = function() {
 
 }
 
-module.exports = getTheTitles
+module.exports = getTheTitles;

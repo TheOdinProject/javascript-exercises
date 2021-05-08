@@ -1,6 +1,1 @@
 .vscode
-node_modules
-package-lock.json
-package.json
-.eslintrc
-.DS_Store
