@@ -1,4 +1,4 @@
-const palindromes = require("./palindromes");
+const expect = require('expect');const palindromes = require('./palindromes')
 
 describe('palindromes', function() {
   it('works with single words', function() {

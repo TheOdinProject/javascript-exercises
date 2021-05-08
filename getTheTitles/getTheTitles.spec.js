@@ -1,4 +1,4 @@
-let getTheTitles = require('./getTheTitles')
+const expect = require('expect');let getTheTitles = require('./getTheTitles')
 
 describe('getTheTitles', function() {
     const books = [

@@ -1,4 +1,4 @@
-let findTheOldest = require('./findTheOldest')
+const expect = require('expect');let findTheOldest = require('./findTheOldest')
 
 describe('findTheOldest', function() {
   it('finds the oldest person!', function() {
