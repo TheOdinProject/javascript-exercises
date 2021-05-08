@@ -1,4 +1,4 @@
-const getTheTitles = require("./getTheTitles");
+let getTheTitles = require("./getTheTitles");
 
 describe("getTheTitles", function () {
   const books = [
@@ -12,7 +12,7 @@ describe("getTheTitles", function () {
     },
   ];
 
-  test("gets titles", () => {
-    expect(getTheTitles(books)).toBe(["Book", "Book2"]);
+  it("gets titles", function () {
+    expect(getTheTitles(books)).toEqual(["Book", "Book2"]);
   });
 });
