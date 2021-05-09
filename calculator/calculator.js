@@ -1,26 +1,26 @@
-function add(a, b) {
+const add = function(a, b) {
   return a + b;
 }
 
-function subtract(a, b) {
+const subtract = function(a, b) {
   return a - b;
 }
 
-function sum(array) {
+const sum = function(array) {
   return array.reduce((total, current) => total + current, 0);
 }
 
-function multiply(array) {
+const multiply = function(array) {
     return array.length
       ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
       : 0;
 }
 
-function power(a, b) {
+const power = function(a, b) {
   return Math.pow(a, b);
 }
 
-function factorial(n) {
+const factorial = function(n) {
   if (n == 0) return 1;
   let product = 1;
   for (let i = n; i > 0; i--) {
@@ -31,7 +31,7 @@ function factorial(n) {
 
 // This is another implementation of Factorial that uses recursion
 // THANKS to @ThirtyThreeB!
-function recursiveFactorial(n) {
+const recursiveFactorial = function(n) {
   if (n===0){
     return 1;
   }

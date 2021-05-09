@@ -1,4 +1,4 @@
-function pigLatin(string) {
+const pigLatin = function(string) {
 	return string
 	  .split(" ")
 	  .map(word => {
@@ -10,7 +10,7 @@ function pigLatin(string) {
 	  .join(" ");
   }
   
-  function firstVowelIndex(string) {
+const firstVowelIndex = function(string) {
 	const vowels = string.match(/[aeiou]/g);
 	if (vowels[0] == "u" && string[string.indexOf(vowels[0]) - 1] == "q") {
 	  return string.indexOf(vowels[1]);
