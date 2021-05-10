@@ -22,7 +22,7 @@ At the very top of the file we use `require()` to import the code from the javas
 
 The next block (`describe()`) is the body of the test.  Basically, all it's doing is running your code and testing to see if the output is correct.  The `test()` function describes what should be happening in plain english and then includes the `expect()` function.  For this simple example it should be pretty simple to read.
 
-For now you do not need to worry about how to write tests, but you should try to get comfortable enough with the syntax to figure out what the tests are asking you to do.  Go ahead and run the tests by entering `jasmine helloWorld.spec.js` in the terminal and watch it fail.  The output from that command should tell you exactly what went wrong with your code.  In this case, running the `helloWorld()` function should return the phrase 'Hello, World!' but instead it returns an empty string...
+For now you do not need to worry about how to write tests, but you should try to get comfortable enough with the syntax to figure out what the tests are asking you to do.  Go ahead and run the tests by entering `npm test helloWorld.spec.js` in the terminal and watch it fail.  The output from that command should tell you exactly what went wrong with your code.  In this case, running the `helloWorld()` function should return the phrase 'Hello, World!' but instead it returns an empty string...
 
 so let's look at the javascript file:
 ```javascript
