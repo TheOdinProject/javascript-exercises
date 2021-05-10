@@ -13,7 +13,7 @@ describe('getTheTitles', () => {
     ]
 
   test('gets titles', () => {
-    expect(getTheTitles(books)).toBe(['Book','Book2']);
+    expect(getTheTitles(books)).toEqual(['Book','Book2']);
   });
 
 });

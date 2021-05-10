@@ -19,38 +19,38 @@ const pigLatin = require('./pigLatin')
 
 describe('translate', () => {
 	test('translates a word beginning with a vowel', () => {
-		expect(pigLatin.translate("apple")).toBe('appleay');
+		expect(pigLatin("apple")).toBe('appleay');
 	});
 
 	test.skip('translates a word beginning with a consonant', () => {
-		expect(pigLatin.translate("banana")).toBe("ananabay");
+		expect(pigLatin("banana")).toBe("ananabay");
 	});
 
 	test.skip('translates a word beginning with two consonants', () => {
-		expect(pigLatin.translate("cherry")).toBe('errychay');
+		expect(pigLatin("cherry")).toBe('errychay');
 	});
 
 	test.skip('translates two words', () => {
-		expect(pigLatin.translate("eat pie")).toBe('eatay iepay');
+		expect(pigLatin("eat pie")).toBe('eatay iepay');
 	});
 
 	test.skip('translates a word beginning with three consonants', () => {
-		expect(pigLatin.translate("three")).toBe("eethray");
+		expect(pigLatin("three")).toBe("eethray");
 	});
 
 	test.skip('counts "sch" as a single phoneme', () => {
-		expect(pigLatin.translate("school")).toBe("oolschay");
+		expect(pigLatin("school")).toBe("oolschay");
 	});
 
 	test.skip('counts "qu" as a single phoneme', () => {
-		expect(pigLatin.translate("quiet")).toBe("ietquay");
+		expect(pigLatin("quiet")).toBe("ietquay");
 	});
 
 	test.skip('counts "qu" as a consonant even when its preceded by a consonant', () => {
-		expect(pigLatin.translate("square")).toBe("aresquay");
+		expect(pigLatin("square")).toBe("aresquay");
 	});
 
 	test.skip('translates many words', () => {
-		expect(pigLatin.translate("the quick brown fox")).toBe("ethay ickquay ownbray oxfay");
+		expect(pigLatin("the quick brown fox")).toBe("ethay ickquay ownbray oxfay");
 	});
 });

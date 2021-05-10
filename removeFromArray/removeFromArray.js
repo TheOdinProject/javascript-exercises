@@ -1,5 +1,5 @@
 const removeFromArray = function() {
 
-}
+};
 
-module.exports = removeFromArray
+module.exports = removeFromArray;

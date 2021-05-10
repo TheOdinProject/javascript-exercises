@@ -1,5 +1,5 @@
 function pigLatin(string) {
 
-  }
+};
   
-  module.exports = pigLatin
+  module.exports = pigLatin;
