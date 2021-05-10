@@ -8,7 +8,7 @@ const pigLatin = function(string) {
 		return `${ending}${beginning}ay`;
 	  })
 	  .join(" ");
-  }
+  };
   
 const firstVowelIndex = function(string) {
 	const vowels = string.match(/[aeiou]/g);
@@ -16,6 +16,6 @@ const firstVowelIndex = function(string) {
 	  return string.indexOf(vowels[1]);
 	}
 	return string.indexOf(vowels[0]);
-  }
+  };
   
-  module.exports = pigLatin
+  module.exports = pigLatin;
