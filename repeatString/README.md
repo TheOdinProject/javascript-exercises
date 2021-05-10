@@ -15,4 +15,11 @@ You will notice in this exercise that there are multiple tests (see in file `rep
 
 - Create a variable to hold the string you're going to return, create a loop that repeats the given number of times and add the given string to the result on each loop.
 
-- If running `jasmine repeatString.spec.js` raises `Temporarily disabled with test.skip` errors, make sure you have enabled the rest of the tests (see above).
+- If running `npm test repeatString.spec.js` returns results similar to the below:
+
+```
+Test Suites: 1 passed, 1 total
+Tests:       6 skipped, 1 passed, 7 total
+```
+
+- Make sure you have enabled the rest of the tests (see above).
