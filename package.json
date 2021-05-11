@@ -21,7 +21,6 @@
     "eslint-plugin-import": "^2.22.1"
   },
   "scripts": {
-    "test": "jest",
-    "lint" : "./node_modules/.bin/eslint"
+    "test": "jest"
   }
 }
