@@ -1,8 +1,8 @@
-{  
+{
   "name": "javascript-exercises",
   "version": "1.0.0",
-  "description": "These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start very simply, but get more involved as you progress through them.",
-  "main": "index.js",  
+  "description": "These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start off nice and easy, but get more involved as you progress through them.",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheOdinProject/javascript-exercises.git"
@@ -21,7 +21,6 @@
     "eslint-plugin-import": "^2.22.1"
   },
   "scripts": {
-    "test": "jest",
-    "lint" : "./node_modules/.bin/eslint"
+    "test": "jest"
   }
 }
