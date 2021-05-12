@@ -22,5 +22,8 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "eslintConfig": {
+    "root": true
   }
 }
