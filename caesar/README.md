@@ -1,4 +1,4 @@
-# Exercise XX - Caesar cipher
+# Exercise 13 - Caesar cipher
 
 Implement the legendary Caesar cipher:
 
