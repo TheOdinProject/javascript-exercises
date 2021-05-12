@@ -1,5 +1,4 @@
 {
-    "extends": "airbnb-base",
     "plugins": [
         "import"
     ],
@@ -8,5 +7,6 @@
         "sourceType": "module"
     },
     "rules": {
+        "eol-last": ["error", "always"]
     }
 }
