@@ -1,4 +1,4 @@
-# Exercise XX - leapYears
+# Exercise 06 - leapYears
 
 Create a function that determines whether or not a given year is a leap year. Leap years are determined by the following rules:
 
