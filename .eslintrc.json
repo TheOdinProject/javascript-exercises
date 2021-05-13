@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        "import"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "eol-last": ["error", "always"]
+    }
+}

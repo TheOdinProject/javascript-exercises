@@ -1,4 +1,4 @@
-# Get the Titles!
+# Exercise 11 - Get the Titles!
 
 You are given an array of objects that represent books with an author and a title that looks like this:
 
@@ -15,7 +15,7 @@ const books = [
 ]
 ```
 
-your job is to write a function that takes the array and returns an array of titles:
+Your job is to write a function that takes the array and returns an array of titles:
 
 ```javascript
 getTheTitles(books) // ['Book','Book2']
