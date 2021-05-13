@@ -1,8 +1,8 @@
 const calculator = require('./calculator');
 
-describe('add', () => {
-	test('adds 0 and 0', () => {
-		expect(calculator.add(0,0)).toBe(0);
+describe('add', function() {
+	it('adds 0 and 0', function() {
+		expect(calculator.add(0,0)).toEqual(0);
 	});
 
 	test.skip('adds 2 and 2', () => {
@@ -54,24 +54,24 @@ describe('power', () => {
 	});
 });
 
-describe('factorial', () => {
-	test.skip('computes the factorial of 0', () => {
-		expect(calculator.factorial(0)).toBe(1); // 0! = 1
+describe('factorial', function() {
+	xit('computes the factorial of 0', function() {
+		expect(calculator.factorial(0)).toEqual(1); // 0! = 1
 	});
 
-	test.skip('computes the factorial of 1', () => {
-		expect(calculator.factorial(1)).toBe(1);
+	xit('computes the factorial of 1', function() {
+		expect(calculator.factorial(1)).toEqual(1);
 	});
 
-	test.skip('computes the factorial of 2', () => {
-		expect(calculator.factorial(2)).toBe(2);
+	xit('computes the factorial of 2', function() {
+		expect(calculator.factorial(2)).toEqual(2);
 	});
 
-	test.skip('computes the factorial of 5', () => {
-		expect(calculator.factorial(5)).toBe(120);
+	xit('computes the factorial of 5', function() {
+		expect(calculator.factorial(5)).toEqual(120);
 	});
 
-	test.skip('computes the factorial of 10', () => {
-		expect(calculator.factorial(10)).toBe(3628800);
+	xit('computes the factorial of 10', function() {
+		expect(calculator.factorial(10)).toEqual(3628800);
 	});
 });

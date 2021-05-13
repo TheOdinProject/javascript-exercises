@@ -1,31 +1,31 @@
 const fibonacci = require('./fibonacci')
 
-describe('fibonacci', () => {
-  test('4th fibonacci number is 3', () => {
-    expect(fibonacci(4)).toBe(3);
+describe('fibonacci', function() {
+  it('works', function() {
+    expect(fibonacci(4)).toEqual(3);
   });
-  test.skip('6th fibonacci number is 8', () => {
-    expect(fibonacci(6)).toBe(8);
+  xit('works', function() {
+    expect(fibonacci(6)).toEqual(8);
   });
-  test.skip('10th fibonacci number is 55', () => {
-    expect(fibonacci(10)).toBe(55);
+  xit('works', function() {
+    expect(fibonacci(10)).toEqual(55);
   });
-  test.skip('15th fibonacci number is 610', () => {
-    expect(fibonacci(15)).toBe(610);
+  xit('works', function() {
+    expect(fibonacci(15)).toEqual(610);
   });
-  test.skip('25th fibonacci number is 75025', () => {
-    expect(fibonacci(25)).toBe(75025);
+  xit('works', function() {
+    expect(fibonacci(25)).toEqual(75025);
   });
-  test.skip('doesn\'t accept negatives', () => {
-    expect(fibonacci(-25)).toBe("OOPS");
+  xit('doesn\'t accept negatives', function() {
+    expect(fibonacci(-25)).toEqual("OOPS");
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("1")).toBe(1);
+  xit('DOES accept strings', function() {
+    expect(fibonacci("1")).toEqual(1);
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("2")).toBe(1);
+  xit('DOES accept strings', function() {
+    expect(fibonacci("2")).toEqual(1);
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("8")).toBe(21);
+  xit('DOES accept strings', function() {
+    expect(fibonacci("8")).toEqual(21);
   });
 });
