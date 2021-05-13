@@ -14,8 +14,6 @@ Before you start you should have a few things installed on your machine:
 
 Each exercise includes 3 files: a markdown file with a description of the task, an empty (or mostly empty) JavaScript file, and a set of tests. To complete an exercise, you'll need to go to the exercise directory with `cd exerciseName` in the terminal and run `jasmine exerciseName.spec.js`. This should run the test file and show you the output. When you first run a test, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass. Some of the exercises have test conditions defined in their spec file that are defined as 'xit' compared to 'it'. This is purposeful. After you pass your first 'it', you will change the next 'xit' to an 'it' and test your code again. You'll do this until all conditions are satisfied.
 
-**Note**: Due to the way Jest handles failed tests, it may return an exit code of 1 if any tests fail. NPM will interpret this as an error and you may see some `npm ERR!` messages after Jest runs. You can ignore these, or run your test with `npm test exerciseName.spec.js --silent` to supress the errors.
-
 The first exercise, `helloWorld`, will walk you through the process in-depth.
 
 ## Solutions

@@ -1,7 +1,7 @@
 let <%= title %> = require('./<%=title%>')
 
 describe('<%=title%>', function() {
-  test('EDITME', function() {
+  it('EDITME', function() {
     expect(<%=title%>()).toEqual(' ');
   });
 

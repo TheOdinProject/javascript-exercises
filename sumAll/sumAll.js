@@ -1,5 +1,5 @@
 const sumAll = function() {
 
-};
+}
 
-module.exports = sumAll;
+module.exports = sumAll

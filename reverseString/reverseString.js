@@ -1,5 +1,5 @@
 const reverseString = function() {
 
-};
+}
 
-module.exports = reverseString;
+module.exports = reverseString

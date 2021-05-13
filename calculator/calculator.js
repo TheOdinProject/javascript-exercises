@@ -1,26 +1,26 @@
-const add = function() {
+function add () {
 	
-};
+}
 
-const subtract = function() {
+function subtract () {
 	
-};
+}
 
-const sum = function() {
+function sum () {
 	
-};
+}
 
-const multiply = function() {
-
-};;
-
-const power = function() {
+function multiply () {
 	
-};
+}
 
-const factorial = function() {
+function power() {
 	
-};
+}
+
+function factorial() {
+	
+}
 
 module.exports = {
   add,
@@ -28,5 +28,5 @@ module.exports = {
   sum,
   multiply,
   power,
-  factorial
+  factorial,
 };

@@ -1,5 +1,5 @@
 const repeatString = function() {
 
-};
+}
 
-module.exports = repeatString;
+module.exports = repeatString
