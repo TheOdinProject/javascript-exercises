@@ -12,7 +12,7 @@ const sum = function() {
 
 const multiply = function() {
 
-};;
+};
 
 const power = function() {
 	
