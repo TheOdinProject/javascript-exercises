@@ -19,5 +19,4 @@ describe('snakeCase', () => {
   test.skip('works with WTF case', () => {
     expect(snakeCase('SnAkE..CaSe..Is..AwEsOmE')).toEqual('snake_case_is_awesome');
   });
-
 });

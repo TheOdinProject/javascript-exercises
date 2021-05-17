@@ -3,8 +3,9 @@ const ftoc = function(f) {
 };
 
 const ctof = function(c) {
-  return Math.round(((c * 9/5) + 32) * 10) / 10 
+  return Math.round(((c * 9/5) + 32) * 10) / 10
 };
+
 
 module.exports = {
   ftoc,

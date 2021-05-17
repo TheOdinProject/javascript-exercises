@@ -19,7 +19,6 @@ const removeFromArray = function (...args) {
   return newArray;
 };
 
-
 // A simpler, but more advanced way to do it is to use the 'filter' function,
 // which basically does what we did with the forEach above.
 

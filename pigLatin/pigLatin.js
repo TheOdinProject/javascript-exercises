@@ -9,13 +9,13 @@ const pigLatin = function(string) {
 	  })
 	  .join(" ");
   };
-  
+
 const firstVowelIndex = function(string) {
 	const vowels = string.match(/[aeiou]/g);
 	if (vowels[0] == "u" && string[string.indexOf(vowels[0]) - 1] == "q") {
 	  return string.indexOf(vowels[1]);
 	}
 	return string.indexOf(vowels[0]);
-  };
-  
+};
+
   module.exports = pigLatin;
