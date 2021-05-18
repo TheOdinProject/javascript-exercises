@@ -25,5 +25,10 @@
   },
   "eslintConfig": {
     "root": true
+  },
+   "jest": {
+    "testPathIgnorePatterns": [
+      "generator-exercise/"
+    ]
   }
 }
