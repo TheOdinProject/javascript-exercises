@@ -1,5 +1,5 @@
 const leapYears = function() {
 
-}
+};
 
-module.exports = leapYears
+module.exports = leapYears;
