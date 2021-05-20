@@ -1,14 +1,23 @@
-const fibonacci = function(count) {
-  if (count < 0) return "OOPS";
-  if (count == 0) return 0;
-  let a = 0;
-  let b = 1;
-  for (let i = 1; i < count; i++) {
-    const temp = b;
-    b = a + b;
-    a = temp;
+const fibonacci = function (member) {
+  let indexNo = parseInt(member) - 1;
+  if (indexNo < 0) {
+    return "OOPS";
   }
-  return b;
+
+  let fib = [1, 1];
+
+  function makeFib() {
+    let lastGuy = fib[fib.length - 1];
+    let secondLast = fib[fib.length - 2];
+    let newGuy = lastGuy + secondLast;
+    fib.push(newGuy);
+  }
+
+  while (fib.length <= indexNo) {
+    makeFib();
+  }
+
+  return fib[indexNo];
 };
 
 module.exports = fibonacci;
