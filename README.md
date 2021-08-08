@@ -18,6 +18,9 @@ Each exercise includes 3 files: a markdown file with a description of the task, 
 
 The first exercise, `helloWorld`, will walk you through the process in-depth.
 
+## Debugging
+To debug functions, you can run the tests in the visual code studio debugger terminal (open this by clicking the "Run and Debug" icon on the left or pressing ctrl + shift + D, then clicking JavaScript Debug Terminal). In your code you are able to set breakpoints as you would in the Chrome devtools debugger. You can run `npm test exerciseName.spec.js` to then execute your code up until your breakpoint and step through your code as necessary. 
+
 ## Solutions
 
 Solutions for these exercises can be found in this repo on the 'solutions' branch.
