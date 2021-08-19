@@ -11,4 +11,11 @@ const fibonacci = function(count) {
   return b;
 };
 
+// Alternative recursive version
+const recursiveFib = function(count) {
+  if (count < 0) return "OOPS";
+  if (count == 1 || count == 2) return 1;
+  return recursiveFib(index - 1) + recursiveFib(index - 2);
+};
+
 module.exports = fibonacci;
