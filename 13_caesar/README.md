@@ -14,7 +14,7 @@ caesar('A', 1) // simply shifts the letter by 1: returns 'B'
 
 the cipher should retain capitalization:
 ```javascript
-caesar('Hey', 5) // returns 'Mjd;
+caesar('Hey', 5) // returns 'Mjd'
 ```
 
 should _not_ shift punctuation:
