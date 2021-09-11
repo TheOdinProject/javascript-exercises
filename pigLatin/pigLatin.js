@@ -2,4 +2,5 @@ function pigLatin(string) {
 
 };
   
-  module.exports = pigLatin;
+// Do not edit below this line
+module.exports = pigLatin;
