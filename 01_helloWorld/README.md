@@ -13,7 +13,7 @@ Let's look at the spec file first:
 const helloWorld = require('./helloWorld');
 
 describe('Hello World', function() {
-  test('says hello world', function() {
+  test('says "Hello, World!"', function() {
     expect(helloWorld()).toEqual('Hello, World!');
   });
 });
