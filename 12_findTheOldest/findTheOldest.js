@@ -1,4 +1,5 @@
-const findTheOldest = function() {
+const findTheOldest = function(arry) {
+    let deathYear = arry
 
 };
 
