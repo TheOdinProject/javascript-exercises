@@ -38,7 +38,7 @@ Go ahead and see if you can make the test pass by editing the return value of th
 
 Just to make sure, in case you're confused at this point, the test is telling you that running the function `helloWorld` should return the phrase `Hello, World!`.  Punctuation and capitalization definitely matter here, so double check that if the test still isn't passing.
 
-this is what the final function should look like:
+This is what the final function should look like:
 ```javascript
 const helloWorld = function() {
   return 'Hello, World!'
