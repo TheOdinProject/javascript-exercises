@@ -11,6 +11,13 @@ A palindrome is a string that is spelled the same both forwards and backwards, u
   - Animal loots foliated detail of stool lamina.
   - A nut for a jar of tuna.
 
+
+/*
+1. understand the problem
+2. research and rewrite the problem
+3. pseudocode problem 
+
+*/
 ```javascript
 palindromes('racecar') // true
 palindromes('tacos') // false
