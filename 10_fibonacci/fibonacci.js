@@ -12,3 +12,5 @@ const fibonacci = function(Fn) {
 
 // Do not edit below this line
 module.exports = fibonacci;
+
+console.log(fibonacci(5));
