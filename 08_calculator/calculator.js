@@ -46,12 +46,21 @@ const factorial = function(num) {
   return sum;
 };
 
-// Do not edit below this line
-module.exports = {
-  add,
-  subtract,
-  sum,
-  multiply,
-  power,
-  factorial
-};
+const operate = function(op, num1, num2) {
+  switch (op) {
+    case 'add':
+      return add(num1, num2);
+    case 'subtract':
+      return subtract(num1, num2);
+    case 'multiply':
+      return multiply(num1, num2);
+    case 'power':
+      return power(num1, num2);
+    case 'factorial':
+      return factorial(num1);
+  }
+}
+
+let answer = operate("multiply", 1, 2);
+
+console.log(answer);
