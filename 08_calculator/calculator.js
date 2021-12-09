@@ -3,6 +3,7 @@ let operator = 0;
 let num1 = 0;
 let num2 = 0;
 const specialChars = ['!', '^', '*', '/', '+', '-'];
+const decimal = ['.'];
 
 const add = function(num1, num2) {
   let sum = num1 + num2;
@@ -81,6 +82,10 @@ function updateDisplay(id) {
     case '!':
     case '.':
       let includesSpec = specialChars.some(char => display.textContent.includes(char));
+      let includesDec = display.textContent.includes('.');
+      if (includesDec && id === '.') {
+        break;
+      }
       if (includesSpec) {
         let num2 = display.textContent.split(/[\/+^!-*-]/);
         num1 = num2[0];
@@ -131,11 +136,19 @@ function updateDisplay(id) {
       break;
     case 'equals':
       let num2 = display.textContent.split(/[\/+^!-*-]/);
+      if (!num2[1]) {
+        break;
+      }
       num1 = num2[0];
       num1 = parseFloat(num1);
       num2 = num2[1];
       num2 = parseFloat(num2);
       let answer = operate(operator, num1, num2)
+      if (answer === Infinity) {
+        display.style.fontSize = '40px';
+        display.textContent = 'To infinity, and beyond!';
+        break;
+      }
       display.textContent = answer;
       displayValue = answer;
       console.log('equals');
@@ -154,6 +167,7 @@ const buttons = document.querySelectorAll('.btn');
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         // operate(button.id);
+        display.style.fontSize = '2em';
         updateDisplay(button.id);
     });
   });

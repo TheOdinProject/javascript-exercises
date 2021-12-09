@@ -31,18 +31,16 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
-    font-size: 2em;
     border-bottom: solid #E5A9A9 4px;
     width: 400px;
     height: 83px;
     -webkit-box-shadow: inset 0px 0px 0px 2px #000000; 
-    box-shadow: inset 0px 0px 0px 2px #000000;
-    
-    
+    box-shadow: inset 0px 0px 0px 2px #000000;   
 }
 
 .display {
     margin-right: 0.1em;
+    font-size: 2em;
     
     
 }
