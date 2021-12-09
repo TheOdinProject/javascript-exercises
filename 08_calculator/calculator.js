@@ -2,6 +2,7 @@ let displayValue = 0;
 let operator = 0;
 let num1 = 0;
 let num2 = 0;
+let answer = 0;
 const specialChars = ['!', '^', '*', '/', '+', '-'];
 const decimal = ['.'];
 
@@ -74,12 +75,18 @@ const operate = function(op, num1, num2) {
 }
 function updateDisplay(id) {
   switch (id) {
+    case '!':
+      operator = id;
+      num1 = display.textContent;
+      answer = operate(operator, num1)
+      display.textContent = answer;
+      displayValue = answer;
+      break;
     case '+':
     case '-':
     case '*':
     case '/':
     case '^':
-    case '!':
     case '.':
       let includesSpec = specialChars.some(char => display.textContent.includes(char));
       let includesDec = display.textContent.includes('.');
@@ -105,7 +112,6 @@ function updateDisplay(id) {
         operator = id;
         display.textContent += id;
         displayValue = display.textContent;
-        console.log('false');
         break;
       }
     case '1':
@@ -132,7 +138,6 @@ function updateDisplay(id) {
       let newString = display.textContent.slice(0, -1);
       display.textContent = newString
       displayValue = display.textContent;
-      console.log('back');
       break;
     case 'equals':
       let num2 = display.textContent.split(/[\/+^!-*-]/);
@@ -143,7 +148,7 @@ function updateDisplay(id) {
       num1 = parseFloat(num1);
       num2 = num2[1];
       num2 = parseFloat(num2);
-      let answer = operate(operator, num1, num2)
+      answer = operate(operator, num1, num2)
       if (answer === Infinity) {
         display.style.fontSize = '40px';
         display.textContent = 'To infinity, and beyond!';
@@ -151,12 +156,10 @@ function updateDisplay(id) {
       }
       display.textContent = answer;
       displayValue = answer;
-      console.log('equals');
       break;
     case 'clear':
       display.textContent = '0';
       displayValue = 0;
-      console.log('clear');
       break;
   }
 }
