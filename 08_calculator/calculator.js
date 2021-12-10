@@ -74,6 +74,9 @@ const operate = function(op, num1, num2) {
   }
 }
 function updateDisplay(id) {
+  if (display.textContent === "To infinity, and beyond!") {
+    display.textContent = id;
+  }
   switch (id) {
     case '!':
       operator = id;
@@ -95,10 +98,8 @@ function updateDisplay(id) {
       }
       if (includesSpec) {
         let num2 = display.textContent.split(/[\/+^!-*-]/);
-        num1 = num2[0];
-        num1 = parseFloat(num1);
-        num2 = num2[1];
-        num2 = parseFloat(num2);
+        num1 = parseFloat(num2[0]);
+        num2 = parseFloat(num2[1]);
         let currentAnswer = operate(operator, num1, num2);
         operator = id;
         display.textContent = currentAnswer + id;
@@ -125,7 +126,6 @@ function updateDisplay(id) {
     case '9':
     case '0':
       if (displayValue === 0) {
-        display.textContent = '';
         display.textContent = id;
         displayValue = display.textContent;
       }
@@ -144,14 +144,14 @@ function updateDisplay(id) {
       if (!num2[1]) {
         break;
       }
-      num1 = num2[0];
-      num1 = parseFloat(num1);
-      num2 = num2[1];
-      num2 = parseFloat(num2);
+      num1 = parseFloat(num2[0]);
+      num2 = parseFloat(num2[1]);
       answer = operate(operator, num1, num2)
       if (answer === Infinity) {
         display.style.fontSize = '40px';
         display.textContent = 'To infinity, and beyond!';
+        answer = 0;
+        displayValue = 0;
         break;
       }
       display.textContent = answer;
@@ -171,7 +171,7 @@ buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         // operate(button.id);
         display.style.fontSize = '2em';
-        updateDisplay(button.id);
+        updateDisplay(button.id);  
     });
   });
 
