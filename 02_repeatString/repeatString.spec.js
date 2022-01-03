@@ -28,7 +28,7 @@ describe('repeatString', () => {
     const number = Math.floor(Math.random() * 1000)
     /*The .match(/((hey))/g).length is a regex that will count the number of heys
     in the result, which if your function works correctly will equal the number that
-    was randomaly generated. */
+    was randomly generated. */
     expect(repeatString('hey', number).match(/((hey))/g).length).toEqual(number);
   });
   test.skip('works with blank strings', () => {
