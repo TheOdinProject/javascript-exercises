@@ -19,4 +19,7 @@ describe('sumAll', () => {
   test.skip('returns ERROR with non-number parameters', () => {
     expect(sumAll(10, [90, 1])).toEqual('ERROR');
   });
+  test.skip('returns ERROR with empty strings', () => {
+    expect(sumAll('', 2)).toEqual('ERROR');
+  });
 });
