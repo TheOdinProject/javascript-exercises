@@ -20,7 +20,7 @@ const power = function(a, b) {
   return Math.pow(a, b);
 };
 
-//alternate solution using Exponentiation opertator
+//alternate solution using the Exponentiation operator
 const altPower = function(a, b) {
   return a ** b;
 };
