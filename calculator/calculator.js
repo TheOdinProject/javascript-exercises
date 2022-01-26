@@ -16,7 +16,7 @@ const multiply = function(array) {
       : 0;
 };
 
-const power = function(a, b) {
+const altPower = function(a, b) {
   return Math.pow(a, b);
 };
 
