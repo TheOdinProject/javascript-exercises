@@ -1,7 +1,7 @@
 const calculator = require('./calculator');
 
 describe('add', () => {
-	test('adds 0 and 0', () => {
+	test.skip('adds 0 and 0', () => {
 		expect(calculator.add(0,0)).toBe(0);
 	});
 
@@ -39,22 +39,62 @@ describe('sum', () => {
 });
 
 describe('multiply', () => {
+	test.skip('computes the product of an empty array', () => {
+		expect(calculator.multiply([])).toBe(0);
+	});
 	test.skip('multiplies two numbers', () => {
 		expect(calculator.multiply([2,4])).toBe(8);
 	});
-
 	test.skip('multiplies several numbers', () => {
 		expect(calculator.multiply([2,4,6,8,10,12,14])).toBe(645120);
 	});
 });
 
+/* 
+ * Base facts:
+ * 	=> x to the power of 0 is always 1.
+ * 	=> with base of 0, the exponent must NOT be negative, otherwise the result will be Infinity.
+ */
 describe('power', () => {
-	test.skip('raises one number to the power of another number', () => {
+	test('raises one number to the power of another number', () => {
 		expect(calculator.power(4,3)).toBe(64); // 4 to third power is 64
+	});
+	test('to the negative exponent', () => {
+		expect(calculator.power(2,-2)).toBe(0.25);
+	});
+	test('with negative base', () => {
+		expect(calculator.power(-2,2)).toBe(4);
+	});
+	test('with negative base', () => {
+		expect(calculator.power(-2,3)).toBe(-8);
+	});
+	test('negative base to the negative exponent', () => {
+		expect(calculator.power(-2,-2)).toBe(0.25);
+	});
+	test('negative base to the negative exponent', () => {
+		expect(calculator.power(-2,-3)).toBe(-0.125);
+	});
+	test('to the power of 0', () => {
+		expect(calculator.power(2,0)).toBe(1);
+	});
+	test('to the power of 0', () => {
+		expect(calculator.power(-2,0)).toBe(1);
+	});
+	test('to the power of 0', () => {
+		expect(calculator.power(0,0)).toBe(1);
+	});
+	test('with base of 0', () => {
+		expect(calculator.power(0,2)).toBe(0);
+	});
+	test('with base of 0', () => {
+		expect(calculator.power(0,-2)).toBe(Infinity);
 	});
 });
 
 describe('factorial', () => {
+	test('factorial of negative number should be undefined', () => {
+		expect(calculator.factorial(-1)).toBeUndefined();
+	});
 	test.skip('computes the factorial of 0', () => {
 		expect(calculator.factorial(0)).toBe(1); // 0! = 1
 	});
