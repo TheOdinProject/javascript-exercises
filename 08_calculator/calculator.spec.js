@@ -1,7 +1,7 @@
 const calculator = require('./calculator');
 
 describe('add', () => {
-	test.skip('adds 0 and 0', () => {
+	test('adds 0 and 0', () => {
 		expect(calculator.add(0,0)).toBe(0);
 	});
 
@@ -56,37 +56,37 @@ describe('multiply', () => {
  * 	=> with base of 0, the exponent must NOT be negative, otherwise the result will be Infinity.
  */
 describe('power', () => {
-	test('raises one number to the power of another number', () => {
+	test.skip('raises one number to the power of another number', () => {
 		expect(calculator.power(4,3)).toBe(64); // 4 to third power is 64
 	});
-	test('to the negative exponent', () => {
+	test.skip('to the negative exponent', () => {
 		expect(calculator.power(2,-2)).toBe(0.25);
 	});
-	test('with negative base', () => {
+	test.skip('with negative base', () => {
 		expect(calculator.power(-2,2)).toBe(4);
 	});
-	test('with negative base', () => {
+	test.skip('with negative base', () => {
 		expect(calculator.power(-2,3)).toBe(-8);
 	});
-	test('negative base to the negative exponent', () => {
+	test.skip('negative base to the negative exponent', () => {
 		expect(calculator.power(-2,-2)).toBe(0.25);
 	});
-	test('negative base to the negative exponent', () => {
+	test.skip('negative base to the negative exponent', () => {
 		expect(calculator.power(-2,-3)).toBe(-0.125);
 	});
-	test('to the power of 0', () => {
+	test.skip('to the power of 0', () => {
 		expect(calculator.power(2,0)).toBe(1);
 	});
-	test('to the power of 0', () => {
+	test.skip('to the power of 0', () => {
 		expect(calculator.power(-2,0)).toBe(1);
 	});
-	test('to the power of 0', () => {
+	test.skip('to the power of 0', () => {
 		expect(calculator.power(0,0)).toBe(1);
 	});
-	test('with base of 0', () => {
+	test.skip('with base of 0', () => {
 		expect(calculator.power(0,2)).toBe(0);
 	});
-	test('with base of 0', () => {
+	test.skip('with base of 0', () => {
 		expect(calculator.power(0,-2)).toBe(Infinity);
 	});
 });
