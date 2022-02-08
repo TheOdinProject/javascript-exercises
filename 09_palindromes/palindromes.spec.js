@@ -17,6 +17,6 @@ describe('palindromes', () => {
     expect(palindromes('Animal loots foliated detail of stool lamina.')).toBe(true);
   });
   test.skip('doesn\'t just always return true', () => {
-    expect(palindromes('ZZZZ car, a man, a maraca.')).toBe(false);
+    expect(palindromes('ZZZZ car, a man, a maracaz.')).toBe(false);
   });
 });
