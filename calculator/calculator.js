@@ -20,6 +20,23 @@ const power = function(a, b) {
   return Math.pow(a, b);
 };
 
+/* 
+ * If you want to write a handmade power() function by yourself,
+ * Here's a simple example. 
+ * Only work with integer as input. 
+ */
+const intPower = function(base, exponent) {
+  if (exponent === 0) return 1;
+  if (base === 0) return (exponent > 0)? 0 : Infinity;
+  let result = 1;
+  if (exponent > 0) {
+    while (exponent-- > 0) result *= base;
+  } else {
+    while (exponent++ < 0) result /= base;
+  }
+  return result;
+};
+
 const factorial = function(n) {
   if (n < 0) return undefined;
   if (n === 0) return 1;
