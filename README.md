@@ -9,7 +9,9 @@ These JavaScript exercises are intended to complement the JavaScript content on 
 If you have a suggestion to improve an exercise, an idea for a new exercise, or notice an issue with an exercise, please feel free to open an issue after thoroughly reading our [contributing guide](https://github.com/TheOdinProject/theodinproject/blob/main/CONTRIBUTING.md) in our main TOP repo.
 
 ## How To Use These Exercises
+
 Before you start you should have a few things installed on your machine:
+
 1. **NPM**. We should have installed NPM already in [this Installing Node.js lesson](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/installing-node-js). Just in case you need to check, type `npm --version` in your terminal. If you get back `Command 'npm' not found, but can be installed with:`, do NOT follow the instructions in the terminal to install with `apt-get`. (This causes permission issues.) Instead, go back to the installation lesson and install Node with NVM by following the instructions there.
 2. **A fork and clone of this repository**. To learn how to fork a repository, see the GitHub documentation on how to [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
     - Copies of repositories on your machine are called clones. If you need help cloning to your local environment you can learn how from the GitHub documentation on [cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
@@ -24,6 +26,7 @@ Some of the exercises have test conditions defined in their spec file that are d
 The first exercise, `helloWorld`, will walk you through the process in-depth.
 
 ## Debugging
+
 To debug functions, you can run the tests in the Visual Studio Code debugger terminal. You can open this by clicking the "Run and Debug" icon on the left or pressing `ctrl + shift + D`, then clicking JavaScript Debug Terminal. You will be able to set breakpoints as you would in the Chrome DevTools debugger. You can run `npm test exerciseName.spec.js` to then execute your code up until your breakpoint and step through your code as necessary. **NOTE**: To take advantage of the debugger, you **MUST** run the script in the debugger terminal, not the bash or zsh terminal.
 
 ## Solutions
