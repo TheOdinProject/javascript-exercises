@@ -1,6 +1,7 @@
-const getTheTitles = function() {
-
+const getTheTitles = function(dict) {
+	result = Object.keys(dict);
+	console.log(result);
+	return result;
 };
 
-// Do not edit below this line
-module.exports = getTheTitles;
+
