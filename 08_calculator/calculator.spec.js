@@ -39,6 +39,9 @@ describe('sum', () => {
 });
 
 describe('multiply', () => {
+	test.skip('multiplies an empty array', () => {
+		expect(calculator.multiply([])).toBe(0);
+	});
 	test.skip('multiplies two numbers', () => {
 		expect(calculator.multiply([2,4])).toBe(8);
 	});
