@@ -28,4 +28,18 @@ const removeFromArray = function (...args) {
 // }
 //
 
+// another solution is to loop through the first array items, and for each item, you check if it's on the second array. if true,
+// the item is removed from the array using splice() method.
+const removeFromArray = function (array, ...num) {
+    let i = 0;    // this will be a counter for loop iterations, it will be used as the array's index indicator
+    firstArray:
+    while (i < array.length) {
+        for (item of num) {
+            if (array[i] === item) { array.splice(i, 1); continue firstArray }
+        }
+        i++;
+    }
+    return array;
+};
+
 module.exports = removeFromArray;
