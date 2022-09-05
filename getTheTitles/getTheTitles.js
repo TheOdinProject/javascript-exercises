@@ -3,3 +3,14 @@ const getTheTitles = function(array) {
 };
 
 module.exports = getTheTitles;
+
+
+const getTheTitles = function (array) {
+  let titles = [];
+
+  for (const element of array) titles.push(element.title);
+
+  return titles;
+};
+
+module.exports = getTheTitles
