@@ -1,6 +1,6 @@
-const removeFromArray = function(list) {
+const removeFromArray = function(list, item) {
 //Remove third element from array
-    let remove = list.splice(2, 1);
+    let remove = list.filter(item);
     return list;
 };
 
