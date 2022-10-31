@@ -1,8 +1,14 @@
-const add = function() {
+const add = function(firstValue, secondValue) {
+  firstValue = 8
+  secondValue = 10
+  result = firstValue + secondValue
+  return result
+  
 	
 };
 
 const subtract = function() {
+  
 	
 };
 
