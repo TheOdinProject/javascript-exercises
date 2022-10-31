@@ -1,7 +1,9 @@
-const removeFromArray = function(list, item) {
-//Remove third element from array
-    let remove = list.filter(item);
-    return list;
+const removeFromArray = function(list, ...remove) {
+
+    let result = list.filter(item => !remove.includes(item));
+
+    return result;
+    
 };
 
 // Do not edit below this line
