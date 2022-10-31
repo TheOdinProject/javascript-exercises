@@ -1,8 +1,8 @@
-const ftoc = function(f) {
-  return Math.round((f - 32) * (5/9))
+const ftoc = function(fahrenheit) {
+  return Math.round((fahrenheit - 32) * (5/9))
 }
-const ctof = function(c) {
-  return Math.round(((c * 9/5) + 32))
+const ctof = function(celsius) {
+  return Math.round(((celsius * 9/5) + 32))
 }
 
 ftoc(32)
