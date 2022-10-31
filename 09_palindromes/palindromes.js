@@ -3,11 +3,11 @@ const palindromes = function(string) {
     
     let reversedString = (
       processedString
-        .split("")      // ["v","u","d","a","n","g"]
-        .reverse()      // ["g","n","a","d","u","v"]
-        .join("")      // "gnaduv"
+        .split("")      
+        .reverse()      
+        .join("")
     );
-    return processedString == reversedString; // false because "vudang" =! "gnaduv"
+    return processedString == reversedString;
   };
 palindromes('racecar')
 // Do not edit below this line
