@@ -1,32 +1,14 @@
-const add = function(firstValue, secondValue) {
-  firstValue = 8
-  secondValue = 10
-  result = firstValue + secondValue
-  return result
-  
-	
-};
+function add (numberOne, numberTwo) {
+	return numberOne + numberTwo; 
+}
 
-const subtract = function() {
-  
-	
-};
+function subtract (numberOne, numberTwo) {
+	return numberOne + numberTwo;; 
+}
 
-const sum = function() {
-	
-};
-
-const multiply = function() {
-
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
-};
+add(0, 0)
+add(2, 2)
+add(2,6)
 
 // Do not edit below this line
 module.exports = {
