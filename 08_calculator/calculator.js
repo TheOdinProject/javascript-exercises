@@ -23,8 +23,14 @@ const multiply = function(num1, num2) {
   return total;
 };
 
-const power = function() {
-	
+const power = function(num, pow) {
+  let total = 1;
+
+  for (i=0; i<pow; i++) {
+      total *= num;
+  }
+
+  return total;
 };
 
 const factorial = function() {
