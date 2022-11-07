@@ -28,6 +28,7 @@ const multiply = function(numList) {
   return total;
 };
 
+<<<<<<< HEAD
 const power = function(num, power) {
 	//empty variable for total
   let total = 1;
@@ -37,6 +38,16 @@ const power = function(num, power) {
     total *= num;
   }
   return total; 
+=======
+const power = function(num, pow) {
+  let total = 1;
+
+  for (i=0; i<pow; i++) {
+      total *= num;
+  }
+
+  return total;
+>>>>>>> 0c51ad1a2bf2379e6c83b344ac96ac708d94db1a
 };
 
 const factorial = function(num) {
