@@ -49,29 +49,29 @@ describe('multiply', () => {
 });
 
 describe('power', () => {
-	test.skip('raises one number to the power of another number', () => {
+	test('raises one number to the power of another number', () => {
 		expect(calculator.power(4,3)).toBe(64); // 4 to third power is 64
 	});
 });
 
 describe('factorial', () => {
-	test.skip('computes the factorial of 0', () => {
+	test('computes the factorial of 0', () => {
 		expect(calculator.factorial(0)).toBe(1); // 0! = 1
 	});
 
-	test.skip('computes the factorial of 1', () => {
+	test('computes the factorial of 1', () => {
 		expect(calculator.factorial(1)).toBe(1);
 	});
 
-	test.skip('computes the factorial of 2', () => {
+	test('computes the factorial of 2', () => {
 		expect(calculator.factorial(2)).toBe(2);
 	});
 
-	test.skip('computes the factorial of 5', () => {
+	test('computes the factorial of 5', () => {
 		expect(calculator.factorial(5)).toBe(120);
 	});
 
-	test.skip('computes the factorial of 10', () => {
+	test('computes the factorial of 10', () => {
 		expect(calculator.factorial(10)).toBe(3628800);
 	});
 });

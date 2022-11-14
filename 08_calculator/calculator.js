@@ -11,11 +11,11 @@ const sum = function(array) {
   if (array.length == 0) {
     return 0;
   } else {
-  for (let i = 0; i < array.length; i++) {
-    sumArray += array[i];
+    for (let i = 0; i < array.length; i++) {
+      sumArray += array[i];
+    }
+    return sumArray;
   }
-  return sumArray;
-}
 };
 
 const multiply = function(numbers) {
@@ -26,12 +26,20 @@ const multiply = function(numbers) {
   return multiplyNum;
 };
 
-const power = function() {
-	
+const power = function(num, power) {
+  powerNum = 1;
+  for (let i = 0; i < power; i++) {
+     powerNum *= num;
+  }
+  return powerNum;
 };
 
-const factorial = function() {
-	
+const factorial = function(fact) {
+  factNum = 1;
+	for (let i = fact; i > 0; i--) {
+    factNum *= i;
+  }
+  return factNum;
 };
 
 // Do not edit below this line
