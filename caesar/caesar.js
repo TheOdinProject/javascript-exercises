@@ -17,9 +17,8 @@ const shift = (char, shiftValue) => {
   const code = char.charCodeAt();
 
   if ((code >= 65 && code <= 90) || (code >= 97 && code <= 122)) {
-    return String.fromCharCode(
-      mod(code + shiftValue - codeSet(code), 26) + codeSet(code)
-    );
+    const shiftedCode = mod(code + shiftValue - codeSet(code), 26) + codeSet(code);
+    return String.fromCharCode(shiftedCode);
   }
   return char;
 };
