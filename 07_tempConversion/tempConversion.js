@@ -1,13 +1,11 @@
-const ftoc = function() {
-
+const convertToCelsius = function() {
 };
 
-const ctof = function() {
-
+const convertToFahrenheit = function() {
 };
 
 // Do not edit below this line
 module.exports = {
-  ftoc,
-  ctof
+  convertToCelsius,
+  convertToFahrenheit
 };
