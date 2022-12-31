@@ -22,8 +22,8 @@
     "nsp": "^2.6.3",
     "eslint": "^4.1.0",
     "eslint-config-xo-space": "^0.16.0",
-    "jest": "^19.0.2",
-    "jest-cli": "^20.0.0"
+    "jest": "^29.3.1",
+    "jest-cli": "^29.3.1"
   },
   "dependencies": {
     "chalk": "^1.1.3",
