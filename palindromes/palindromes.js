@@ -7,7 +7,6 @@
 
 //there are many ways of checking the solution for palindromes without using regex. Here is one.
 const palindromes = function (string) {
-	//there are many ways of checking the solution for palindromes without using regex. Here is one.
 	let alphabet = 'abcdefghijklmnopqrstuvwxyz'; //create a variable that holds all the letters of the alphabet
 
 	//Take the input string, convert to lowercase, split, reverse, & filter only letters, before rejoining them together as the constant cleanedString.
