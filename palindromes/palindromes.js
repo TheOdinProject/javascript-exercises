@@ -23,7 +23,7 @@ const palindromes = function (string) {
 	return cleanedString === reversedString;
 };
 
-//check with console.log statements below in your daw/
+//check with console.log statements below in your editor/
 
 // console.log(palindromes('A car, a man, a maraca.'));
 // console.log(palindromes('ZZZZ car, a man, a maracazzzz.'));
