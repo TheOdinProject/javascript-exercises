@@ -1,9 +1,7 @@
 // we have 2 solutions here, an easier one and a more advanced one.
-// The easiest way to get an array of all of the arguments that are passed to a function
+// The easiest way to get an array of the rest of the arguments that are passed to a function
 // is using the rest operator. If this is unfamiliar to you look it up!
-const removeFromArray = function (...args) {
-  // the very first item in our list of arguments is the array, we pull it out with args[0]
-  const array = args[0];
+const removeFromArray = function (array, ...args) {
   // create a new empty array
   const newArray = [];
   // use forEach to go through the array
@@ -22,8 +20,7 @@ const removeFromArray = function (...args) {
 // A simpler, but more advanced way to do it is to use the 'filter' function,
 // which basically does what we did with the forEach above.
 
-// var removeFromArray = function(...args) {
-//   const array = args[0]
+// var removeFromArray = function(array, ...args) {
 //   return array.filter(val => !args.includes(val))
 // }
 //
