@@ -4,7 +4,8 @@ const fibonacci = function(count) {
   let a = 0;
   let b = 1;
   for (let i = 1; i < count; i++) {
-    [a, b] = [b, a+b];
+    // A slightly shorter version of the above solution:
+    // [a, b] = [b, a + b];
   }
   return b;
 };
