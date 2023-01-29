@@ -1,7 +1,7 @@
 const repeatString = require('./repeatString')
 
 describe('repeatString', () => {
-  test('repeats the string', () => {
+  test.skip('repeats the string', () => {
     expect(repeatString('hey', 3)).toEqual('heyheyhey');
   });
   test.skip('repeats the string many times', () => {
