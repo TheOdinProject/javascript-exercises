@@ -1,7 +1,7 @@
 const removeFromArray = require('./removeFromArray')
 
 describe('removeFromArray', () => {
-  test('removes a single value', () => {
+  test.skip('removes a single value', () => {
     expect(removeFromArray([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
   });
   test.skip('removes multiple values', () => {
@@ -19,7 +19,7 @@ describe('removeFromArray', () => {
   test.skip('works with strings', () => {
     expect(removeFromArray(["hey", 2, 3, "ho"], "hey", 3)).toEqual([2, "ho"]);
   });
-  test.skip('only removes same type', () => {
+  test('only removes same type', () => {
     expect(removeFromArray([1, 2, 3], "1", 3)).toEqual([1, 2]);
   });
 });
