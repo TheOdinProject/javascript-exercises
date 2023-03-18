@@ -1,24 +1,27 @@
-const caesar = function(string, shift) {
+const caesar = function(string, shiftValue) {
   return string
     .split("")
-    .map(char => shiftChar(char, shift))
+    .map(char => shift(char, shiftValue))
     .join("");
 };
 
-const codeSet = code => (code < 97 ? 65 : 97);
+const isLetter = code => {
+  return (code >= 65 && code <= 90) || (code >= 97 && code <= 122);
+}
 
-// this function is just a fancy way of doing % so that it works with negative numbers
-// see this link for details:
+// This function implements a version of the modulo operator
+// that returns the smallest positive remainder even for negative inputs.
+// See this link for details:
 // https://stackoverflow.com/questions/4467539/javascript-modulo-gives-a-negative-result-for-negative-numbers
 const mod = (n, m) => (n % m + m) % m;
 
-const shiftChar = (char, shift) => {
+const shift = (char, shiftValue) => {
   const code = char.charCodeAt();
 
-  if ((code >= 65 && code <= 90) || (code >= 97 && code <= 122)) {
-    return String.fromCharCode(
-      mod(code + shift - codeSet(code), 26) + codeSet(code)
-    );
+  if (isLetter(code)) {
+    const base = code < 97 ? 65 : 97;
+    const shiftedCode = mod(code + shiftValue - base, 26) + base;
+    return String.fromCharCode(shiftedCode);
   }
   return char;
 };
