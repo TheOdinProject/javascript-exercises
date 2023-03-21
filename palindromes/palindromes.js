@@ -1,32 +1,14 @@
-//Regex Method
-
+// Non regex
 const palindromes = function (string) {
-	const processedString = string.toLowerCase().replace(/[^a-z]/g, '');
-	return processedString.split('').reverse().join('') == processedString;
+	let alphabet = 'abcdefghijklmnopqrstuvwxyz'; 				//Create a variable that holds all the letters of the alphabet
+	const cleanedString = string 						// Convert to lowercase, split, & filter only letters, rejoin as new const
+		.toLowerCase()
+		.split('')
+		.filter((letter) => alphabet.includes(letter))
+		.join('');
+	const reversedString = cleanedString.split('').reverse().join(''); 	//Create a new const that holds reversed string
+	return cleanedString === reversedString; 				//Compare cleanedString & reversedString which returns true/false
 };
 
-//Method without regex
-// const palindromes = function (string) {
-// 	let alphabet = 'abcdefghijklmnopqrstuvwxyz'; //create a variable that holds all the letters of the alphabet
-
-// 	//Take the input string, convert to lowercase, split, reverse, & filter only letters, before rejoining them together as the constant cleanedString.
-// 	const cleanedString = string
-// 		.toLowerCase()
-// 		.split('')
-// 		.filter((letter) => alphabet.includes(letter))
-// 		.join('');
-
-// 	//make a new const from the cleaned string, and reverse it.
-// 	const reversedString = cleanedString.split('').reverse().join('');
-
-// 	//we then finally compare cleanedString & reversedString which returns true/false
-// 	return cleanedString === reversedString;
-// };
-
-//check with console.log statements below in your editor/
-
-// console.log(palindromes('A car, a man, a maraca.'));
-// console.log(palindromes('ZZZZ car, a man, a maracazzzz.'));
-// console.log(palindromes('this is not a paldindrome'));
 // Do not edit below this line
 module.exports = palindromes;
