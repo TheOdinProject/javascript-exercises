@@ -21,4 +21,7 @@ describe('palindromes', () => {
   test("doesn't just always return true", () => {
     expect(palindromes('ZZZZ car, a man, a maraca.')).toBe(false);
   });
+  test('works with numbers in a string', () => {
+    expect(palindromes('rac3e3car')).toBe(true);
+  });
 });
