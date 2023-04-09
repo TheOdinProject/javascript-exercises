@@ -1,4 +1,4 @@
-const fibonacci = function(count) {
+const fibonacci = function (count) {
   if (count < 0) return "OOPS";
   if (count === 0) return 0;
   let a = 0;
