@@ -1,5 +1,6 @@
 const fibonacci = function (count) {
-  if (count < 0) return "OOPS";
+  count = Number(count);
+  if (isNaN(count) || count < 0) return "OOPS";
   if (count === 0) return 0;
   let a = 0;
   let b = 1;
