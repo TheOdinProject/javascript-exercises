@@ -1,4 +1,11 @@
-const removeFromArray = function() {
+const removeFromArray = function([x], [y]) {
+
+    let array = [x, y];
+
+    array.indexOf(0);
+    array.indexOf(1);
+
+    array.splice()
 
 };
 
