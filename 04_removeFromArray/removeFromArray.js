@@ -1,13 +1,17 @@
-const removeFromArray = function([x], [y]) {
+// First iteration that fails all tests but can create an array:
 
-    let array = [x, y];
+const removeFromArray = function([array], args) {
 
-    array.indexOf(0);
-    array.indexOf(1);
+        function createArray(...args) {
+            let newArray = args
+      }
 
-    array.splice()
 
-};
+  };
+
+
+// const removeFromArray = function() {};
+
 
 // Do not edit below this line
 module.exports = removeFromArray;
