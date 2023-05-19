@@ -1,13 +1,42 @@
+// Second iteration that fails test but can remove duplicates from arrays:
+
+const removeFromArray = function([arrayOne], [arrayTwo]) {
+
+
+
+  let combinedArray = [...arrayOne, ...arrayTwo];
+
+  let removeDuplicates = [...new Set(combinedArray)]
+  
+  // console.table(removeDuplicates)
+
+};
+
+removeFromArray(["A", "B"], ["C", "D"])
+
+
+
+
+
 // First iteration that fails all tests but can create an array:
 
-const removeFromArray = function([array], args) {
+/* const removeFromArray = function([array], args) {
 
         function createArray(...args) {
             let newArray = args
       }
 
+        let oldArray = array;
+
+        let combinedArray = [...newArray, ...oldArray];
+
+        let removeDuplicates = [...new Set(combinedArray)]
+
+
 
   };
+
+  */
 
 // NEXT need to find way to compare the two arrays
 // i.e. compare "array" and "args"
