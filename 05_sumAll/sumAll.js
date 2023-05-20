@@ -10,16 +10,15 @@
 
 const sumAll = function(x, y) {
     let theSum;
-    for (let i = x; i <=y; i++) {
-    x += i 
+    for (let i = x+1; i <=y; i++) {
+    theSum = x += i 
     }
   
-  console.log(theSum)
+  return(theSum)
   
 };
 
 
-sumAll(1,10)
 
 // Need to add conditions for ERROR-message
 
