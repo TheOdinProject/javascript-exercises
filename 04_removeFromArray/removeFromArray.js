@@ -4,13 +4,10 @@ const removeFromArray = function([a, ...b], c, ...d) {
 
   let firstArray = [a, ...b];
   let secondArray = [c, ...d];
- 
- 
-
   let combinedArray = [...firstArray, ...secondArray];
   let removeDuplicates = [...new Set(combinedArray)]
   
- let filterFirstArray = removeDuplicates.filter(n => !secondArray.includes(n))
+  let filterFirstArray = removeDuplicates.filter(n => !secondArray.includes(n))
   
   return filterFirstArray;
 
