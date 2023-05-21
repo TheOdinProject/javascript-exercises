@@ -1,18 +1,23 @@
 const sumAll = function(x, y) {
     let theSum;
-    for (let i = x+1; i <=y; i++) {
-    theSum = x += i 
-    }
   
-  return theSum
+        if (x < 0 || y < 0) {return('ERROR')}
+         
+        else  
+        {
 
-  if (x | y <0 ) {return('ERROR')}
+        for (let i = x+1; i <=y; i++) {
+        theSum = x += i 
 
+
+    
+      
+      }
+        return theSum
+    }
   
 };
 
-
-// Need to add conditions for ERROR-message
 
 
 // Do not edit below this line
