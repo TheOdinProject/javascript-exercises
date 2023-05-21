@@ -7,6 +7,15 @@ const sumAll = function(x, y) {
         if (x < 0 || y < 0) {return('ERROR')}
 
         else if (Number.isInteger(x) == false || Number.isInteger(y) == false) {return('ERROR')}
+
+        else if (x > y) {
+            let X = y;
+            let Y = x;
+            for (let i = X+1; i <=Y; i++) {
+                theSum = X += i 
+                }
+            return theSum
+        }
          
         else  
 
