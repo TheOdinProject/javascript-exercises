@@ -10,11 +10,13 @@ const sum = function (array) {
   return array.reduce((total, current) => total + current, 0);
 };
 
-const multiply = function (array) {
-  return array.length
-    ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
-    : 0;
-};
+const multiply = function(...args){
+  let sum = 1
+ for (let i = 0; i < args.length; i++) {
+    sum *= args[i]
+   }
+   return sum
+ }
 
 const power = function (a, b) {
   return Math.pow(a, b);
