@@ -11,12 +11,12 @@ const sum = function (array) {
 };
 
 const multiply = function(...args){
-  let sum = 1
- for (let i = 0; i < args.length; i++) {
-    sum *= args[i]
-   }
-   return sum
- }
+  let product = 1;
+  for (let i = 0; i < args.length; i++) {
+    product *= args[i];
+  }
+  return product;
+ };
 
 const power = function (a, b) {
   return Math.pow(a, b);
