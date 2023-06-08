@@ -22,4 +22,7 @@ describe('palindromes', () => {
   test.skip('works with numbers in a string', () => {
     expect(palindromes('rac3e3car')).toBe(true);
   });
+  test.skip('works with unevenly spaced numbers in a string', () => {
+    expect(palindromes('r3ace3car')).toBe(false);
+  });
 });
