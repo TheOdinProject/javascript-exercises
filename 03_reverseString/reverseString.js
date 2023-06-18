@@ -2,7 +2,7 @@
 // Split it into an array
 // Pop array and store in a new array
 // Continue until array is done
-
+//Do without string reverse method
 
 const reverseString = function(word) {
     // Split it into an array
