@@ -7,16 +7,12 @@ const subtract = function (a, b) {
 };
 
 const sum = function (...args) {
-  return args.reduce((total, current) => total + current, 0);
+  return args.reduce((sum, curr) => sum + curr, 0);
 };
 
 const multiply = function(...args){
-  let product = 1;
-  for (let i = 0; i < args.length; i++) {
-    product *= args[i];
-  }
-  return product;
- };
+  return args.reduce((product, curr) => product * curr)
+};
 
 const power = function (a, b) {
   return Math.pow(a, b);
