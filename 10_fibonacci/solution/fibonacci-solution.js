@@ -2,16 +2,18 @@ const fibonacci = function(count) {
     if (count < 0) return "OOPS";
     if (count === 0) return 0;
 
-    let first_prev = 1;
-    let second_prev = 0;
+    let firstPrev = 1;
+    let secondPrev = 0;
 
+    // For clarification: curr stands for current. This is standard syntax
+    
     for (let i = 2; i <= count; i++) {
-        let curr = first_prev + second_prev;
-        second_prev = first_prev;
-        first_prev = curr;
+        let curr = firstPrev + secondPrev;
+        secondPrev = firstPrev;
+        firstPrev = curr;
     }
 
-    return first_prev;
+    return firstPrev;
 };
 
 module.exports = fibonacci;
