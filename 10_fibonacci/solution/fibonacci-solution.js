@@ -4,13 +4,11 @@ const fibonacci = function(count) {
 
     let firstPrev = 1;
     let secondPrev = 0;
-
-    // For clarification: curr stands for current. This is standard syntax
     
     for (let i = 2; i <= count; i++) {
-        let curr = firstPrev + secondPrev;
+        let current = firstPrev + secondPrev;
         secondPrev = firstPrev;
-        firstPrev = curr;
+        firstPrev = current;
     }
 
     return firstPrev;
