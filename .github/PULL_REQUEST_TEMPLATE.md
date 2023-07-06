@@ -29,4 +29,4 @@ Closes #XXXXX
 -   [ ] The `Because` section summarizes the reason for this PR
 -   [ ] The `This PR` section has a bullet point list describing the changes in this PR
 -   [ ] If this PR addresses an open issue, it is linked in the `Issue` section
--   [ ] If this PR includes changes that needs to be updated on the `solutions` branch, I have created another PR (and linked it to this PR).
+-   [ ] If this PR includes any changes that affect the solution of an exercise, I've also updated the solution in the `/solutions` folder 
