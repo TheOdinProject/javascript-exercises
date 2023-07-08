@@ -6,26 +6,9 @@ const subtract = function(a,b) {
   return a-b;
 };
 
-const sum = (nums)=>{
-  let total=0;
-	for(let i in nums){
-    total += nums[i];
-  }
-  return total;
-};
+const sum = (nums)=> nums.reduce((total, num)=> total+= num);
 
-const multiply = (...args) => {
-  let total=1;
-  let i=0;
-  for(let i in args){
-    // console.log("i: "+i+" args[i]: "+args[i]);
-    total *= args[i];
-    i++;
-  }
-  console.log(total);
-  return total;
-
-};
+const multiply = (...args) => args.reduce((total,arg)=> total *= arg);
 
 const power = (a,b)=> {
 	let total=1;

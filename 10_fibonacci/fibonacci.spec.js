@@ -4,13 +4,13 @@ describe('fibonacci', () => {
   test('4th fibonacci number is 3', () => {
     expect(fibonacci(4)).toBe(3);
   });
-  test.skip('6th fibonacci number is 8', () => {
+  test('6th fibonacci number is 8', () => {
     expect(fibonacci(6)).toBe(8);
   });
-  test.skip('10th fibonacci number is 55', () => {
+  test('10th fibonacci number is 55', () => {
     expect(fibonacci(10)).toBe(55);
   });
-  test.skip('15th fibonacci number is 610', () => {
+  test('15th fibonacci number is 610', () => {
     expect(fibonacci(15)).toBe(610);
   });
   test.skip('25th fibonacci number is 75025', () => {
