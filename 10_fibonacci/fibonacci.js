@@ -4,8 +4,11 @@ const fibonacci = function(n) {
     //n4 = n3+n2
     //n3 = n2+n1
     //n2 = n1
+    if(n<0){
+        return "OOPS";
+    }
     if(n<=1){
-        return n;
+            return Number(n);
     }
     return fibonacci(n-1)+fibonacci(n-2);
     };
