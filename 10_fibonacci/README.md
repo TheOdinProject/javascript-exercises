@@ -2,7 +2,8 @@
 
 Create a function that returns a specific member of the Fibonacci sequence:
 
-> A series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers. In this exercise, the series starts from 1, 1, 2, 3, 5, 8... but it can also start from 0, 1, 1, 2, 3, 5...
+> A series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers.
+> In this exercise, the Fibonacci sequence used is 1, 1, 2, 3, 5, 8...
 > To learn more about Fibonacci sequences, go to: https://en.wikipedia.org/wiki/Fibonacci_sequence
 
 ```javascript
