@@ -6,8 +6,13 @@ const sumAll = function (min, max) {
     min = max;
     max = temp;
   }
+
+  // An alternative way to swap the values of min and max like above is to use the array destructuring syntax.
+  // Here's an optional article on it: https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/
+  // if (min > max) [min, max] = [max, min];
+  
   let sum = 0;
-  for (let i = min; i < max + 1; i++) {
+  for (let i = min; i <= max; i++) {
     sum += i;
   }
   return sum;
