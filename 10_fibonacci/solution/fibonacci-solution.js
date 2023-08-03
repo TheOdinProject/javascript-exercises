@@ -14,4 +14,11 @@ const fibonacci = function(count) {
     return firstPrev;
 };
 
+// This is another implementation of Fibonacci that uses recursion
+const recursiveFibonacci = function(n) {
+    if (n <= 0) return "OOPS";
+    if (n <= 2) return 1;
+    return recursiveFibonacci(n-1) + recursiveFibonacci(n-2);
+};
+
 module.exports = fibonacci;
