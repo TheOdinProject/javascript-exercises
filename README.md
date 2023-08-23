@@ -2,6 +2,8 @@
 
 These JavaScript exercises are intended to complement the JavaScript content on The Odin Project (TOP). They should only be done when instructed during the course of the curriculum.
 
+**Note:** The `generator-exercise` file is not actually an exercise; it is a script that generates exercises. It was created to help efficiently write these exercises.
+
 ## Contributing
 
 If you have a suggestion to improve an exercise, an idea for a new exercise, or notice an issue with an exercise, please feel free to open an issue after thoroughly reading our [contributing guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md).
