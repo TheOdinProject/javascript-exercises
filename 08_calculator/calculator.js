@@ -1,25 +1,34 @@
-const add = function() {
-	
+const add = function(n , m) {
+  return n + m;
 };
 
-const subtract = function() {
-	
+const subtract = function(n , m) {
+	return n - m;
 };
 
-const sum = function() {
-	
+const sum = function(myArray) {
+	let s = 0;
+  for(let i = 0 ;i < myArray.length ; i++){
+    s += myArray[i];
+  }
+  return s;
 };
 
-const multiply = function() {
-
+const multiply = function(myArray) {
+  let m = 1;
+  for(let i = 0 ;i < myArray.length ; i++){
+    m *= myArray[i];
+  }
+  return m;
 };
 
-const power = function() {
-	
+const power = function(n , m) {
+	return Math.pow(n , m);
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+	if(n < 2) return 1;
+  return n * factorial(n - 1);
 };
 
 // Do not edit below this line
