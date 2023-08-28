@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #f0f0f0; /* Cambiamos el fondo a un gris más claro */
+    border-radius: 10px; /* Aumentamos el radio del borde para hacerlo más suave */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px; /* Aumentamos el ancho para dar más espacio a los botones */
+    padding: 20px; /* Agregamos un poco de espacio alrededor del contenido */
+    margin-top: 20px; /* Añadimos margen superior para centrar en la pantalla */
+}
+
+.display {
+    font-size: 36px; /* Aumentamos el tamaño del texto en el display */
+    padding: 10px;
+    border: 1px solid #ccc; /* Cambiamos el borde inferior a un borde completo */
+    margin-bottom: 10px; /* Agregamos margen inferior para separar del contenido de los botones */
+    background-color: #fff; /* Fondo blanco para el display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Agregamos espacio entre los botones */
+}
+
+.btn {
+    font-size: 24px; /* Aumentamos el tamaño del texto en los botones */
+    padding: 20px 0;
+    cursor: pointer;
+    border: 1px solid #ccc; /* Agregamos un borde a los botones */
+    background-color: #fff; /* Fondo blanco para los botones */
+}
+
+.btn:hover {
+    background-color: #eee; /* Cambiamos el color de fondo al pasar el ratón */
+}
+
+#equals {
+    grid-column: span 4;
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+}
+
+#equals:hover {
+    background-color: #cc5500;
+}
