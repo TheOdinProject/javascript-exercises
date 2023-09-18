@@ -16,7 +16,7 @@ describe('fibonacci', () => {
   test.skip('25th fibonacci number is 75025', () => {
     expect(fibonacci(25)).toBe(75025);
   });
-  test('0th fibonacci number is o', () => {
+  test.skip('0th fibonacci number is o', () => {
     expect(fibonacci(0)).toBe(0);
   });
   test.skip('doesn\'t accept negatives', () => {
