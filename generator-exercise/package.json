@@ -19,7 +19,7 @@
   "devDependencies": {
     "yeoman-test": "^1.6.0",
     "yeoman-assert": "^3.0.0",
-    "nsp": "^2.6.3",
+    "nsp": "^3.2.1",
     "eslint": "^4.1.0",
     "eslint-config-xo-space": "^0.16.0",
     "jest": "^19.0.2",
