@@ -1,6 +1,9 @@
-const reverseString = function() {
-
+const reverseString = function(str) {
+    let stringIntoArray = str.split("");
+    let arrayReverse = stringIntoArray.reverse();
+    let arrayIntoString = arrayReverse.join("");
+    return arrayIntoString;
 };
 
-// Do not edit below this line
+reverseString('hello');
 module.exports = reverseString;
