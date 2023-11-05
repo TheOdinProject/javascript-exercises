@@ -5,7 +5,6 @@ const removeFromArray = function(array) {
             removalChecks.push(arguments[i]);
         }
     }
-    console.log(removalChecks)
     lenArray = array.length-1;
     for (i=0; i<removalChecks.length; i++) {
         valToCheck = removalChecks[i]
