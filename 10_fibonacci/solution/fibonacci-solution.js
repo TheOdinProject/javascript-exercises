@@ -4,7 +4,7 @@ const fibonacci = function(count) {
 
     let firstPrev = 1;
     let secondPrev = 0;
-    
+
     for (let i = 2; i <= count; i++) {
         let current = firstPrev + secondPrev;
         secondPrev = firstPrev;
@@ -12,6 +12,14 @@ const fibonacci = function(count) {
     }
 
     return firstPrev;
+
 };
+
+// Another way to do it is by using an iterative approach with an array containing two values, 0 and 1.
+// const fib = [0, 1];
+// for (let i = 2; i <= count; i++) {
+//    fib[i] = fib[i - 1] + fib[i - 2];
+// }
+// return fib[count];
 
 module.exports = fibonacci;
