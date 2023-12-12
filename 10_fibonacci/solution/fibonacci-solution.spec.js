@@ -1,4 +1,4 @@
-const fibonacci = require('./fibonacci-solution');
+const fibonacci = require('./fibonacci-solution')
 
 describe('fibonacci', () => {
   test('4th fibonacci number is 3', () => {
@@ -16,19 +16,22 @@ describe('fibonacci', () => {
   test('25th fibonacci number is 75025', () => {
     expect(fibonacci(25)).toBe(75025);
   });
-  test('0th fibonacci number is o', () => {
+  test('0th fibonacci number is 0', () => {
     expect(fibonacci(0)).toBe(0);
   });
-  test("doesn't accept negatives", () => {
-    expect(fibonacci(-25)).toBe('OOPS');
+  test('doesn\'t accept negatives', () => {
+    expect(fibonacci(-25)).toBe("OOPS");
   });
   test('DOES accept strings', () => {
-    expect(fibonacci('1')).toBe(1);
+    expect(fibonacci("0")).toBe(0);
   });
   test('DOES accept strings', () => {
-    expect(fibonacci('2')).toBe(1);
+    expect(fibonacci("1")).toBe(1);
   });
   test('DOES accept strings', () => {
-    expect(fibonacci('8')).toBe(21);
+    expect(fibonacci("2")).toBe(1);
+  });
+  test('DOES accept strings', () => {
+    expect(fibonacci("8")).toBe(21);
   });
 });
