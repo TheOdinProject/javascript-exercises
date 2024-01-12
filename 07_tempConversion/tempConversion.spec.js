@@ -4,10 +4,10 @@ describe('convertToCelsius', () => {
   test('works', () => {
     expect(convertToCelsius(32)).toEqual(0);
   });
-  test.skip('rounds to 1 decimal', () => {
+  test('rounds to 1 decimal', () => {
     expect(convertToCelsius(100)).toEqual(37.8);
   });
-  test.skip('works with negatives', () => {
+  test('works with negatives', () => {
     expect(convertToCelsius(-100)).toEqual(-73.3);
   });
 });
