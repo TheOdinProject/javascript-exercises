@@ -26,7 +26,7 @@ If you have a suggestion to improve an exercise, an idea for a new exercise, or 
 4. Some of the exercises have test conditions defined in their spec file as `test.skip` compared to `test`. This is purposeful. After you pass one `test`, you will change the next `test.skip` to `test` and test your code again. You'll do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any `test.skip` instances by the time you finish an exercise.
 5. Once you successfully finish an exercise, check the `solutions` directory within each exercise to compare it with yours.
    - You should not be checking the solution for an exercise until you finish it!
-   - If your solution differs wildly from TOP's solution (and still passes the self-check criteria), that's completely fine. Do feel free to ask about it in the chatroom if there are parts you do not understand.
+   - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that's completely fine. Do feel free to ask about it in our Discord if there are parts you do not understand.
 6. Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
 
 **Note**: Due to the way Jest handles failed tests, it may return an exit code of 1 if any tests fail. NPM will interpret this as an error and you may see some `npm ERR!` messages after Jest runs. You can ignore these, or run your test with `npm test exerciseName.spec.js --silent` to supress the errors.
