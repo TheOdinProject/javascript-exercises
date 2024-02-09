@@ -10,7 +10,7 @@ removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
 
 The first test on this one is fairly easy, but there are a few things to think about(or google) here for the later tests:
 
+- you can manipulate the original array you pass into the function call or create a new array that is returned as the result.
 - how to remove a single element from an array
 - how to deal with multiple optional arguments in a javascript function
-- [Check this link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments).  Scroll down to the bit about `Array.from` or the spread operator. - [Or this link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
-  
+- For more information, check out MDN's page on [function arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) - scroll down to the bit about `Array.from` or the spread operator. You can also check out MDN's page on [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
