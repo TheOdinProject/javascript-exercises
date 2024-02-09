@@ -29,7 +29,7 @@ describe('repeatString', () => {
     /*The .match(/((hey))/g).length is a regex that will count the number of heys
     in the result, which if your function works correctly will equal the number that
     was randomly generated. */
-    expect(repeatString('hey', number).match(/((hey))/g).length).toEqual(
+    expect(repeatString('hey', number).match(/(hey)/g).length).toEqual(
       number
     );
   });
