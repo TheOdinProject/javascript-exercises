@@ -1,5 +1,6 @@
 const { mkdir } = require("fs/promises");
 const { join } = require("path");
+const { camelCase } = require("case-anything");
 const { createExerciseDirectoryName } = require("./generators/helpers");
 const { writeReadme } = require("./generators/writeReadme");
 const { writeExercise } = require("./generators/writeExercise");
@@ -14,14 +15,16 @@ module.exports = function (plop) {
       );
     }
 
+    const camelExerciseName = camelCase(exerciseName);
     const exerciseDirectoryName = await createExerciseDirectoryName(
-      exerciseName
+      camelExerciseName
     );
     const basePath = join("./", exerciseDirectoryName);
     const solutionPath = join(basePath, "solution");
 
     await mkdir(basePath);
     await mkdir(solutionPath);
+
     await writeReadme(basePath);
     await writeExercise(basePath);
     await writeExercise(solutionPath);
