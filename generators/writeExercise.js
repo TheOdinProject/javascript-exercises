@@ -10,7 +10,8 @@ async function writeExercise(exercisePath) {
 };
   
 // Do not edit below this line
-module.exports = ${exerciseName};`;
+module.exports = ${exerciseName};
+`;
 
   await writeFile(
     join(

@@ -23,7 +23,8 @@ describe('${exerciseName}', () => {
 
     expect(${exerciseName}()).toBe('');
   });
-});`;
+});
+`;
 
   await writeFile(
     join(exercisePath, `${trueExerciseName}.spec.js`),

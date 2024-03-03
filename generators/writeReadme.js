@@ -6,7 +6,8 @@ async function writeReadme(exercisePath) {
   const { exerciseNumber, exerciseName } = splitDirectoryName(exercisePath);
   const readmeContent = `# Exercise ${exerciseNumber} - ${exerciseName}
 
-Description of the exercise goes here.`;
+Description of the exercise goes here.
+`;
 
   await writeFile(join(exercisePath, "README.md"), readmeContent);
 }
