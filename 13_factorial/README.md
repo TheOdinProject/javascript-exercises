@@ -1,6 +1,6 @@
 # Exercise 13 - Factorial
 
-Create a function that takes an input integer greater than or equal to 1 and returns the product of all its predecessing integers. If 0 is input it returns 1. It should accept strings that when converted to a number are valid inputs. For invalid inputs it returns `undefined`.
+Write a recursive function that takes a non-negative integer, and returns the product of all positive integers less than or equal to the input integer. An input of `0` should return `1`. The function should only accept numbers, so `'4'` should not be accepted as it is a string. All invalid inputs should return `undefined`.
 
 For example:
 
