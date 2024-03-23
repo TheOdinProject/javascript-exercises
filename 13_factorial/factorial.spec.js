@@ -19,19 +19,19 @@ describe('factorial', () => {
   test.skip('0th factorial number is 1', () => {
     expect(factorial(0)).toBe(1);
   });
-  test.skip('doesn\'t accept negatives', () => {
+  test.skip("doesn't accept negatives", () => {
     expect(factorial(-25)).toBe(undefined);
   });
-  test.skip('doesn\'t accept floats', () => {
+  test.skip("doesn't accept floats", () => {
     expect(factorial(5.4)).toBe(undefined);
   });
-  test.skip('doesn\'t accept a number as a string', () => {
+  test.skip("doesn't accept a number as a string", () => {
     expect(factorial('5')).toBe(undefined);
   });
-  test.skip('doesn\'t accept strings', () => {
+  test.skip("doesn't accept strings", () => {
     expect(factorial('foo')).toBe(undefined);
   });
-  test.skip('doesn\'t accept arrays', () => {
+  test.skip("doesn't accept arrays", () => {
     expect(factorial([5])).toBe(undefined);
   });
 });
