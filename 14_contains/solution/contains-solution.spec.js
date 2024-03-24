@@ -40,7 +40,7 @@ describe('contains', () => {
     expect(contains(object, 'e')).toBe(true);
   });
 
-  test('false if the provided property exists but is not a primitive', () => {
+  test('false if the provided value exists but is not a primitive', () => {
     expect(contains(object, [42])).toBe(false);
   });
 
