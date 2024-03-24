@@ -1,4 +1,4 @@
-const factorial = require("./factorial-solution");
+const factorial = require("./factorial");
 
 describe('factorial', () => {
   test('4th factorial number is 24', () => {
