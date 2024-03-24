@@ -36,7 +36,7 @@ describe('contains', () => {
     expect(contains(object, 'bar')).toBe(false);
   });
 
-  test('true if the provided string is duplicated', () => {
+  test('true if provided string is within the object, even if duplicated', () => {
     expect(contains(object, 'e')).toBe(true);
   });
 
