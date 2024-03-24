@@ -11,7 +11,7 @@ describe('totalIntegers', () => {
     expect(totalIntegers([5, 7, -7, [45, -1, -0], [4, 7, -4, -4, -4, [777777, -45674]], [-5477654]])).toBe(14);
   });
   test('Works with floats', () => {
-    expect(totalIntegers([5, 7.7, 7, [45, 1, 0], [4.0, 7, [7.77777, 4567.4]], [5477.654]])).toBe(11);
+    expect(totalIntegers([5, 7.7, 7, [45, 1, 0], [4.0, 7, [7.77777, 4567.4]], [5477.654]])).toBe(7);
   });
   test('Only accepts arrays', () => {
     expect(totalIntegers('2')).toBe(undefined);
