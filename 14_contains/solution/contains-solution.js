@@ -1,11 +1,13 @@
-const contains = function(current, search) {
-  if (Object.values(current).includes(search)) return true;
+const contains = function(obj, searchValue) {
+  const values = Object.values(obj);
+  if (values.includes(searchValue)) return true;
 
-  for (const nestedObject of Object.values(current).filter((value) => typeof value === 'object')) {
-    return contains(nestedObject, search)
+  const nestedObjects = values.filter((value) => typeof value === 'object');
+  for (const nestedObject of nestedObjects) {
+    return contains(nestedObject, searchValue);
   }
-  
-  return false
+
+  return false;
 };
   
 // Do not edit below this line
