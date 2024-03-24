@@ -1,7 +1,7 @@
 const contains = require('./contains-solution');
 
 describe('contains', () => {
-  const nestedObject = {
+  const object = {
     data: {
       banana: NaN,
       info: {
