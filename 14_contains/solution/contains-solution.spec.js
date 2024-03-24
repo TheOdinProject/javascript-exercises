@@ -7,6 +7,7 @@ describe('contains', () => {
       info: {
           duplicate: 'e',
           magicNumber: 44,
+          empty: null,
           stuff: {
               thing: {
                 banana: NaN,
@@ -46,5 +47,9 @@ describe('contains', () => {
 
   test('true if NaN is a value within the object', () => {
     expect(contains(object, NaN)).toBe(true);
+  });
+
+  test('false if the provided value exists and is null', () => {
+    expect(contains(object, null)).toBe(true);
   });
 });
