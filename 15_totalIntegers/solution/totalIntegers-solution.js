@@ -1,19 +1,12 @@
-const isInteger = (number) => {
-  switch (true) {
-    case (Number.isNaN(number)):
-    case (typeof number !== 'number'):
-    case (number % 1 !== 0):
-      return false;
-    default:
-      return true;
-  }
-};
+const totalIntegers = function(obj, count = 0) {
 
-const totalIntegers = function(array, count = 0) {
-  if (!Array.isArray(array)) return;
-  for (const el of array) {
-    if (isInteger(el)) ++count;
-    if (Array.isArray(el)) count += totalIntegers(el);
+  if (typeof obj !== 'object' || obj === null) return;
+
+  const elements = Array.isArray(obj) ? obj : Object.values(obj)
+
+  for (const el of elements) {
+    if (Number.isInteger(el)) ++count;
+    if (typeof el === 'object' && el !== null) count += totalIntegers(el);
   }
   return count;
 };
