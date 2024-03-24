@@ -1,15 +1,15 @@
-const sumSquares = require('./sumSquares-solution');
+const permutations = require('./permutations');
 
-describe('sumSquares', () => {
+describe('permutations', () => {
   test('First test description', () => {
     // Replace this comment with any other necessary code, and update the expect line as necessary
 
-    expect(sumSquares()).toBe('');
+    expect(permutations()).toBe('');
   });
   
-  test('Second test description', () => {
+  test.skip('Second test description', () => {
     // Replace this comment with any other necessary code, and update the expect line as necessary
 
-    expect(sumSquares()).toBe('');
+    expect(permutations()).toBe('');
   });
 });

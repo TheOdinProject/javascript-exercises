@@ -1,6 +1,6 @@
-const sumSquares = function() {
+const permutations = function() {
   // Replace this comment with the solution code
 };
   
 // Do not edit below this line
-module.exports = sumSquares;
+module.exports = permutations;
