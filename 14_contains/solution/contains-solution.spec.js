@@ -44,7 +44,7 @@ describe('contains', () => {
     expect(contains(object, [42])).toBe(false);
   });
 
-  test('true if NaN is a property within the object', () => {
+  test('true if NaN is a value within the object', () => {
     expect(contains(object, NaN)).toBe(true);
   });
 });
