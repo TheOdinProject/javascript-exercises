@@ -1,7 +1,9 @@
 const contains = function(obj, searchValue) {
   const values = Object.values(obj);
 
-  // NaN !== NaN, so we would usually have to do an explicit check with Math.isNaN to test for it. However, Array.prototype.includes handles that for us
+  // NaN === NaN evaluates to false (as per the IEEE 754 standard)
+  // Normally, we would have to do an explicit Number.isNaN() check to compare NaN equality
+  // However, Array.prototype.includes automatically handles this for us
   if (values.includes(searchValue)) return true;
 
   const nestedObjects = values.filter((value) => typeof value === 'object' && value !== null);
