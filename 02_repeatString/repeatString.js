@@ -1,7 +1,7 @@
-const repeatString = function(str, num) {
-    if (num >= 0) {
+const repeatString = function(str, repeat) {
+    if (repeat >= 0) {
         let world = '';
-        for (let index = 0; index < num; index++) {
+        for (let index = 0; index < repeat; index++) {
             world += str  
         }
         return world
