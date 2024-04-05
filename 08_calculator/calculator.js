@@ -24,7 +24,7 @@ const multiply = function(array) {
 };
 
 const power = function(base, exponent) {
-	return base ** exponent;
+	return Math.pow(base, exponent);
 };
 
 const factorial = function(number) {
