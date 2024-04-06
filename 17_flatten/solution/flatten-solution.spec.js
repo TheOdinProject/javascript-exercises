@@ -1,15 +1,17 @@
 const flatten = require('./flatten-solution');
 
 describe('flatten', () => {
-  test('First test description', () => {
-    // Replace this comment with any other necessary code, and update the expect line as necessary
-
-    expect(flatten()).toBe('');
+  test('Works', () => {
+    expect(flatten([[1, [2, 3]], 4], 1)).toEqual([1, [2, 3], 4])
+  })
+  test('Works with a depth argument', () => {
+    expect(flatten([ [1, 2], [3, 4, [[1, [8, 9]], [3, 4]], 2] ], 2)).toEqual([1, 2, 3, 4, [1, [ 8, 9 ]], [3, 4], 2]);
   });
   
-  test('Second test description', () => {
-    // Replace this comment with any other necessary code, and update the expect line as necessary
-
-    expect(flatten()).toBe('');
+  test('Works with no depth argument', () => {
+    expect(flatten([[[1, 2], [3, 4]], 1, [[[[[[[[1]]]]], 4, [[[[[[5, 4]]]]]], 1]]]])).toEqual([1, 2, 3, 4, 1, 1, 4, 5, 4, 1]);
+  });
+  test('Works with an empty array', () => {
+    expect(flatten([])).toEqual([]);
   });
 });
