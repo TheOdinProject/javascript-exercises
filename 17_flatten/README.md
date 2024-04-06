@@ -1,6 +1,7 @@
 # Exercise 17 - flatten
 
-Write a function that takes in an array and an optional depth argument which defaults to `Infinity` if not specified.
+Write a function that takes in an array of positive integers and an optional depth argument which defaults to `Infinity` if not specified.
+
 The function returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
 ```javascript
