@@ -1,4 +1,5 @@
-const totalIntegers = function(obj, count = 0) {
+const totalIntegers = function (obj, count = 0) {
+  const isObject = (value) => typeof value === 'object' && value !== null;
 
   if (typeof obj !== 'object' || obj === null) {
     return;
@@ -9,7 +10,7 @@ const totalIntegers = function(obj, count = 0) {
   for (const el of elements) {
     if (Number.isInteger(el)) {
       count++;
-    } else if (typeof el === 'object' && el !== null) {
+    } else if (isObject(el)) {
       count += totalIntegers(el);
     }
   }
