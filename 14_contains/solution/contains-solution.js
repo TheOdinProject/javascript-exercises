@@ -1,8 +1,5 @@
-const contains = function (initialObject, searchValue, queue = []) {
-  if (initialObject !== null) queue.push(initialObject);
-  if (initialObject === null && queue.length === 0) return false;
-  const item = queue.shift();
-  const values = Object.values(item);
+const contains = function (object, searchValue) {
+  const values = Object.values(object);
 
   // NaN === NaN evaluates to false
   // Normally, we would have to do an explicit Number.isNaN() check to compare NaN equality
@@ -11,12 +8,12 @@ const contains = function (initialObject, searchValue, queue = []) {
 
   const nestedObjects = values.filter(
     // typeof null === 'object' evaluates to true ¯\_(ツ)_/¯
-    (value) => typeof value === "object" && value !== null,
+    (value) => typeof value === "object" && value !== null
   );
 
-  const newQueue = queue.concat(nestedObjects);
-
-  return contains(null, searchValue, newQueue);
+  return nestedObjects.some((nestedObject) =>
+    contains(nestedObject, searchValue)
+  );
 };
 
 // Do not edit below this line
