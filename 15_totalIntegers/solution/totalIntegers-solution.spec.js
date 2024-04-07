@@ -1,6 +1,15 @@
 const totalIntegers = require('./totalIntegers-solution');
 
 describe('totalIntegers', () => {
+  test('Works with a simple array of numbers', () => {
+    expect(totalIntegers([1, 2, 3])).toBe(3);
+  });
+  test('Ignores non-integer values', () => {
+    expect(totalIntegers([1, 2, '3', 4])).toBe(3);
+  });
+  test('Works with simple objects', () => {
+    expect(totalIntegers({ a: 1, b: '2', c: 3 })).toBe(2);
+  });
   test('Works with an empty nested array', () => {
     expect(totalIntegers([[], [], []])).toBe(0);
   });
