@@ -5,8 +5,11 @@ const totalIntegers = function(obj, count = 0) {
   const elements = Object.values(obj);
 
   for (const el of elements) {
-    if (Number.isInteger(el)) ++count;
-    if (typeof el === 'object' && el !== null) count += totalIntegers(el);
+    if (Number.isInteger(el)) {
+      count++;
+    } else if (typeof el === 'object' && el !== null) {
+      count += totalIntegers(el);
+    }
   }
   return count;
 };
