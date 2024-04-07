@@ -1,6 +1,8 @@
 const totalIntegers = function(obj, count = 0) {
 
-  if (typeof obj !== 'object' || obj === null) return;
+  if (typeof obj !== 'object' || obj === null) {
+    return;
+  }
 
   const elements = Object.values(obj);
 
