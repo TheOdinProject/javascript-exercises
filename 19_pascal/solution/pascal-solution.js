@@ -27,7 +27,5 @@ const pascal = function (counter, currentLine = [1]) {
   return pascal(counter - 1, joined);
 };
 
-pascal(5)
-
 // Do not edit below this line
 module.exports = pascal;
