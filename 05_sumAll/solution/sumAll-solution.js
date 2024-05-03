@@ -18,4 +18,16 @@ const sumAll = function (min, max) {
   return sum;
 };
 
+// A more advanced approach
+// const sumAll = function(min, max) {
+//  if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
+//  if (min < 0 || max < 0) return "ERROR";
+//  create an array of consecutive integers from min to max
+//  create an array that of length equal to the difference between min and max, every element is "undefined"
+//  return Array.from({ length: max - min })
+//              // we name the variable _ because we aren't using it, we only
+//              // use it to acces i (index), this is a convention
+//              .map((_, i) => (i + 1) + min).reduce((a, b) => a + b, 0) // add all numbers
+// }
+
 module.exports = sumAll;
