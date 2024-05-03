@@ -1,19 +1,17 @@
-const findTheOldest = function (array) {
-  return array.reduce((oldest, currentPerson) => {
-    const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
-    const currentAge = getAge(
-      currentPerson.yearOfBirth,
-      currentPerson.yearOfDeath
-    );
-    return oldestAge < currentAge ? currentPerson : oldest;
-  });
+const getAge = function (person) {
+  // The nullish coalescing assignment operator
+  // evaluates to the right hand side if the left hand side is undefined
+  // Else it evaluates to the left hand side
+  person.yearOfDeath ??= new Date().getFullYear();
+
+  return person.yearOfDeath - person.yearOfBirth;
 };
 
-const getAge = function (birth, death) {
-  if (!death) {
-    death = new Date().getFullYear();
-  }
-  return death - birth;
+const findTheOldest = function (array) {
+  // Sort the people from oldest to youngest
+  return array.sort(
+    (person, nextPerson) => getAge(nextPerson) - getAge(person),
+  )[0];
 };
 
 module.exports = findTheOldest;
