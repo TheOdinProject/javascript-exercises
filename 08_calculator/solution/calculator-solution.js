@@ -14,9 +14,8 @@ const multiply = function (array) {
   return array.reduce((product, current) => product * current)
 };
 
-const power = function (a, b) {
-  return Math.pow(a, b);
-};
+// Functions in JavaScript are variables that be manipulated just like any other variable
+const power = Math.pow
 
 const factorial = function (n) {
   if (n === 0) return 1;
