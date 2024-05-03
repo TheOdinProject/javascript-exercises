@@ -18,4 +18,8 @@ const sumAll = function (min, max) {
   return sum;
 };
 
+// A very mathematical approach. You'd probably be unlikely to stumble across this by chance
+// But using a formula is easily the most elegant approach (not including "ERROR" handling!)
+// const sumAll = (min, max) => max * (min + max) / 2
+
 module.exports = sumAll;
