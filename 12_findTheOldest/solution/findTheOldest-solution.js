@@ -7,9 +7,9 @@ const getAge = function (person) {
   return person.yearOfDeath - person.yearOfBirth;
 };
 
-const findTheOldest = function (array) {
+const findTheOldest = function (people) {
   // Sort the people from oldest to youngest
-  return array.sort(
+  return people.sort(
     (person, nextPerson) => getAge(nextPerson) - getAge(person),
   )[0];
 };
