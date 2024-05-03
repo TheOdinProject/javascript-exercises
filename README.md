@@ -1,6 +1,6 @@
 # JavaScript Exercises
 
-These JavaScript exercises are intended to complement the JavaScript content on The Odin Project (TOP). They should only be done when instructed during the course of the curriculum.
+These JavaScript exercises are intended to complement the JavaScript content on [The Odin Project](https://www.theodinproject.com/) (TOP). They should only be done when instructed during the course of the curriculum.
 
 ## Contributing
 
@@ -20,12 +20,12 @@ If you have a suggestion to improve an exercise, an idea for a new exercise, or 
    - A markdown file with a description of the task, an empty (or mostly empty) JavaScript file, and a set of tests.
    - A `solutions` directory that contains a solution and the same test file with all of the tests unskipped.
 
-   To complete an exercise, you'll need to go to the exercise directory with `cd exerciseName` in the terminal and run `npm test exerciseName.spec.js`. This should run the test file and show you the output. When you first run a test, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass.
+   To complete an exercise, you will need to go to the exercise directory with `cd exerciseName` in the terminal and run `npm test exerciseName.spec.js`. This should run the test file and show you the output. When you run a test for the first time, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass.
 
-1. Some of the exercises have test conditions defined in their spec file as `test.skip` compared to `test`. This is purposeful. After you pass one `test`, you will change the next `test.skip` to `test` and test your code again. You'll do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any `test.skip` instances by the time you finish an exercise.
+1. Some of the exercises have test conditions defined in their spec file as `test.skip` instead of `test`. This is intentional. Once all `test`s pass, you will change the next `test.skip` to `test` and test your code again. You will do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any instances of `test.skip` in the spec file when you are finished with an exercise.
 1. Once you successfully finish an exercise, check the `solutions` directory within each exercise to compare it with yours.
    - You should not be checking the solution for an exercise until you finish it!
-   - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that's completely fine. Do feel free to ask about it in our Discord if there are parts you do not understand.
+   - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that is completely fine. Feel free to ask about it in our Discord if there are parts you do not understand.
 1. Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
 
 **Note**: Due to the way Jest handles failed tests, it may return an exit code of 1 if any tests fail. NPM will interpret this as an error and you may see some `npm ERR!` messages after Jest runs. You can ignore these, or run your test with `npm test exerciseName.spec.js --silent` to supress the errors.
@@ -40,8 +40,8 @@ To debug functions, you can run the tests in the Visual Studio Code debugger ter
 
 To add a new exercise:
 
-1. Be sure you've ran `npm install` at the root of the `javascript-exercises` directory
-2. Run the command `npm run generate`
-3. When prompted, enter the name of the new exercise in camelCase syntax
+1. Be sure to run `npm install` at the root of the `javascript-exercises` directory.
+2. Run the command `npm run generate`.
+3. When prompted, enter the name of the new exercise in "camelCase" syntax.
 
 After entering an exercise name, a new directory with the necessary files will be created. You will then need to update the `README.md` and `spec.js` files as well as the files in the `solution` directory of the new exercise.
