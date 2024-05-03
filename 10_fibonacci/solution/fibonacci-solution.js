@@ -31,4 +31,10 @@ const fibonacci = function(countArg) {
 // }
 // return fib[count];
 
+// An even more advanced way
+// const fibs = (n) =>
+//  Array.from({ length: n })
+//    .reduce((acc, _, i) => [...acc, acc.at(-1) + acc.at(-2)], [0, 1])[n];
+// };
+
 module.exports = fibonacci;
