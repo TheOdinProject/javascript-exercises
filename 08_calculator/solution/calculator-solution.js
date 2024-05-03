@@ -27,15 +27,6 @@ const factorial = function (n) {
   return product;
 };
 
-// This is another implementation of Factorial that uses recursion
-// THANKS to @ThirtyThreeB!
-const recursiveFactorial = function (n) {
-  if (n === 0) {
-    return 1;
-  }
-  return n * recursiveFactorial(n - 1);
-};
-
 module.exports = {
   add,
   subtract,
