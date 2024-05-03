@@ -35,6 +35,5 @@ const fibonacci = function(countArg) {
 // const fibs = (n) =>
 //  Array.from({ length: n })
 //    .reduce((acc, _, i) => [...acc, acc.at(-1) + acc.at(-2)], [0, 1])[n];
-// };
 
 module.exports = fibonacci;
