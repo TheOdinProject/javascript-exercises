@@ -10,7 +10,9 @@ describe('reverseString', () => {
   });
 
   test('works with numbers and punctuation', () => {
-    expect(reverseString('123! abc!')).toEqual('!cba !321');
+    expect(reverseString('123! abc! Hello, Odinite.')).toEqual(
+      '.etinidO ,olleH !cba !321'
+    );
   });
   test('works with blank strings', () => {
     expect(reverseString('')).toEqual('');
