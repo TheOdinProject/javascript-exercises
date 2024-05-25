@@ -1,4 +1,4 @@
-const removeFromArray = function(...arg) {
+const removeFromArray = function() {
     
 };
 
