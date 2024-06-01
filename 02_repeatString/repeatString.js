@@ -1,4 +1,4 @@
-let string = 'hey';
+let string = 'hello';
 
 const repeatString = function(string, num) {
     let result = '';
@@ -8,8 +8,9 @@ const repeatString = function(string, num) {
     return result;
 };  
 
-const repeatedString = repeatString(string, 3);
+const repeatedString = repeatString(string, 10);
 console.log(repeatedString);
+
 
 
 // Do not edit below this line
