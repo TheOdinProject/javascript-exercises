@@ -1,15 +1,9 @@
-const removeFromArray = function(arr, element) {
-    const index = arr.indexOf(element);
-
-    if(index !== -1){
-        arr.splice(index, 1);
-    }
-    return arr;
-   
+const removeFromArray = function(arr, ...elementsToRemove) {
+    return arr.filter(item => !elementsToRemove.includes(item));
 };
 
-let removeElement = removeFromArray([1, 2, 3, 4], 3);
-console.log(removeElement);
+let removeElement = removeFromArray([1, 2, 3, 4], 1, 2, 3, 4);
+console.log(removeElement); // Output: [1, 3]
 
 // Do not edit below this line
 module.exports = removeFromArray;
