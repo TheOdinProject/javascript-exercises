@@ -1,6 +1,6 @@
 const fibonacci = function (input) {
   const n = parseInt(input);
-  if (isNaN(n)) {
+  if (typeof n !== "number") {
     return NaN; // Return NaN if input is not a number
   }
 
@@ -11,7 +11,7 @@ const fibonacci = function (input) {
   if (n <= 1) {
     return n;
   } else {
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacci(n - 1) + fibonacci(n - 2); //recursive method.
   }
 };
 
