@@ -22,6 +22,10 @@
     "jest-cli": "^29.6.4",
     "plop": "^4.0.1"
   },
+  "engines": {
+    "npm": ">=8.5.5",
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "test": "jest",
     "generate": "plop"
