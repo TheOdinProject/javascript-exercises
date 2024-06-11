@@ -15,10 +15,6 @@ const sum = function(array) {
 };
 
 const multiply = function(arr = []) {
-  if (arr.length === 0) {
-    return 1; // Default to 1 if no arguments are provided
-  }
-  
   return arr.reduce((acc, curr) => acc * curr, 1);
 };
 
