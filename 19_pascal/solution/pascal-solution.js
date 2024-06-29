@@ -1,5 +1,7 @@
 const pascal = function (counter, currentLine = [1]) {
-  if (counter === 1) return currentLine;
+  if (counter === 1) {
+    return currentLine;
+  }
 
   const halfOfNextLine = currentLine.reduce(
     (accumulator, currentElement, index, originalArray) => {
