@@ -15,8 +15,7 @@ const pascal = function (counter, currentLine = [1]) {
   );
 
   // Notice that pascal triangle's lines are always palindromic in nature. 
-  // We only need the first half to obtain the information to 
-  // Construct the second half
+  // We only need the first half to obtain the information to construct the second half
   const joined = [...halfOfNextLine, ...halfOfNextLine.reverse()];
 
   // If a given line of the pascal's triangle has an even amount of elements, two things are true:
