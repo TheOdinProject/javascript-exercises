@@ -8,27 +8,15 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(nums) {
-  let sum = 0;
-  nums.forEach((element) => {
-    sum += element;
-  })
-  return sum;
+  return nums.reduce((total, current) => total + current, 0);
 };
 
 const multiply = function(nums) {
-  product = 1;
-  nums.forEach((element) => {
-    product *= element;
-  });
-  return product;
+  return nums.reduce((product, current) => product * current);
 };
 
 const power = function(base, power) {
-  let product = 1;
-  for (let i = 0; i < power; i++) {
-    product *= base;
-  }
-	return product;
+	return Math.pow(base, power);
 };
 
 const factorial = function(num) {
