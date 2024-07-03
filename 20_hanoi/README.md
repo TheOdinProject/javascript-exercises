@@ -1,7 +1,7 @@
 # Exercise 20 - hanoi
 
 Good job, you have come a very long way. You should be proud of yourself for making it this far. At this point, you hopefully feel comfortable
-with recursion, and so, this **final recursive exercise** should give you a proper challenge and take your abilities to the _next_ level.
+with recursion, and so, this **final recursive exercise** should give you a proper challenge and take your abilities to the *next* level.
 
 Tower of Hanoi is a classic challenge in which we have 3 towers. Tower 2 and tower 3 are empty.
 Tower 1 has `n` disks. The goal is to move all disks from tower 1 to tower 3 so that they are exactly the in the same order. For instance:
