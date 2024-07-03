@@ -17,11 +17,11 @@ Tower 1 has `n` disks. The goal is to move all disks from tower 1 to tower 3 so 
 The rules are as follows:
 - Each disk has a length. For abstraction purposes, we will imagine each disk as an integer with that disk's length.
 - We can only move 1 disk at a time between any of the towers
-- The towers are modelled as stacks. We can move disks from the top and add them to the top with the `Array.prototype.pop` and `Array.prototype.push` methods.
+- The towers are modelled as stacks. We can move disks from the top of one stack to the top of another stack with the `Array.prototype.pop` and `Array.prototype.push` methods.
 - **Disks can only be placed on top of disks that are smaller**. For instance, we cannot have the tower `[3, 4]` but `[4, 3]` is fine.
 
-Your task is to create a function, `hanoi`, that when given an integer `n` will perform the required operations to transport all the numbers from the `first tower`
-onto the `third tower`.
+Your task is to create a function, `hanoi(n)`, that when given the number of disks in the starting tower (`n`), will return an array. The first element of this array will be the towers' initial state. The last element will be the towers' final state. Every intermediary element will represent a step to get from the initial position to the final position.
+The function **must** return a solution in the minimum number of moves. i.e. there will be no duplicates in the array returned.
 
 For example, lets say we had given this function `3`, it will then output the Tower of Hanoi solution as a series of steps:
 
