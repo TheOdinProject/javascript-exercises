@@ -18,7 +18,7 @@ The rules are as follows:
 - Each disk has a length. For abstraction purposes, we will imagine each disk as an integer with that disks' length.
 - We can only move 1 disk at a time between any of the towers
 - The towers are modelled as stacks. We can move disks from the top and add them to the top with the `Array.prototype.pop` and `Array.prototype.push` methods.
-- **Disks can only be placed on top of disks that are smaller**. For instance, we cannot have the following tower: `[3, 4]`. It would violate the rules
+- **Disks can only be placed on top of disks that are smaller**. For instance, we cannot have the tower `[3, 4]` but `[4, 3]` is fine.
 
 Your task is to create a function, `hanoi`, that when given an integer `n` will perform the required operations to transport all the numbers from the `first tower`
 onto the `third tower`.
