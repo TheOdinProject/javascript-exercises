@@ -15,7 +15,7 @@ Tower 1 has `n` disks. The goal is to move all disks from tower 1 to tower 3 so 
 ```
 
 The rules are as follows:
-- Each disk has a length. For abstraction purposes, we will imagine each disk as an integer with that disks' length.
+- Each disk has a length. For abstraction purposes, we will imagine each disk as an integer with that disk's length.
 - We can only move 1 disk at a time between any of the towers
 - The towers are modelled as stacks. We can move disks from the top and add them to the top with the `Array.prototype.pop` and `Array.prototype.push` methods.
 - **Disks can only be placed on top of disks that are smaller**. For instance, we cannot have the tower `[3, 4]` but `[4, 3]` is fine.
