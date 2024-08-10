@@ -19,8 +19,6 @@ You will notice in this exercise that there are multiple tests (see in file `rep
 
 - Take note of the above function call- how exactly is it being called?
 
-- You're going to want to use a loop for this one.
-
 - Create a variable to hold the string you're going to return, create a loop that repeats the given number of times and add the given string to the result on each loop.
 
 - If running `npm test repeatString.spec.js` returns results similar to the below, make sure you have enabled the rest of the tests, as described in the instructions above.
