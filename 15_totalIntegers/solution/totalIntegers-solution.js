@@ -1,4 +1,5 @@
-const totalIntegers = function (obj, count = 0) {
+const totalIntegers = function (obj) {
+  let count = 0;
   const isObject = (value) => typeof value === 'object' && value !== null;
 
   if (typeof obj !== 'object' || obj === null) {
