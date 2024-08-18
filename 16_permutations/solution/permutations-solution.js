@@ -1,9 +1,6 @@
-const permutations = function (original, currentPermutations) {
-  if (original.length === 1) return original;
-
-  const perms = currentPermutations
-    ? currentPermutations
-    : original.map((el) => [el]);
+const permutations = function (original, currentPermutations = original.map((num) => [num])) {
+  if (original.length === 0) return [];
+  if (original.length === 1) return [original];
 
   const newPerms = [];
   perms.forEach((el) => {
