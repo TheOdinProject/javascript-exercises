@@ -1,17 +1,27 @@
 const permutations = function (
   original,
-  currentPermutations = original.map((num) => [num]),
+  partialPermutations = original.map((num) => [num]),
 ) {
-  if (original.length < 2) return [original];
+  if (original.length <= 1) return [original];
 
-  const newPerms = [];
-  currentPermutations.forEach((el) => {
-    const missing = original.filter((item) => !el.includes(item));
-    missing.forEach((itemMissing) => newPerms.push([...el, itemMissing]));
+  const newPartialPermutations = [];
+  partialPermutations.forEach((partialPermutation) => {
+    const missingNums = original.filter(
+      (num) => !partialPermutation.includes(num),
+    );
+    missingNums.forEach((missingNum) =>
+      newPartialPermutations.push([...partialPermutation, missingNum]),
+    );
   });
 
-  if (newPerms.every((el) => el.length === original.length)) return newPerms;
-  return permutations(original, newPerms);
+  // We can pick any valid index because all of the elements will be the same length
+  const ANY_INDEX = 0;
+
+  if (newPartialPermutations[ANY_INDEX].length === original.length) {
+    return newPartialPermutations;
+  }
+
+  return permutations(original, newPartialPermutations);
 };
 
 // Do not edit below this line
