@@ -19,6 +19,7 @@ The rules are as follows:
 - **Disks can only be placed on top of disks that are smaller**. For instance, we cannot have the tower `[3, 4]` but `[4, 3]` is fine.
 
 Your task is to create a function, `hanoi(n)`, that when given the number of disks in the starting tower (`n`), will return an array. The first element of this array will be the towers' initial state. The last element will be the towers' final state. Every intermediary element will represent a step to get from the initial position to the final position.
+
 The function **must** return a solution in the minimum number of moves. i.e. there will be no duplicates in the array returned.
 
 For example, lets say we had given this function `3`, it will then output the Tower of Hanoi solution as a series of steps:
