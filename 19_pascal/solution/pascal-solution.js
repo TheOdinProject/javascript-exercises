@@ -4,17 +4,17 @@ const pascal = function (counter, currentLine = [1]) {
   }
 
   const halfOfNextLine = currentLine.reduce(
-    (accumulator, currentElement, index, originalArray) => {
-      const nextElement = originalArray[index + 1]
-      if (currentElement <= nextElement) {
-        return [...accumulator, currentElement + nextElement];
+    (numbers, currentNumber, index) => {
+      const nextNumber = currentLine[index + 1];
+      if (currentNumber <= nextNumber) {
+        return [...numbers, currentNumber + nextNumber];
       }
-      return accumulator;
+      return numbers;
     },
     [1],
   );
 
-  // Notice that pascal triangle's lines are always palindromic in nature. 
+  // Notice that pascal triangle's lines are always palindromic in nature.
   // We only need the first half to obtain the information to construct the second half
   const joined = [...halfOfNextLine, ...halfOfNextLine.reverse()];
 
