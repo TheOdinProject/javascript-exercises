@@ -22,7 +22,7 @@ Your task is to create a function, `hanoi(n)`, that when given the number of dis
 
 The function **must** return a solution in the minimum number of moves. i.e. there will be no duplicates in the array returned.
 
-For example, lets say we had given this function `3`, it will then output the Tower of Hanoi solution as a series of steps:
+For example, `hanoi(3)` will output the Tower of Hanoi solution as a series of steps:
 
 ```
 [
