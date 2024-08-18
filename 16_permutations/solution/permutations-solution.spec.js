@@ -1,10 +1,13 @@
 const permutations = require("./permutations-solution");
 
 describe("permutations", () => {
-  test("Works for array of size one", () => {
-    expect(permutations([1]).sort()).toEqual([1].sort());
+  test("1 possible permutation for a set containing 0 numbers", () => {
+    expect(permutations([]).sort()).toEqual([[]].sort());
   });
-  test("Works for array of size two", () => {
+  test("1 possible permutation for a set containing 1 number", () => {
+    expect(permutations([1]).sort()).toEqual([[1]].sort());
+  });
+  test("2 possible permutations for a set containing 2 numbers", () => {
     expect(permutations([1, 2]).sort()).toEqual(
       [
         [1, 2],
@@ -12,7 +15,7 @@ describe("permutations", () => {
       ].sort(),
     );
   });
-  test("Works for array of size three", () => {
+  test("6 possible permutations for a set containing 3 numbers", () => {
     expect(permutations([1, 2, 3]).sort()).toEqual(
       [
         [1, 2, 3],
@@ -24,7 +27,7 @@ describe("permutations", () => {
       ].sort(),
     );
   });
-  test("Works for array of size four", () => {
+  test("24 possible permutations for a set containing 4 numbers", () => {
     expect(permutations([1, 2, 3, 4]).sort()).toEqual(
       [
         [1, 2, 3, 4],
