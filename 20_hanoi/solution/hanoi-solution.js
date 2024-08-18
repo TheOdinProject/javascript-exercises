@@ -1,26 +1,21 @@
 const hanoi = function (
   n,
-  fromTowerIndex = 0,
-  storageTowerIndex = 1,
-  toTowerIndex = 2,
-  towers = [
-    Array(n)
-      .fill() // Array function creates an array with "empty" slots which map does not iterate over
-      .map((_, i) => n - i),
-    [],
-    [],
-  ],
-  steps = [towers.map((tower) => [...tower])],
+  fromTower = 0,
+  storageTower = 1,
+  toTower = 2,
+  steps = [],
 ) {
-  if (n === 0) return steps;
+  if (n <= 0) {
+    return steps;
+  }
 
-  hanoi(n - 1, fromTowerIndex, toTowerIndex, storageTowerIndex, towers, steps);
+  hanoi(n - 1, fromTower, toTower, storageTower, steps);
 
-  towers[toTowerIndex].push(towers[fromTowerIndex].pop());
+  steps.push(
+    `Move disc ${n} from tower ${fromTower + 1} to tower ${toTower + 1}`,
+  );
 
-  steps.push(towers.map((tower) => [...tower]));
-
-  hanoi(n - 1, storageTowerIndex, fromTowerIndex, toTowerIndex, towers, steps);
+  hanoi(n - 1, storageTower, fromTower, toTower, steps);
 
   return steps;
 };
