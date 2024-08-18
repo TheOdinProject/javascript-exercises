@@ -1,9 +1,11 @@
-const permutations = function (original, currentPermutations = original.map((num) => [num])) {
-  if (original.length === 0) return [];
-  if (original.length === 1) return [original];
+const permutations = function (
+  original,
+  currentPermutations = original.map((num) => [num]),
+) {
+  if (original.length < 2) return [original];
 
   const newPerms = [];
-  perms.forEach((el) => {
+  currentPermutations.forEach((el) => {
     const missing = original.filter((item) => !el.includes(item));
     missing.forEach((itemMissing) => newPerms.push([...el, itemMissing]));
   });
