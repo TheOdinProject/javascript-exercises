@@ -4,7 +4,7 @@ const isObject = (value) => typeof value === 'object' && value !== null;
 const totalIntegers = function (obj) {
   let count = 0;
 
-  if (typeof obj !== 'object' || obj === null) {
+  if (!isObject(obj)) {
     return;
   }
 
