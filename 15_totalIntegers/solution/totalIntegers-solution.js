@@ -1,4 +1,4 @@
-// We could define this helper function inside of totalIntegers however that would not be best practice as everytime that the recursive totalIntegers is run it would re-create the isObject function when it could just re-use it.
+// The extra null check is required since typeof null === "object" evaluates to true
 const isObject = (value) => typeof value === 'object' && value !== null;
 
 const totalIntegers = function (obj) {
