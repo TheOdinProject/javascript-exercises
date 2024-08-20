@@ -42,11 +42,11 @@ describe("contains", () => {
     expect(contains(object, "e")).toBe(true);
   });
 
-  test("true if the provided array is a reference to an array that exists within the object", () => {
+  test("true if the object contains the same object by reference", () => {
     expect(contains(object, meaningOfLifeArray)).toBe(true);
   });
 
-  test("false if the provided array has the same structure as an array within the object, however the reference is not the same", () => {
+  test("false if no matching object reference", () => {
     expect(contains(object, [42])).toBe(false);
   });
 
