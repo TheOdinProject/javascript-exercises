@@ -7,6 +7,6 @@ Objects are compared by reference.
 Examples:
 
 ```javascript
-contains({ foo: "foo" }, "bar") // true
+contains({ foo: "foo" }, "bar") // false
 contains({ foo: { bar: "bar" } }, "bar") // true
 ```
