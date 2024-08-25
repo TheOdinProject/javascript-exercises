@@ -22,7 +22,7 @@ Your task is to create a function, `hanoi(n)`, that when given the number of dis
 
 The function **must** return a solution in the minimum number of moves. i.e. there will be no duplicates in the solution array returned.
 
-For example, here is tho expected output of `hanoi(3)`:
+For example, here is the expected output of `hanoi(3)`:
 
 ```javascript
 [
