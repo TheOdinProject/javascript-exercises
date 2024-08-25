@@ -13,5 +13,6 @@ Fourth row: `[0+1, 1+2, 2+1, 1+0]` or simply `[1, 3, 3, 1]`
 
 The pattern continues forever.
 
-Your task is to create a *recursive* function, `pascal` - that will take an input `n` and output the 
-`n`th pascal's row.
+Your task is to create a *recursive* function, `pascal` - that will take an input `n` and output the `n`th pascal's row as an array of numbers.
+
+For example, `pascal(3)` should return `[1, 2, 1]`.
