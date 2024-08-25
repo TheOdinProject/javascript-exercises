@@ -2,10 +2,10 @@ const permutations = require("./permutations-solution");
 
 describe("permutations", () => {
   test("1 possible permutation for a set containing 0 numbers", () => {
-    expect(permutations([]).sort()).toEqual([[]].sort());
+    expect(permutations([])).toEqual([[]]);
   });
   test("1 possible permutation for a set containing 1 number", () => {
-    expect(permutations([1]).sort()).toEqual([[1]].sort());
+    expect(permutations([1])).toEqual([[1]]);
   });
   test("2 possible permutations for a set containing 2 numbers", () => {
     expect(permutations([1, 2]).sort()).toEqual(
