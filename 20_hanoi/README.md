@@ -18,7 +18,11 @@ The rules are as follows:
 - The towers are modelled as stacks. We can move disks from the top of one stack to the top of another stack with the `Array.prototype.pop` and `Array.prototype.push` methods.
 - **Disks can only be placed on top of disks that are smaller**. For instance, we cannot have the tower `[3, 4]` but `[4, 3]` is fine.
 
-Your task is to create a function, `hanoi(n)`, that when given the number of disks in the starting tower (`n`), will return an array containing the steps that have to be taken in order to get from the initial state to the final state.
+Your task is to create a function, `hanoi(n)`, that when given the number of disks in the starting tower (`n`), will return an array containing the steps that have to be taken in order to get from the initial state to the final state. Each step will be a string in the form:
+
+```javascript
+`Move disc ${discNumber} from tower ${fromTower} to tower ${toTower}`
+```
 
 The function **must** return a solution in the minimum number of moves. i.e. there will be no duplicates in the solution array returned.
 
