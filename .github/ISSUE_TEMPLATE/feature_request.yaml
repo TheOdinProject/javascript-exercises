@@ -46,6 +46,11 @@ body:
         - [ ] Requirement 1
         - [ ] Requirement 2
         - [ ] Requirement 3
+
+        E.g.:
+        - [ ] A theme toggle is present on the dashboard
+        - [ ] Clicking the theme toggle changes between light and dark
+        - [ ] A user's theme choice persists after leaving the website
     validations:
       required: true
 
