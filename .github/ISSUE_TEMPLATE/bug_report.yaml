@@ -79,7 +79,7 @@ body:
       label: Device
       placeholder: iPhone6
     validations:
-      required: false
+      required: true
 
   - type: input
     id: os
@@ -87,7 +87,7 @@ body:
       label: OS
       placeholder: iOS
     validations:
-      required: false
+      required: true
 
   - type: input
     id: browser
@@ -95,7 +95,7 @@ body:
       label: Browser and its version
       placeholder: Chrome 122
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: additional-comments
