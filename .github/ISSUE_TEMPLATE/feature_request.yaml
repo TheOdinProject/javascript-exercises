@@ -26,16 +26,8 @@ body:
           required: true
         - label: "The title of this issue follows the `<Location of the improvement>: <Brief description of the improvement>` format, e.g. Exercises: Add exercise on XYZ"
           required: true
-
-  - type: dropdown
-    id: assignee
-    attributes:
-      label: (Optional) Work on this issue
-      description: Are you interested in working on this issue and would like to be assigned to it?
-      options:
-        - "No"
-        - "Yes"
-      default: 0
+        - label: I am interested in working on this issue and would like to be assigned to it
+          required: false
 
   - type: textarea
     id: improvement-description
