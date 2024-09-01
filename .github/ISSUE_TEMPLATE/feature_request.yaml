@@ -33,8 +33,8 @@ body:
       label: (Optional) Work on this issue
       description: Are you interested in working on this issue and would like to be assigned to it?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
       default: 0
 
   - type: textarea
