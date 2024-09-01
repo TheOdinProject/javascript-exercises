@@ -37,7 +37,6 @@ body:
         - No
       default: 0
 
-
   - type: textarea
     id: improvement-description
     attributes:
@@ -65,4 +64,4 @@ body:
       description: Provide any extra information that might be helpful, such as links to Discorddiscussions, screenshots, or other relevant details.
       placeholder: We ❤️ open source
     validations:
-        required: false
+      required: false
