@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing your ideas to make our project better!
+        ## Thank you for contributing your ideas to make our project better!
 
         To help us understand and evaluate your suggestion in a reasonable amount of time, please provide detailed information below.
 
@@ -26,7 +26,7 @@ body:
           required: true
         - label: "The title of this issue follows the `<Location of the improvement>: <Brief description of the improvement>` format, e.g. Exercises: Add exercise on XYZ"
           required: true
-        - label: I am interested in working on this issue and would like to be assigned to it
+        - label: (Optional) I am interested in working on this issue and would like to be assigned to it
           required: false
 
   - type: textarea
