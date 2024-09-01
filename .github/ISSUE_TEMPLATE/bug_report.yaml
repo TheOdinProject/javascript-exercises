@@ -1,4 +1,4 @@
-name: 🌟 Report a bug
+name: 🐞 Report a bug
 description: Create a report to help us fix something that is not working correctly
 title: "Bug: <Brief description of the bug>"
 labels: ["Status: Needs Review", "Type: Bug"]
@@ -32,7 +32,7 @@ body:
   - type: textarea
     id: bug-description
     attributes:
-      label: bug Description
+      label: Bug Description
       description: Clearly describe the bug. Include any screenshots that may help show the bug in action.
     validations:
       required: true
@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: bug-reproducement
     attributes:
-      label: How to reproduce the Bug
+      label: How to reproduce the bug
       description: "List what steps one might need to take in order to reproduce this bug"
       value: |
         1. Step 1
@@ -77,7 +77,7 @@ body:
     id: device
     attributes:
       label: Device
-      placeholder: e.g. iPhone6
+      placeholder: iPhone6
     validations:
       required: false
 
@@ -85,26 +85,17 @@ body:
     id: os
     attributes:
       label: OS
-      placeholder: e.g. iOS
+      placeholder: iOS
     validations:
       required: false
 
   - type: input
     id: browser
     attributes:
-      label: Browser
-      placeholder: e.g. chrome
+      label: Browser and its version
+      placeholder: Chrome 122
     validations:
       required: false
-
-  - type: input
-    id: version
-    attributes:
-      label: Version
-      placeholder: e.g. 22
-    validations:
-      required: false
-
 
   - type: textarea
     id: additional-comments
