@@ -18,7 +18,7 @@ body:
     id: prerequisites
     attributes:
       label: Prerequisites
-      description: "Please confirm the following:"
+      description: "Please confirm the following prequisites are met:"
       options:
         - label: I have thoroughly read and understand [The Odin Project Contributing Guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md)
           required: true
@@ -26,8 +26,17 @@ body:
           required: true
         - label: "The title of this issue follows the `<Location of the improvement>: <Brief description of the improvement>` format, e.g. Exercises: Add exercise on XYZ"
           required: true
-        - label: (Optional) I am interested in working on this issue and would like to be assigned to it
-          required: false
+
+  - type: dropdown
+    id: assignee
+    attributes:
+      label: (Optional) Work on this issue
+      description: Are you interested in working on this issue and would like to be assigned to it?
+      options:
+        - Yes
+        - No
+      default: 0
+
 
   - type: textarea
     id: improvement-description
