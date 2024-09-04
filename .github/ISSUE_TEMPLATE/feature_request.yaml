@@ -1,0 +1,60 @@
+name: 🌟 Suggest an improvement
+description: Suggest a new feature or enhancement
+title: "<Location of the improvement>: <Brief description of the improvement>"
+labels: ["Status: Needs Review"]
+assignees:
+  - nil
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing your ideas to make our project better!
+
+        To help us understand and evaluate your suggestion in a reasonable amount of time, please provide detailed information below.
+
+        If you have any questions or are unsure about anything, don't be afraid to ask! The maintainers are here to help.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: "Please confirm the following prequisites are met:"
+      options:
+        - label: I have thoroughly read and understand [The Odin Project Contributing Guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md)
+          required: true
+        - label: I have searched the existing issues to ensure this improvement hasn't been suggested before (please have a look through our [open issues list](https://github.com/TheOdinProject/javascript-exercises/issues) to make sure)
+          required: true
+        - label: "The title of this issue follows the `<Location of the improvement>: <Brief description of the improvement>` format, e.g. `Exercises: Add exercise on XYZ`"
+          required: true
+        - label: (Optional) I am interested in working on this issue and would like to be assigned to it
+          required: false
+
+  - type: textarea
+    id: improvement-description
+    attributes:
+      label: Improvement Description
+      description: Clearly describe the proposed feature or enhancement. Explain its purpose, how it would be useful, and what problem(s) it would solve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the specific requirements that must be met for this request to be considered complete. Use checkbox items to outline each criterion.
+      placeholder: |
+        - [ ] A theme toggle is present on the dashboard
+        - [ ] Clicking the theme toggle changes between light and dark
+        - [ ] A user's theme choice persists after leaving the website
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: additional-comments
+    attributes:
+      label: (Optional) Additional Comments
+      description: Provide any extra information that might be helpful, such as links to Discorddiscussions, screenshots, or other relevant details.
+      placeholder: We ❤️ open source
+    validations:
+      required: false
