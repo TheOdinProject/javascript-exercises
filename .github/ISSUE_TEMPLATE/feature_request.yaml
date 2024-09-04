@@ -42,12 +42,7 @@ body:
     attributes:
       label: Acceptance Criteria
       description: List the specific requirements that must be met for this request to be considered complete. Use checkbox items to outline each criterion.
-      value: |
-        - [ ] Requirement 1
-        - [ ] Requirement 2
-        - [ ] Requirement 3
-
-        E.g.:
+      placeholder: |
         - [ ] A theme toggle is present on the dashboard
         - [ ] Clicking the theme toggle changes between light and dark
         - [ ] A user's theme choice persists after leaving the website

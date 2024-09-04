@@ -42,12 +42,7 @@ body:
     attributes:
       label: How to reproduce the bug
       description: "List what steps one might need to take in order to reproduce this bug"
-      value: |
-        1. Step 1
-        2. Step 2
-        3. Step 3
-
-        E.g.:
+      placeholder: |
         1. Log in
         2. Visit a lesson page
         3. Click the complete button
@@ -60,12 +55,7 @@ body:
     attributes:
       label: Expected Behavior
       description: A brief description of what you expected to happen
-      value: |
-        1. Step 1
-        2. Step 2
-        3. Step 3
-
-        E.g.:
+      placeholder: |
         1. Log in
         2. Visit a lesson page
         3. Click the complete button
