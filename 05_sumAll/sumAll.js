@@ -1,8 +1,6 @@
 const sumAll = function (start, end) {
   //   The function first checks if the inputs are valid numbers and positive. If not, it returns 'ERROR'
   if (
-    typeof start !== "number" ||
-    typeof end !== "number" ||
     start < 0 ||
     end < 0 ||
     !Number.isInteger(start) ||
