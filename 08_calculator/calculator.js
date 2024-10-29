@@ -1,5 +1,5 @@
 const add = function() {
-	
+	allo
 };
 
 const subtract = function() {
