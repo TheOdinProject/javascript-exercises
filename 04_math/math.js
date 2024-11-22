@@ -1,4 +1,4 @@
-const a = 1 - 1
+const a = 1 - 1 // Freebie!!! This is the answer to "one minus one"
 const b = "one plus eight"
 const c = "22 times three"
 const d = "the *remainder* of 5/4"
