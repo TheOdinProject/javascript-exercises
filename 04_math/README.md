@@ -1,4 +1,4 @@
-# Exercise 03 - math
+# Exercise 04 - math
 
 Replace the strings to the right of the `=` with the expression they describe. Do **not** manually enter the answers to the equation.
 
