@@ -1,4 +1,4 @@
-# Exercise 02 - repeatString
+# Exercise 03 - script
 
 Modify the code so it returns `true` when the number is greater than or equal to 10, and `false` if it is less than 10.
 
