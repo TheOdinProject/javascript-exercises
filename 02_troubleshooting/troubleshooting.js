@@ -1,12 +1,12 @@
 function troubleshooting() {
-	const a = 1;
-	const b = 1;
+  const a = 1;
+  const b = 1;
 
-	let result;
+  let result;
 
-	result = "a" + "b";
+  result = "a" + "b";
 
-	return result;
+  return result;
 }
 
 // Do not change this
