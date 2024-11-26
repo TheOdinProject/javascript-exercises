@@ -1,4 +1,4 @@
-function troubleshooting() {
+function addNumbers() {
   const a = 1;
   const b = 1;
 
@@ -10,4 +10,4 @@ function troubleshooting() {
 }
 
 // Do not change this
-module.exports = troubleshooting;
+module.exports = addNumbers;
