@@ -4,7 +4,7 @@ function troubleshooting() {
 
   let result;
 
-  result = "a" + "b";
+  result = "a" + "b"; // <------ EDIT THIS LINE
 
   return result;
 }
