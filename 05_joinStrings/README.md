@@ -21,10 +21,11 @@ Note: To make the tests pass, you will need to use exact values and wording (as 
 You will edit your code to make it easier to read using the following instructions:
 
 1. Create 2 new variables: `fullName` and `age`
-Do NOT simply type the full name and age into the new variables. Instead, use the pre-existing variables, with the calculations that are currently inside of `greeting`.
+- Do NOT simply type the full name and age into the new variables
+- Instead, use the pre-existing variables, with the calculations that are currently inside of `greeting`
 
 2. Edit the `greeting` string to use `fullName` and `age` instead of the other 4 variables.
-`greeting` should looks something like: `"Hello! My name is " + fullName`
+- `greeting` should looks something like: `"Hello! My name is " + fullName`
 
 The output should be unchanged once you are done.
 
