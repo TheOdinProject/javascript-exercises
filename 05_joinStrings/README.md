@@ -25,7 +25,10 @@ You will edit your code to make it easier to read using the following instructio
 - Instead, use the pre-existing variables, with the calculations that are currently inside of `greeting`
 
 2. Edit the `greeting` string to use `fullName` and `age` instead of the other 4 variables.
-- `greeting` should looks something like: `"Hello! My name is " + fullName`
+- `greeting` should look something like:
+```js
+"Hello! My name is " + fullName
+```
 
 The output should be unchanged once you are done.
 
