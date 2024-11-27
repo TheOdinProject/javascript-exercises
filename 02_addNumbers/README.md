@@ -6,4 +6,4 @@ Currently, it is not returning the correct value.
 
 ## Hints
 
-- You only need to edit line 16.
+- You only need to edit the strings on line 7.
