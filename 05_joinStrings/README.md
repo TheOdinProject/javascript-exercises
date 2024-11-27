@@ -30,7 +30,10 @@ You will edit your code to make it easier to read using the following instructio
 "Hello! My name is " + fullName
 ```
 
-The output should be unchanged once you are done.
+Run all the tests one last time to ensure that the output remains unchanged:
+```bash
+npm test joinStrings.spec.js
+```
 
 ## Hints
 
