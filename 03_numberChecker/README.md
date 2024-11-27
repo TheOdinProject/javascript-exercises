@@ -7,3 +7,5 @@ Currently, the code returns `true` if the number is `6`, otherwise, it returns `
 ## Hints
 
 - You only need to edit line 2.
+
+- Look at the docs for comparison operators in JavaScript for a quick reference.
