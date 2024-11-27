@@ -1,6 +1,6 @@
-const values = require('./follow-example')
+const values = require('./joinStrings-example')
 
-describe('follow-example', () => {
+describe('joinStrings-example', () => {
   test('birthYear is 1947', () => {
     expect(values.birthYear).toEqual(1947);
   });
