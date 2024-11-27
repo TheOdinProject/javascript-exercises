@@ -1,4 +1,4 @@
-# Exercise 08 - Calculator
+# Exercise 12 - Calculator
 
 The goal for this exercise is to create a calculator that does the following:
 
