@@ -5,7 +5,6 @@ Replace the strings to the right of the `=` with the expression they describe. D
 Currently, the variables are strings. They need to be math equations instead.
 
 To help you, the first variable has been completed for you:
-`math.js`
 ```js
 const a = 1 - 1 // Freebie!!! This is the answer to "one minus one"
 ```
