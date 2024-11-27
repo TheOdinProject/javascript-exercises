@@ -15,11 +15,11 @@
 
 // Do not change this
 module.exports = {
-  firstName: typeof firstName === 'undefined' ? null : firstName,
-  lastName: typeof lastName === 'undefined' ? null : lastName,
-  thisYear: typeof thisYear === 'undefined' ? null : thisYear,
-  birthYear: typeof birthYear === 'undefined' ? null : birthYear,
-  greeting: typeof greeting === 'undefined' ? null : greeting,
-  fullName: typeof fullName === 'undefined' ? null : fullName,
-  age: typeof age === 'undefined' ? null : age
+  firstName: typeof firstName === 'undefined' ? undefined : firstName,
+  lastName: typeof lastName === 'undefined' ? undefined : lastName,
+  thisYear: typeof thisYear === 'undefined' ? undefined : thisYear,
+  birthYear: typeof birthYear === 'undefined' ? undefined : birthYear,
+  greeting: typeof greeting === 'undefined' ? undefined : greeting,
+  fullName: typeof fullName === 'undefined' ? undefined : fullName,
+  age: typeof age === 'undefined' ? undefined : age
 }
