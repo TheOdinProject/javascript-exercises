@@ -15,16 +15,7 @@ After understanding the example code, you will recreate the snippet on your own 
 2. Create a 5th variable, `greeting`, that is constructed from the previous 4 variables
 - It should contain a greeting that includes the person's full name and age
 
-Note: To make the tests pass, you will need to use these exact values. The wording also must be an exact match. If the tests fail, look at the feedback in your terminal then check for spacing, capitalization, and punctation:
-```
-First name: Carlos
-Last name: Stevenson
-This year: 1965
-Birth year: 1947
-
-The greeting should read: "Hello! My name is Carlos Stevenson and I am 18 years old."
-```
-For your convenience, there is a similar comment to this inside `follow.js`.
+Note: To make the tests pass, you will need to use exact values and wording (as you will see described in `joinStrings.js`). If the tests fail, look at the feedback in your terminal then check your spacing, capitalization, and punctation.
 
 ## Step 3: Optimize
 You will edit your code to make it easier to read using the following instructions:
