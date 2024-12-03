@@ -6,7 +6,7 @@ In this directory you will find 2 other files:
   1. `helloWorld.js`
   2. `helloWorld.spec.js`
 
-This setup should be the same for all of the exercises.  The plain javascript file is where you'll write your code, and the `spec` file contains the tests that verify your code is functional.
+This setup should be similar for all of the exercises.  The plain javascript file is where you'll write your code, and the `spec` file contains the tests that verify your code is functional.
 
 Let's look at the spec file first:
 ```javascript
@@ -47,4 +47,4 @@ const helloWorld = function() {
 module.exports = helloWorld
 ```
 
-For the most part we've set up these tests in such a way that you only have to write the code being tested.  You should not have to worry about importing or exporting anything at this stage.. so just work around that bit of the code and write what it takes to make them pass!
+For the most part we've set up these tests in such a way that you only have to update or write the code being tested.  You should not have to worry about importing or exporting anything at this stage.. so just work around that bit of the code and write what it takes to make them pass!
