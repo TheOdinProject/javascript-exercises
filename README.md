@@ -38,13 +38,3 @@ The first exercise, `helloWorld`, will walk you through the process in-depth.
 ## Debugging
 
 To debug functions, you can run the tests in the Visual Studio Code debugger terminal. You can open this by clicking the "Run and Debug" icon on the left or pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>, then clicking JavaScript Debug Terminal. You will be able to set breakpoints as you would in the Chrome DevTools debugger. You can run `npm test exerciseName.spec.js` to then execute your code up until your breakpoint and step through your code as necessary. **NOTE**: To take advantage of the debugger, you **MUST** run the script in the debugger terminal, not the bash or zsh terminal.
-
-## Adding a new exercise
-
-To add a new exercise:
-
-1. Be sure to run `npm install` at the root of the `javascript-exercises` directory.
-2. Run the command `npm run generate`.
-3. When prompted, enter the name of the new exercise in "camelCase" syntax.
-
-After entering an exercise name, a new directory with the necessary files will be created. You will then need to update the `README.md` and `spec.js` files as well as the files in the `solution` directory of the new exercise.
