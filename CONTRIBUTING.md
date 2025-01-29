@@ -24,7 +24,7 @@ If a maintainer has approved a new exercise to be added, the new exercise(s) mus
 To generate a new exercise template, do the following:
 
 1. Be sure to run `npm install` at the root of the `javascript-exercises` directory to install the necessary dependencies.
-2. Run the command `npm run generate`.
-3. When prompted, enter the name of the new exercise in "camelCase" syntax.
+1. Run the command `npm run generate`.
+1. When prompted, enter the name of the new exercise in "camelCase" syntax.
 
 After entering an exercise name, a new directory with the necessary files will be created. You will then need to update the `README.md` and `spec.js` files as well as the files in the `solution` directory of the new exercise.
