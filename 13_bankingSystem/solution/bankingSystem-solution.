@@ -1,0 +1,33 @@
+const BankAccount = require("./bankingSystem");
+
+describe("BankAccount Class", () => {
+    let account1, account2;
+
+    beforeEach(() => {
+        account1 = new BankAccount(101, "Alice", 1000);
+        account2 = new BankAccount(102, "Bob", 500);
+    });
+
+    test("should create a new account with initial balance", () => {
+        expect(account1.accountHolder).toBe("Alice");
+        expect(account1.balance).toBe(1000);
+    });
+
+    test("should deposit money into an account", () => {
+        expect(account1.deposit(200)).toBe("Deposited $200 into account 101. New balance: $1200");
+    });
+
+    test("should withdraw money if sufficient balance", () => {
+        expect(account1.withdraw(500)).toBe("Withdrew $500 from account 101. New balance: $500");
+    });
+
+    test("should not allow withdrawal of more than balance", () => {
+        expect(() => account1.withdraw(2000)).toThrow("Insufficient funds.");
+    });
+
+    test("should transfer money between accounts", () => {
+        account1.transfer(300, account2);
+        expect(account1.balance).toBe(700);
+        expect(account2.balance).toBe(800);
+    });
+});
