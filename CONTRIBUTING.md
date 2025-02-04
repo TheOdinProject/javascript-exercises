@@ -19,6 +19,9 @@ This contributing guide assumes you have followed the instructions in our genera
 
 ### Adding New Exercises
 
+> [!IMPORTANT]
+> Please do not open a pull request with a new exercise unless you have opened an issue in this repo with your proposal **and** it has been approved by a maintainer.
+
 If a maintainer has approved a new exercise to be added, the new exercise(s) must follow the same format as existing exercises.
 
 To generate a new exercise template, do the following:
