@@ -27,12 +27,7 @@ describe('repeatString', () => {
       If this doesn't make sense, you should go read about functions here:
       https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-3 */
     const number = Math.floor(Math.random() * 1000);
-    /*The .match(/((hey))/g).length is a regex that will count the number of heys
-    in the result, which if your function works correctly will equal the number that
-    was randomly generated. */
-    expect(repeatString('hey', number).match(/((hey))/g).length).toEqual(
-      number
-    );
+    expect(repeatString('hey', number)).toBe('hey'.repeat(number));
   });
   test('works with blank strings', () => {
     expect(repeatString('', 10)).toEqual('');
