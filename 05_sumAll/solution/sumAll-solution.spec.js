@@ -2,7 +2,7 @@ const sumAll = require('./sumAll-solution');
 
 describe('sumAll', () => {
   test('sums numbers within the range', () => {
-    expect(sumAll(1, 4)).toEqual(10);
+    expect(sumAll(2, 4)).toEqual(9);
   });
   test('works with large numbers', () => {
     expect(sumAll(1, 4000)).toEqual(8002000);
