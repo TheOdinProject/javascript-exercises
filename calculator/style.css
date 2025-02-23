@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('./fonts/sf-pro-text-regular.woff');
+  font-style: normal;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100svh;
+  font-family: 'SF Pro';
+  font-weight: normal;
+  overflow: hidden;
+}
+.container {
+  background-color: #1c1c1c;
+  height: 500px;
+  min-width: 400px;
+  border-radius: 12px;
+  border: 10px solid #333;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.output-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-column: 1 / -1;
+  font-size: 3.5rem;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+button {
+  font-size: 2rem;
+  background-color: #505050;
+  color: #fff;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:active {
+  background-color: #3d3d3d;
+}
+
+.row-3 {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+.row-3:active {
+  background-color: #8a8a8a;
+}
+
+.row-4 {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.row-4:active {
+  background-color: #fda205;
+}
+
+.operator:focus {
+  background-color: #fda205;
+}
+
+.divide {
+  background-color: #ff9500;
+}
+
+.div1 {
+  grid-column: span 2;
+  border-radius: 8px;
+}
+
+.dot {
+  background-color: #505050;
+}
+
+.digit {
+  background-color: #ff9500;
+}

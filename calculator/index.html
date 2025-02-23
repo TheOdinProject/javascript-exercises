@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="output-box"></div>
+      <button class="backspace" value="backspace" data-key="Backspace">
+        <img src="./assets/clear.svg" alt="a backspace icon" />
+      </button>
+      <button class="row-3 clear" value="AC" data-key="AC">AC</button>
+      <button class="row-3" value="+/-" data-key="+/-">+/-</button>
+      <button class="row-3" value="%" data-key="%">%</button>
+      <button value="7" data-key="7">7</button>
+      <button value="8" data-key="8">8</button>
+      <button value="9" data-key="9">9</button>
+      <button class="row-4 operator divide" value="/" data-key="/">÷</button>
+      <button value="4" data-key="4">4</button>
+      <button value="5" data-key="5">5</button>
+      <button value="6" data-key="6">6</button>
+      <button class="row-4 operator" value="*" data-key="*">×</button>
+      <button value="1" data-key="1">1</button>
+      <button value="2" data-key="2">2</button>
+      <button value="3" data-key="3">3</button>
+      <button class="row-4 operator" value="-" data-key="-">-</button>
+      <button value="0" class="div1" data-key="0" data-key="0">0</button>
+      <button class="dot" value="." data-key="." data-key=".">.</button>
+      <button class="row-4 operator" value="+" data-key="+">+</button>
+      <button class="row-4 digit" value="=" data-key="=">=</button>
+    </main>
+    <script src="calculator.js"></script>
+  </body>
+</html>

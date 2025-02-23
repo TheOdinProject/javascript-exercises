@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gridSelector">
+      <pre>Select Number Of Grid</pre>
+      <p class="gridRange"><span id="range">50 x 50</span></p>
+      <input type="range" min="10" max="100" class="slider" id="selectRange" />
+    </div>
+    <div class="div-container">
+      <button id="eraser-btn">Eraser</button>
+      <button id="clear-btn">Clear Board</button>
+    </div>
+    <div class="container"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
