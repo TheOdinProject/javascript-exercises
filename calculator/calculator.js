@@ -58,6 +58,8 @@ function handleOperator(op) {
 
   operator = op;
   newNumFlag = true;
+  console.log(firstNum, currentNum);
+
   enableDotButton();
 }
 
@@ -103,27 +105,31 @@ btn.forEach((node) => {
     const operatorText = userInput.match(operatorPattern);
     const matchedOperators = operatorText ? operatorText.join('') : userInput;
 
-    if (userInput === 'backspace' && display !== '0' && userInput !== undefined) {
-      display = display.substring(0, display.length - 1);
-    } else if (userInput === 'AC' && display !== '0' && userInput !== undefined) {
-      if (confirm('¿𝙲𝚕𝚎𝚊𝚛 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐? 𝚈𝚊 𝚜𝚞𝚛𝚎?')) {
-        display = '0';
-        firstNum = null;
-        operator = null;
-        newNumFlag = true;
-      } else {
-        display = display;
-      }
-    } else if (userInput === '%') {
-      display = parseFloat(display) / 100;
-    } else if (userInput === '+/-' && display !== '0') {
-      display = parseFloat(display) * -1;
-    } else if (matchedText) {
-      handleNumber(matchedText);
-    } else if (matchedOperators) {
-      handleOperator(matchedOperators);
-    } else if (userInput === '=') {
-      handleEquals();
+    if (userInput === undefined) return;
+
+    switch (userInput) {
+      case 'backspace':
+        if (display !== '0') display = display.substring(0, display.length - 1);
+        break;
+      case 'AC':
+        if (display !== '0' && confirm('¿𝙲𝚕𝚎𝚊𝚛 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐? 𝚈𝚊 𝚜𝚞𝚛𝚎?')) {
+          display = '0';
+          firstNum = null;
+          operator = null;
+          newNumFlag = true;
+        }
+        break;
+      case '%':
+        display = parseFloat(display) / 100;
+        break;
+      case '+/-':
+        if (display !== '0') display = parseFloat(display) * -1;
+        break;
+      default:
+        if (matchedText) handleNumber(matchedText);
+        else if (matchedOperators) handleOperator(matchedOperators);
+        else if (userInput === '=') handleEquals();
+        break;
     }
 
     output.innerText = display;
@@ -133,17 +139,31 @@ btn.forEach((node) => {
 window.addEventListener('keydown', (event) => {
   const key = event.key;
 
-  if (key.match(/[0-9+\-*/.=%]/)) {
-    let button = document.querySelector(`[data-key="${key}"]`);
-    if (button) button.click(); // Simulate a button click
-  } else if (key === 'Escape') {
-    let acButton = document.querySelector(`[data-key="AC"]`);
-    if (acButton) acButton.click();
-  } else if (key === 'Enter') {
-    let equalButton = document.querySelector(`[data-key="="]`);
-    if (equalButton) equalButton.click();
-  } else if (key === 'Backspace' || key === 'Delete') {
-    let backspaceButton = document.querySelector(`[data-key="Backspace"]`);
-    if (backspaceButton) backspaceButton.click();
-  }
+  const keyMap = {
+    0: '0',
+    1: '1',
+    2: '2',
+    3: '3',
+    4: '4',
+    5: '5',
+    6: '6',
+    7: '7',
+    8: '8',
+    9: '9',
+    '.': '.',
+    '+': '+',
+    '-': '-',
+    '*': '*',
+    '/': '/',
+    '%': '%',
+    '=': '=',
+    Escape: 'AC',
+    Enter: '=',
+    Backspace: 'Backspace',
+    Delete: 'Backspace',
+  };
+
+  const button = document.querySelector(`[data-key="${keyMap[key]}"]`);
+
+  if (button) button.click(); // Simulate a button click
 });
