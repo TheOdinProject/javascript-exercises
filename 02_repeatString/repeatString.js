@@ -5,7 +5,7 @@ const repeatString = function(str, num) {
         result += str;
     }
     return result;
-
+    
 };
 
 // Do not edit below this line
