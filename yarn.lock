@@ -3079,6 +3079,11 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
+node-bin-setup@^1.0.0:
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.1.3.tgz"
+  integrity sha512-opgw9iSCAzT2+6wJOETCpeRYAQxSopqQ2z+N6BXwIMsQQ7Zj5M8MaafQY8JMlolRR6R1UXg2WmhKp0p9lSOivg==
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz"
@@ -3119,6 +3124,13 @@ node-releases@^2.0.13:
   version "2.0.13"
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.13.tgz"
   integrity sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==
+
+node@^23.11.0:
+  version "23.11.0"
+  resolved "https://registry.npmjs.org/node/-/node-23.11.0.tgz"
+  integrity sha512-IS7dwB4M8/iKCFuJVN4EQmMmpX1YLN/wLfkgcouPA99s9cQUpuUX7Ng0j0XIK+4Zhb4EhcDyea5P20hF26nVow==
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 normalize-path@^3.0.0:
   version "3.0.0"

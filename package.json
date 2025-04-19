@@ -37,5 +37,8 @@
     "testPathIgnorePatterns": [
       "generators/"
     ]
+  },
+  "dependencies": {
+    "node": "^23.11.0"
   }
 }
