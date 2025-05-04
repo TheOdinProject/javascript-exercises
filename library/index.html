@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css" />
+  </head>
+  <body>
+    <h1>My Book Library</h1>
+
+    <div class="library-container" id="books-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Read Status</th>
+          </tr>
+        </thead>
+        <tbody id="book-table-body">
+          <!-- Books will be inserted here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dialog__container">
+      <dialog>
+        <form method="dialog">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title />
+
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author />
+
+          <label for="year">Year</label>
+          <input type="text" name="year"" id="year" />
+
+          <label for="title">Read</label>
+          <input type="text" name="read" id="read" />
+
+          <div class="btn__container">
+            <button id="close" type="reset" autofocus>Cancel</button>
+            <button type="submit" id="confirm">Confirm</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+
+    <button id="add-new-book_btn">Add new book</button>
+    <script src="library.js"></script>
+  </body>
+</html>

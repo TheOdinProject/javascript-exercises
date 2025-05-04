@@ -1,75 +1,75 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  overflow: hidden;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow: hidden;
 }
 
 body {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 pre {
-  padding-top: 0.5rem;
+	padding-top: 0.5rem;
 }
 
 .flex-box {
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: calc(100vh - 50px);
-  background-color: lightgray;
-  border: 1px solid #ccc;
-  flex-wrap: wrap;
-  margin: 20px 0;
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	height: calc(100vh - 50px);
+	background-color: lightgray;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+	margin: 20px 0;
 }
 
 .cell {
-  border: 0.5px solid #ccc;
+	border: 0.5px solid #ccc;
 }
 
 .gridRange {
-  text-align: center;
-  margin-top: 10px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .slider {
-  appearance: none;
-  background-color: rgb(0, 17, 255);
-  height: 10px;
-  border-radius: 5px;
-  width: 133px;
+	appearance: none;
+	background-color: rgb(0, 17, 255);
+	height: 10px;
+	border-radius: 5px;
+	width: 133px;
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: rgb(255, 255, 255);
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
+	-webkit-appearance: none;
+	background-color: rgb(255, 255, 255);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
 }
 
 button {
-  width: 133px;
-  height: 40px;
-  background-color: lightblue;
-  cursor: pointer;
-  outline: none;
-  border: none;
+	width: 133px;
+	height: 40px;
+	background-color: lightblue;
+	cursor: pointer;
+	outline: none;
+	border: none;
 }
 
 button:active {
-  background-color: rebeccapurple;
+	background-color: rebeccapurple;
 }
 
 .div-container {
-  display: flex;
-  gap: 1rem;
-  padding-top: 1rem;
+	display: flex;
+	gap: 1rem;
+	padding-top: 1rem;
 }

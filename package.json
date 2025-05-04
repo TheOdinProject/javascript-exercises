@@ -1,42 +1,40 @@
 {
-  "name": "javascript-exercises",
-  "version": "1.0.0",
-  "description": "These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start off nice and easy, but get more involved as you progress through them.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheOdinProject/javascript-exercises.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheOdinProject/javascript-exercises/issues"
-  },
-  "homepage": "https://github.com/TheOdinProject/javascript-exercises#readme",
-  "devDependencies": {
-    "case-anything": "^2.1.13",
-    "eslint": "^8.47.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "jest": "^29.6.4",
-    "jest-cli": "^29.6.4",
-    "plop": "^4.0.1"
-  },
-  "engines": {
-    "npm": ">=8.5.5",
-    "node": ">=18.0.0"
-  },
-  "scripts": {
-    "test": "jest",
-    "generate": "plop"
-  },
-  "eslintConfig": {
-    "root": true
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "generators/"
-    ]
-  },
-  "packageManager": "pnpm@10.3.0+sha512.ee592eda8815a8a293c206bb0917c4bb0ff274c50def7cbc17be05ec641fc2d1b02490ce660061356bd0d126a4d7eb2ec8830e6959fb8a447571c631d5a2442d"
+	"name": "javascript-exercises",
+	"version": "1.0.0",
+	"description": "These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start off nice and easy, but get more involved as you progress through them.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TheOdinProject/javascript-exercises.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/TheOdinProject/javascript-exercises/issues"
+	},
+	"homepage": "https://github.com/TheOdinProject/javascript-exercises#readme",
+	"devDependencies": {
+		"case-anything": "^2.1.13",
+		"eslint": "^8.47.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.28.1",
+		"jest": "^29.6.4",
+		"jest-cli": "^29.6.4",
+		"plop": "^4.0.1"
+	},
+	"engines": {
+		"npm": ">=8.5.5",
+		"node": ">=18.0.0"
+	},
+	"scripts": {
+		"test": "jest",
+		"generate": "plop"
+	},
+	"eslintConfig": {
+		"root": true
+	},
+	"jest": {
+		"testPathIgnorePatterns": ["generators/"]
+	},
+	"packageManager": "pnpm@10.3.0+sha512.ee592eda8815a8a293c206bb0917c4bb0ff274c50def7cbc17be05ec641fc2d1b02490ce660061356bd0d126a4d7eb2ec8830e6959fb8a447571c631d5a2442d"
 }

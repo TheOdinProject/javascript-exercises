@@ -1,4 +1,4 @@
-const pigLatin = require('./pigLatin')
+const pigLatin = require("./pigLatin");
 
 //  Topics
 
@@ -17,24 +17,24 @@ const pigLatin = require('./pigLatin')
 
 // See https://en.wikipedia.org/wiki/Pig_Latin for more details.
 
-describe('translate', () => {
-	test('translates a word beginning with a vowel', () => {
-		expect(pigLatin("apple")).toBe('appleay');
+describe("translate", () => {
+	test("translates a word beginning with a vowel", () => {
+		expect(pigLatin("apple")).toBe("appleay");
 	});
 
-	test.skip('translates a word beginning with a consonant', () => {
+	test.skip("translates a word beginning with a consonant", () => {
 		expect(pigLatin("banana")).toBe("ananabay");
 	});
 
-	test.skip('translates a word beginning with two consonants', () => {
-		expect(pigLatin("cherry")).toBe('errychay');
+	test.skip("translates a word beginning with two consonants", () => {
+		expect(pigLatin("cherry")).toBe("errychay");
 	});
 
-	test.skip('translates two words', () => {
-		expect(pigLatin("eat pie")).toBe('eatay iepay');
+	test.skip("translates two words", () => {
+		expect(pigLatin("eat pie")).toBe("eatay iepay");
 	});
 
-	test.skip('translates a word beginning with three consonants', () => {
+	test.skip("translates a word beginning with three consonants", () => {
 		expect(pigLatin("three")).toBe("eethray");
 	});
 
@@ -50,7 +50,7 @@ describe('translate', () => {
 		expect(pigLatin("square")).toBe("aresquay");
 	});
 
-	test.skip('translates many words', () => {
+	test.skip("translates many words", () => {
 		expect(pigLatin("the quick brown fox")).toBe("ethay ickquay ownbray oxfay");
 	});
 });

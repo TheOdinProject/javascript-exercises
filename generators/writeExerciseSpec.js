@@ -3,13 +3,13 @@ const { join } = require("path");
 const { splitDirectoryName } = require("./helpers");
 
 async function writeExerciseSpec(exercisePath) {
-  const { exerciseName } = splitDirectoryName(exercisePath);
-  const isSolutionFile = exercisePath.includes("/solution");
-  const trueExerciseName = isSolutionFile
-    ? `${exerciseName}-solution`
-    : exerciseName;
+	const { exerciseName } = splitDirectoryName(exercisePath);
+	const isSolutionFile = exercisePath.includes("/solution");
+	const trueExerciseName = isSolutionFile
+		? `${exerciseName}-solution`
+		: exerciseName;
 
-  const exerciseSpecContent = `const ${exerciseName} = require('./${trueExerciseName}');
+	const exerciseSpecContent = `const ${exerciseName} = require('./${trueExerciseName}');
 
 describe('${exerciseName}', () => {
   test('First test description', () => {
@@ -26,10 +26,10 @@ describe('${exerciseName}', () => {
 });
 `;
 
-  await writeFile(
-    join(exercisePath, `${trueExerciseName}.spec.js`),
-    exerciseSpecContent
-  );
+	await writeFile(
+		join(exercisePath, `${trueExerciseName}.spec.js`),
+		exerciseSpecContent,
+	);
 }
 
 module.exports = { writeExerciseSpec };

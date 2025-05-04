@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <div class="heading">
+        <p class="turn"></p>
+        <h4 class="score-board"></h4>
+      </div>
+
+      <div class="board"></div>
+      <div class="controls">
+        <button class="reset-button">ReStart Game</button>
+        <button class="new-game-button">New Game</button>
+      </div>
+
+      <div id="game-modal" class="modal hidden">
+        <div class="modal-content">
+          <p id="modal-message"></p>
+          <button id="close-modal">OK</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
