@@ -1,4 +1,11 @@
-const repeatString = function() {
+const repeatString = function(word, times) {
+let string = word;  
+let result = string.repeat(times);
+ 
+return result;
+}
+
+console.log(repeatString("hey", 3));
 
 };
 
