@@ -5,6 +5,8 @@ const repeatString = function (word, times) {
     string += word;
   }
   return string;
-};
+}
+
+repeatString("hello", 10);
 
 module.exports = repeatString;

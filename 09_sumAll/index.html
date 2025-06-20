@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript TestRun</title>
+</head>
+<body>
+    <h1>This is a test page</h1>
+</body>
+
+<script>
+
+const convertToFahrenheit = function(tempInFahrenheit) {
+
+  //Conveeting from Celsius to Fahrenheit
+
+  tempInFahrenheit = ((tempInFahrenheit * (9/5)) + 32);
+
+  return tempInFahrenheit.toFixed(1);
+};
+
+const convertToCelsius = function(tempInCelsius) {
+
+  // Converting from Fahrenheit to Celsius
+  tempInCelsius = ((tempInCelsius - 32) * (5/9));
+
+  return tempInCelsius.toFixed(1);
+};
+
+// Do not edit below this line
+
+ console.log(convertToCelsius(32));
+ console.log(convertToFahrenheit(0));
+
+
+</script>
+</html>
