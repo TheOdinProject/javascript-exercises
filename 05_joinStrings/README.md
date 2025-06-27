@@ -15,7 +15,7 @@ After understanding the example code, you will recreate the snippet on your own 
 2. Create a 5th variable, `greeting`, that is constructed from the previous 4 variables
 - It should contain a greeting that includes the person's full name and age
 
-Note: To make the tests pass, you will need to use exact values and wording (as you will see described in `joinStrings.js`). If the tests fail, look at the feedback in your terminal then check your spacing, capitalization, and punctation.
+Note: To make the tests pass, you will need to use exact values and wording (as you will see described in `joinStrings.js`). If the tests fail, look at the feedback in your terminal then check your spacing, capitalization, and punctuation.
 
 ## Step 3: Optimize
 You will edit your code to make it easier to read using the following instructions:
