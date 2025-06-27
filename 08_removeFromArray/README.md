@@ -6,6 +6,8 @@ Implement a function that takes an array and some other arguments then removes t
 removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
 ```
 
+See if you can make use of some built-in array methods in this exercise.
+
 ## Hints
 
 The first test on this one is fairly easy, but there are a few things to think about (or google) here for the later tests:
