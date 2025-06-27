@@ -7,7 +7,7 @@ describe('repeatString', () => {
   test.skip('repeats the string many times', () => {
     expect(repeatString('hello', 10)).toEqual('hellohellohellohellohellohellohellohellohellohello');
   });
-  test.skip('repeats the string 1 times', () => {
+  test.skip('repeats the string 1 time', () => {
     expect(repeatString('hi', 1)).toEqual('hi');
   });
   test.skip('repeats the string 0 times', () => {
