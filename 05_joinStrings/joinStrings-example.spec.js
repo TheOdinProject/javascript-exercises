@@ -10,7 +10,7 @@ describe('joinStrings-example', () => {
   test('firstName is Carlos', () => {
     expect(values.firstName).toEqual('Carlos');
   });
-  test('lastName is Carlos', () => {
+  test('lastName is Stevenson', () => {
     expect(values.lastName).toEqual('Stevenson');
   });
   test('greeting is put together correctly', () => {
