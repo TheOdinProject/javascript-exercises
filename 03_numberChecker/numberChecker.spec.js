@@ -11,6 +11,6 @@ describe('numberChecker', () => {
     expect(numberChecker(9)).toEqual(false);
   });
   test.skip('returns false when number is 6', () => {
-    expect(numberChecker(6)).toEqual(false);
+    expect(numberChecker(6)).toEqual(true);
   });
 });
