@@ -1,24 +1,27 @@
 const sumAll = function(num, num2) {
 
+    if ( typeof num !== "number" || typeof num2 !== "number" ) {
+        return "ERROR"
+    }
+
+    else if ( !Number.isInteger(num)  ||  !Number.isInteger(num2) ){
+        return "ERROR"
+    }
+
+    else if ( num < 0 || typeof num2 < 0 ) {
+        return "ERROR"
+    }
+
+    let biggerNumber = num > num2 ? num : num2;
+    let lesserNumber = num < num2 ? num : num2;
+
     let result = 0;
 
-    if (num < 0 || num2 < 0){
-        return "ERROR";
+    for (let i = lesserNumber; i <= biggerNumber; i++) {
+        result += i;
     }
 
-    if(num < num2){
-        for(let n = num; n <= num2; n++){
-            result += n;
-        }
-        return result;
-    }
-
-    else if (num > num2){
-        for(let n = num; n >= num2; n--){
-            result += n;
-        }
-        return result;
-    }
+    return result
 
 };
 
