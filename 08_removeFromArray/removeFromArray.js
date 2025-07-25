@@ -1,8 +1,25 @@
-const removeFromArray = function(array, removeThing, ...moreThings) {
+const removeFromArray = function(array, ...remove) {
 
-    let newArray = array.filter( element => element !== removeThing)
+    for (r of remove){
+        
+        if (array.includes(r)) {
 
-    return newArray
+            let timesRemove = 0;
+        
+            array.forEach( element => {
+                if (element === r) 
+                    timesRemove += 1
+            });
+    
+            let indexToRemove =  array.indexOf(r)
+            
+            array.splice(indexToRemove, timesRemove)
+            
+        }
+        
+    }
+    return array
+
 
 };
 
