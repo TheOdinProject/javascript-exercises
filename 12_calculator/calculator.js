@@ -6,8 +6,9 @@ const add = function(...numbers) {
 	return result
 };
 
-const subtract = function() {
-	
+const subtract = function(num, num2) {
+  let result = num - num2;
+  return result
 };
 
 const sum = function() {
