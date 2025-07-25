@@ -11,8 +11,18 @@ const subtract = function(num, num2) {
   return result
 };
 
-const sum = function() {
-	
+const sum = function(array) {
+  let result = 0;
+
+  if (array.length == 0){
+    return 0
+  }
+
+  for ( number of array){
+    result += number
+  }
+  return result
+  
 };
 
 const multiply = function() {
