@@ -33,8 +33,8 @@ const multiply = function(numbers) {
   return result
 }
 
-const power = function() {
-	
+const power = function(...numbers) {
+	return numbers[0] ** numbers[1]
 };
 
 const factorial = function() {
