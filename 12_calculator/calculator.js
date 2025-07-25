@@ -25,9 +25,13 @@ const sum = function(array) {
   
 };
 
-const multiply = function() {
+const multiply = function(numbers) {
+    const result = numbers.reduce( (total, currentNumber)=> {
+        return total * currentNumber
+      });
 
-};
+  return result
+}
 
 const power = function() {
 	
