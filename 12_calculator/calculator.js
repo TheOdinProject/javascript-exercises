@@ -1,5 +1,9 @@
-const add = function() {
-	
+const add = function(...numbers) {
+  let result = 0;
+  for ( number of numbers){
+    result += number
+  }
+	return result
 };
 
 const subtract = function() {
