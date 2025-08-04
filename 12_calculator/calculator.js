@@ -37,8 +37,19 @@ const power = function(...numbers) {
 	return numbers[0] ** numbers[1]
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  /*let values = [];
+  for (let i = number; i <= number;  i++){
+   values.push(i)   
+  }
+  const result = values.reduce((accumulator, currentValue)=> {return accumulator * currentValue} )
+
+	return result*/
+  let result = 1;
+  for (let i = number; i >= 1; i--){
+    result *= i
+  }
+  return result
 };
 
 // Do not edit below this line
