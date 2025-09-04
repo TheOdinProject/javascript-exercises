@@ -1,0 +1,15 @@
+name: Tests
+on:
+  pull_request:
+    paths:
+      - '**/solution/*.js'
+
+jobs:
+  tests:
+    name: Run solution tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - run: npm run test -- **/solution
