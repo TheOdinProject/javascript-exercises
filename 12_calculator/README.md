@@ -3,7 +3,7 @@
 The goal for this exercise is to create a calculator that does the following:
 
 1. `add()`: take two numbers and return their sum
-2. `subtract()`: take two numbers and return their difference
+2. `subtract()`: take two numbers and the result after subtracting the second from the first
 3. `sum()`: take an array of numbers and add all the numbers together
 4. `multiply()`: take an array of numbers and multiply all the numbers together 
 4. `power()`: take two numbers (base and exponent) and return the result of raising the base to that exponent
