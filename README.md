@@ -18,14 +18,14 @@ If you have a suggestion to improve an exercise, an idea for a new exercise, or 
 1. Each exercise includes the following:
 
    - A markdown file with a description of the task, an empty (or mostly empty) JavaScript file, and a set of tests.
-   - A `solutions` directory that contains a solution and the same test file with all of the tests unskipped.
+   - A `solutions` directory that contains an example solution and the same test file with all of the tests unskipped.
 
    To complete an exercise, you will need to go to the exercise directory with `cd exerciseName` in the terminal and run `npm test exerciseName.spec.js`. This should run the test file and show you the output. When you run a test for the first time, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass.
 
 1. Some of the exercises have test conditions defined in their spec file as `test.skip` instead of `test`. This is intentional. Once all `test`s pass, you will change the next `test.skip` to `test` and test your code again. You will do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any instances of `test.skip` in the spec file when you are finished with an exercise.
-1. Once you successfully finish an exercise, check the `solutions` directory within each exercise to compare it with yours.
+1. Once you successfully finish an exercise, check the `solutions` directory within each exercise.
    - You should not be checking the solution for an exercise until you finish it!
-   - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that is completely fine. Feel free to ask about it in our Discord if there are parts you do not understand.
+   - If your solution differs from TOP's solution (and still passes the exercise's requirements), that is completely fine. The provided solution is only an example and there are always multiple approaches. Feel free to ask in our Discord if there are parts of the example solution you do not understand.
 
 > [!IMPORTANT]
 > Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
