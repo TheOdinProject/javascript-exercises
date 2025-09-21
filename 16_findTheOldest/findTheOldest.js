@@ -1,6 +1,14 @@
-const findTheOldest = function() {
+const findTheOldest = function (people) {
+    const currentYear = new Date().getFullYear();
 
+    return people.reduce((oldest, person) => {
+    let death = person.yearOfDeath || currentYear;
+    let age = death - person.yearOfBirth;
+
+    let oldestAge = (oldest.yearOfDeath || currentYear) - oldest.yearOfBirth;
+
+    return age > oldestAge ? person: oldest;
+    })
 };
 
-// Do not edit below this line
 module.exports = findTheOldest;
