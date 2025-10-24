@@ -54,7 +54,7 @@ body:
     id: additional-comments
     attributes:
       label: (Optional) Additional Comments
-      description: Provide any extra information that might be helpful, such as links to Discorddiscussions, screenshots, or other relevant details.
+      description: Provide any extra information that might be helpful, such as links to Discord discussions, screenshots, or other relevant details.
       placeholder: We ❤️ open source
     validations:
       required: false
