@@ -14,3 +14,4 @@ describe('numberChecker', () => {
     expect(numberChecker(6)).toEqual(false);
   });
 });
+ 
