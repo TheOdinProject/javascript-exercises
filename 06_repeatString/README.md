@@ -6,7 +6,7 @@ Write a function that simply repeats the string a given number of times:
 repeatString('hey', 3) // returns 'heyheyhey'
 ```
 
-This function will take two arguments, `string` and `num`.
+This function will take two arguments, `string` and `num`. If `num` is a negative number, return the string `'ERROR'` instead.
 
 Use loops to implement `repeatString` rather than using the builtin `String.prototype.repeat` which has the same behaviour.
 
