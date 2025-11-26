@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 50px 200px;
+    gap: 50px; 
+}
+
+.card {
+    margin: 0;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    background-color: bisque;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .02s ease;
+    font-size: large;
+    text-align: center;
+    user-select: none;
+}
+
+.selected {
+    transform: scale(1.025);
+    border-color: #ffc600;
+    box-shadow: 0 0 4px #ffc600;
+}
