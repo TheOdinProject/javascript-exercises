@@ -11,7 +11,7 @@ leapYears(2000); // is a leap year: returns true
 leapYears(1985); // is not a leap year: returns false
 ```
 
-Still confused? Refer to [this breakdown](https://www.calendar-12.com/leap_year) with examples.
+Still confused? Refer to this [leap year breakdown](https://www.calendar-12.com/leap_year) with examples.
 
 ## Hints
 
