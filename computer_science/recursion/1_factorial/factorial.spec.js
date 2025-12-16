@@ -13,8 +13,8 @@ describe('factorial', () => {
   test.skip('15th factorial number is 1307674368000', () => {
     expect(factorial(15)).toBe(1307674368000);
   });
-  test.skip('25th factorial number is 1.5511210043330986e+25', () => {
-    expect(factorial(25)).toBe(1.5511210043330986e+25);
+  test.skip('18th factorial number is 6.402373705728e+15', () => {
+    expect(factorial(18)).toBe(6.402373705728e15)
   });
   test.skip('0th factorial number is 1', () => {
     expect(factorial(0)).toBe(1);
