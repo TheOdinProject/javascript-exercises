@@ -54,7 +54,7 @@ describe("contains", () => {
     expect(contains(object, NaN)).toBe(true);
   });
 
-  test.skip("false if the provided value exists and is null", () => {
+  test.skip("true if the provided value exists and is null", () => {
     expect(contains(object, null)).toBe(true);
   });
 });
