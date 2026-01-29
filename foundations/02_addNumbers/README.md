@@ -4,6 +4,39 @@ Troubleshoot and modify the existing function so that it returns the digit 2. Av
 
 Currently, it is not returning the correct value.
 
-## Hints
 
-- You only need to edit the strings on line 7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Hints
+<!-- 
+- You only need to edit the strings on line 7. -->
