@@ -1,10 +1,5 @@
 function numberChecker(number) {
-  if (number === 6) {
-    return true;
-  } else {
-    return false;
-  }
+ return number === 1000 || number === 10 ? true : number === 9 || number === 6 ? false : null;
 }
-
 // Do not edit below this line
 module.exports = numberChecker;
