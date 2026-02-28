@@ -2,6 +2,7 @@ name: Tests
 on:
   pull_request:
     paths:
+      - 'package*.json'
       - '**/solution/*.js'
 
 jobs:
