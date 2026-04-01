@@ -9,9 +9,19 @@
 
 // Add your code right below, good luck!
 
+// Exercise 1:
+let firstName = "Carlos"
+let lastName = "Stevenson"
+let thisYear = 1965
+let birthYear = 1947
 
+const oldGreeting = `Hello! My name is ${firstName} ${lastName} and I am ${thisYear - birthYear} years old.`
 
+// Exercise 2:
+let fullName = `${firstName} ${lastName}`
+let age = 1965 - 1947;
 
+const greeting = `Hello! My name is ${fullName} and I am ${age} years old.` 
 
 // Do not change this
 module.exports = {
