@@ -1,8 +1,11 @@
 const palindromes = require('./palindromes-solution');
 
 describe('palindromes', () => {
-  test('detects palindrome', () => {
+  test('detects odd-length palindrome', () => {
     expect(palindromes('racecar')).toBe(true);
+  });
+  test('detects even-length palindrome', () => {
+    expect(palindromes('abba')).toBe(true);
   });
   test('detects palindrome with numbers', () => {
     expect(palindromes('rac3e3car')).toBe(true);
