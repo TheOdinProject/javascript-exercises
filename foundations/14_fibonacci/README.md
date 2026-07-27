@@ -4,8 +4,9 @@ Create a function that returns a specific member of the Fibonacci sequence (seri
 
 In this exercise, the Fibonacci sequence used is 1, 1, 2, 3, 5, 8, etc. (i.e. starting at 1, not 0).
 
+If given a negative number, the function should return "OOPS".
+
 ```javascript
 fibonacci(4); // returns the 4th member of the series: 3  (1, 1, 2, 3)
 fibonacci(6); // returns 8
-fibonacci(-1); // returns "OOPS"
 ```
