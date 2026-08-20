@@ -34,5 +34,8 @@
     "testPathIgnorePatterns": [
       "<rootDir>/archive/"
     ]
+  },
+  "allowScripts": {
+    "unrs-resolver@1.11.1": true
   }
 }
