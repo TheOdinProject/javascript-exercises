@@ -1,4 +1,4 @@
-# Exercise 06 - repeatString
+# Exercise 01 - repeatString
 
 Write a function that simply repeats the string a given number of times:
 
