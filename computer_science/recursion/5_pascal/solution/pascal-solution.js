@@ -1,17 +1,26 @@
-const pascal = function (counter) {
-  const currentLine = [1];
-  if (counter === 1) {
-    return currentLine;
+// helper to add extra zeros to the start and end of an array
+const padZeros = function (array) {
+  return [0, ...array, 0];
+};
+
+const pascal = function (rowNumber) {
+  if (rowNumber === 1) {
+    return [1];
   }
 
-  const previousLine = pascal(counter - 1);
-  previousLine.forEach((number, i) => {
-    const rightNeighbor = previousLine[i + 1] ?? 0;
-    currentLine.push(number + rightNeighbor);
-  })
+  const previousRow = pascal(rowNumber - 1);
+  // Add the imaginary extra zeros to the start and end, as described in the README
+  const previousRowWithZeros = padZeros(previousRow);
+  const newRow = [];
 
-  return currentLine;
-}
+  for (let i = 0; i < previousRowWithZeros.length - 1; i += 1) {
+    const leftParent = previousRowWithZeros[i];
+    const rightParent = previousRowWithZeros[i + 1];
+    newRow.push(leftParent + rightParent);
+  }
+
+  return newRow;
+};
 
 // Do not edit below this line
 module.exports = pascal;
