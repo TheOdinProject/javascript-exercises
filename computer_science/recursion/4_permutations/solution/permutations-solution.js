@@ -1,24 +1,31 @@
-const permutations = function (array, index = 0, results = []) {
-  if (index == array.length) {
-    // We have formed a valid permutation.
+// helper to insert a value into a specified position in a given array without modifying the original
+const insertIntoArray = function (array, position, value) {
+  return [...array.slice(0, position), value, ...array.slice(position)];
+};
 
-    // the [...array] syntax is a way to clone the contents of the array.
-    // because we do not want to pass a reference to the array, as that would mean
-    // that each item in `results` will be the same item
-    results.push([...array]);
-    return results;
+const permutations = function (array) {
+  if (array.length === 0) {
+    return [[]]; // There is only one permutation of an empty array, which is the empty array
   }
 
-  for (let i = index; i < array.length; i++) {
-    // We use "destructuring assignment" here to swap the values of array[index] and array[i]
-    //
-    // More info: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-    [array[index], array[i]] = [array[i], array[index]];
-    permutations(array, index + 1, results);
-    [array[index], array[i]] = [array[i], array[index]];
+  const firstElement = array[0];
+  const rest = array.slice(1);
+
+  // Calculate (recursively) each permutation of all the elements except the first
+  const previousPermutations = permutations(rest);
+  const newPermutations = [];
+
+  // For each previousPermutations, make new permutations
+  // by inserting firstElement into every position
+  // E.g. inserting 1 into [2,3] can produce [1,2,3] and [2,1,3] and [2,3,1]
+  for (const permutation of previousPermutations) {
+    for (let i = 0; i <= permutation.length; i += 1) {
+      const newPermutation = insertIntoArray(permutation, i, firstElement);
+      newPermutations.push(newPermutation);
+    }
   }
 
-  return results;
+  return newPermutations;
 };
 
 // Do not edit below this line
