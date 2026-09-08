@@ -1,11 +1,11 @@
-// helper to insert a value into a specified position in a given array without modifying the original
 const insertIntoArray = function (array, position, value) {
   return [...array.slice(0, position), value, ...array.slice(position)];
 };
 
 const permutations = function (array) {
   if (array.length === 0) {
-    return [[]]; // There is only one permutation of an empty array, which is the empty array
+    // There is only one permutation of an empty array, which is the empty array
+    return [[]];
   }
 
   const firstElement = array[0];

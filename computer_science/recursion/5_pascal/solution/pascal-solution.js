@@ -1,8 +1,3 @@
-// helper to add extra zeros to the start and end of an array
-const padZeros = function (array) {
-  return [0, ...array, 0];
-};
-
 const pascal = function (rowNumber) {
   if (rowNumber === 1) {
     return [1];
@@ -10,7 +5,8 @@ const pascal = function (rowNumber) {
 
   const previousRow = pascal(rowNumber - 1);
   // Add the imaginary extra zeros to the start and end, as described in the README
-  const previousRowWithZeros = padZeros(previousRow);
+  const previousRowWithZeros = [0, ...previousRow, 0];
+
   const newRow = [];
 
   for (let i = 0; i < previousRowWithZeros.length - 1; i += 1) {
