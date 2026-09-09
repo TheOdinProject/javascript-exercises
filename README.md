@@ -28,9 +28,6 @@ If you have a suggestion to improve an exercise, an idea for a new exercise, or 
 > [!IMPORTANT]
 > Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
 
-> [!NOTE]
-> Due to the way Jest handles failed tests, it may return an exit code of 1 if any tests fail. NPM will interpret this as an error and you may see some `npm ERR!` messages after Jest runs. You can ignore these, or run your test with `npm test exerciseName.spec.js --silent` to suppress the errors.
-
 The first exercise, `helloWorld`, will walk you through the process in-depth.
 
 ## Debugging
