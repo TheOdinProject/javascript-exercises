@@ -8,8 +8,8 @@ const fibonacci = function(countArg) {
         count = countArg
     }
 
-    if (count < 0) return "OOPS";
     if (count == 0) return 0;
+    if (!count || count < 0) return "OOPS";
 
     let firstPrev = 1;
     let secondPrev = 0;
