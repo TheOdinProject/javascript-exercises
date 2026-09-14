@@ -1,4 +1,4 @@
-const fibonacci = require('./fibonacci')
+const fibonacci = require('./fibonacci-solution')
 
 describe('fibonacci', () => {
   test('4th fibonacci number is 3', () => {
@@ -22,16 +22,28 @@ describe('fibonacci', () => {
   test.skip('doesn\'t accept negatives', () => {
     expect(fibonacci(-25)).toBe("OOPS");
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("0")).toBe(0);
+  test.skip('doesn\'t accept strings', () => {
+    expect(fibonacci("0")).toBe("OOPS");
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("1")).toBe(1);
+  test.skip('doesn\'t accept NaN', () => {
+    expect(fibonacci(NaN)).toBe("OOPS");
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("2")).toBe(1);
+  test.skip('doesn\'t accept undefined', () => {
+    expect(fibonacci(undefined)).toBe("OOPS");
   });
-  test.skip('DOES accept strings', () => {
-    expect(fibonacci("8")).toBe(21);
+  test.skip('doesn\'t accept null', () => {
+    expect(fibonacci(null)).toBe("OOPS");
   });
-});
+  test.skip('doesn\'t accept Boolean', () => {
+    expect(fibonacci(true)).toBe("OOPS");
+  });
+  test.skip('doesn\'t accept Boolean', () => {
+    expect(fibonacci(false)).toBe("OOPS");
+  });
+  test.skip('doesn\'t accept Array', () => {
+    expect(fibonacci([1])).toBe("OOPS");
+  });
+  test.skip('doesn\'t accept Object', () => {
+    expect(fibonacci({num: 1})).toBe("OOPS");
+  });
+})
