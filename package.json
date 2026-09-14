@@ -18,7 +18,7 @@
     "case-anything": "^2.1.13",
     "eslint": "^10.0.2",
     "globals": "^17.3.0",
-    "jest": "^30.3.0",
+    "jest": "^30.5.1",
     "plop": "^4.0.1"
   },
   "engines": {
