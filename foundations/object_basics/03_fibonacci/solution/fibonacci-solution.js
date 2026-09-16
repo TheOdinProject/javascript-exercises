@@ -18,7 +18,6 @@ const fibonacci = function(countArg) {
     }
 
     return firstPrev;
-
 };
 
 // Another way to do it is by using an iterative approach with an array containing two values, 0 and 1.
