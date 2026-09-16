@@ -1,10 +1,9 @@
-const fibonacci = function(countArg) {
+const fibonacci = function(count) {
     // checks argument's type and makes sure we use 
     // a number throughout rest of function.
-    let count
-    if (typeof countArg !== 'number' || countArg < 0 || Number.isNaN(countArg)) {
+    if (typeof count !== 'number' || count < 0 || Number.isNaN(count)) {
         return "OOPS";
-    } else count = countArg;
+    }
     
     if (count === 0) return 0;
 
