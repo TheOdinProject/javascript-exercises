@@ -21,8 +21,6 @@ const fibonacci = function(countArg) {
 
 };
 
-console.log(fibonacci('hello'))
-
 // Another way to do it is by using an iterative approach with an array containing two values, 0 and 1.
 // const fib = [0, 1];
 // for (let i = 2; i <= count; i++) {
