@@ -9,4 +9,4 @@ fibonacci(4); // returns the 4th member of the series: 3  (1, 1, 2, 3)
 fibonacci(6); // returns 8
 ```
 
-If given a negative number, `NaN`, or not a number type at all, the function should return `"OOPS"`, i.e. only proceed with positive numbers..
+If given a negative number, `NaN`, or not a number type at all, the function should return `"OOPS"`, i.e. only proceed with positive numbers.
