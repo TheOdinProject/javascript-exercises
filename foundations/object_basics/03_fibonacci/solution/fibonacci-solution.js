@@ -29,4 +29,3 @@ const fibonacci = function(countArg) {
 // return fib[count];
 
 module.exports = fibonacci;
-
