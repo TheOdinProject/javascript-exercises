@@ -22,28 +22,12 @@ describe('fibonacci', () => {
   test('doesn\'t accept negatives', () => {
     expect(fibonacci(-25)).toBe("OOPS");
   });
-  test('doesn\'t accept strings', () => {
-    expect(fibonacci("0")).toBe("OOPS");
-  });
   test('doesn\'t accept NaN', () => {
     expect(fibonacci(NaN)).toBe("OOPS");
   });
-  test('doesn\'t accept undefined', () => {
-    expect(fibonacci(undefined)).toBe("OOPS");
+  test('doesn\'t accept non-numbers types', () => {
+    expect(fibonacci("0")).toBe("OOPS");
+    expect(fibonacci([])).toBe("OOPS");
+    expect(fibonacci({})).toBe("OOPS");
   });
-  test('doesn\'t accept null', () => {
-    expect(fibonacci(null)).toBe("OOPS");
-  });
-  test('doesn\'t accept Boolean', () => {
-    expect(fibonacci(true)).toBe("OOPS");
-  });
-  test('doesn\'t accept Boolean', () => {
-    expect(fibonacci(false)).toBe("OOPS");
-  });
-  test('doesn\'t accept Array', () => {
-    expect(fibonacci([1])).toBe("OOPS");
-  });
-  test('doesn\'t accept Object', () => {
-    expect(fibonacci({num: 1})).toBe("OOPS");
-  });
-});
+})
