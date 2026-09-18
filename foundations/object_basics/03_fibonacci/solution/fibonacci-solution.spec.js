@@ -22,16 +22,12 @@ describe('fibonacci', () => {
   test('doesn\'t accept negatives', () => {
     expect(fibonacci(-25)).toBe("OOPS");
   });
-  test('DOES accept strings', () => {
-    expect(fibonacci("0")).toBe(0);
+  test('doesn\'t accept NaN', () => {
+    expect(fibonacci(NaN)).toBe("OOPS");
   });
-  test('DOES accept strings', () => {
-    expect(fibonacci("1")).toBe(1);
+  test('doesn\'t accept non-numbers types', () => {
+    expect(fibonacci("0")).toBe("OOPS");
+    expect(fibonacci([])).toBe("OOPS");
+    expect(fibonacci({})).toBe("OOPS");
   });
-  test('DOES accept strings', () => {
-    expect(fibonacci("2")).toBe(1);
-  });
-  test('DOES accept strings', () => {
-    expect(fibonacci("8")).toBe(21);
-  });
-});
+})
