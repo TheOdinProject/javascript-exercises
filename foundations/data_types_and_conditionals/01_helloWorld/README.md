@@ -23,7 +23,7 @@ describe('Hello World', function() {
 
 At the very top of the file we use `require()` to import the code from the javascript file (`helloWorld.js`) so that we can test it.
 
-The next block (`describe()`) is the body of the test. Basically, all it's doing is running your code and testing to see if the output is correct. The `test()` function describes what should be happening in plain english and then includes the `expect()` function. For this simple example it should be pretty simple to read.
+The next block (`describe()`) is the body of the test. Basically, all it's doing is running your code and testing to see if the output is correct. The `test()` function describes what should be happening in plain English and then includes the `expect()` function. For this simple example it should be pretty simple to read.
 
 For now you do not need to worry about how to write tests, but you should try to get comfortable enough with the syntax to figure out what the tests are asking you to do. Go ahead and run the tests by entering `npm test helloWorld.spec.js` in the terminal and watch it fail. The output from that command should tell you exactly what went wrong with your code. In this case, running the `helloWorld()` function should return the phrase 'Hello, World!' but instead it returns an empty string...
 
@@ -53,4 +53,4 @@ const helloWorld = function() {
 module.exports = helloWorld;
 ```
 
-For the most part we've set up these tests in such a way that you only have to update or write the code being tested. You should not have to worry about importing or exporting anything at this stage.. so just work around that bit of the code and write what it takes to make them pass!
+For the most part we've set up these tests in such a way that you only have to update or write the code being tested. You should not have to worry about importing or exporting anything at this stage, so just work around that bit of the code and write what it takes to make them pass!
