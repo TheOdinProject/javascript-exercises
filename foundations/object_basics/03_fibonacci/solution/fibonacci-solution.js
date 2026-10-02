@@ -1,6 +1,6 @@
 const fibonacci = function(count) {
     // checks argument's type and makes sure we use
-    // a number throughout rest of function.
+    // a positive number throughout rest of function.
     if (typeof count !== 'number' || count <= 0 || Number.isNaN(count)) {
         return "OOPS";
     }
