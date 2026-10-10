@@ -2,33 +2,31 @@
 
 These JavaScript exercises are intended to complement the JavaScript content on [The Odin Project](https://www.theodinproject.com/) (TOP). They should only be done when instructed during the course of the curriculum.
 
+> [!IMPORTANT]
+> We encourage you to practice your git skills by committing your changes and pushing them to your own fork.  However, please **DO NOT** open a Pull Request to have your solutions merged into this repo or to show your solution.  If we were to merge your changes the exercises would no longer be available as intended for new learners, and opening a PR only causes additional work for us, as we have to close it without merging.
+
 ## Contributing
 
 If you have a suggestion to improve an exercise, an idea for a new exercise, or notice an issue with an exercise, please feel free to open an issue after thoroughly reading our [contributing guide](https://github.com/TheOdinProject/javascript-exercises/blob/main/CONTRIBUTING.md).
 
 ## How To Use These Exercises
 
-1. Fork and clone this repository. To learn how to fork a repository, see the GitHub documentation on how to [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+1. Fork and clone this repository. To learn how to fork a repository, see the GitHub documentation on [how to fork a repo](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository).
    - Copies of repositories on your machine are called clones. If you need help cloning to your local environment you can learn how from the GitHub documentation on [cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 1. **npm installation:** You should have installed npm already in our [Installing Node.js](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/installing-node-js) lesson. Just in case you need to check, type `npm --version` in your terminal. If you get back `Command 'npm' not found, but can be installed with:`, **do not follow the instructions in the terminal** to install with `apt-get` as this causes permission issues. Instead, **go back to the installation lesson** and install Node with NVM by following the instructions there.
 1. **Jest installation:** After cloning this repository to your local machine and installing npm, go **into** the newly created directory (`cd javascript-exercises`) and run `npm install`. This will install Jest and set up the testing platform based on our preconfigured settings. (Note: if you get warnings that packages are out of date or contain vulnerabilities, you can safely ignore them for these exercises.)
 1. Each exercise includes the following:
-
    - A markdown file with a description of the task, an empty (or mostly empty) JavaScript file, and a set of tests.
    - A `solutions` directory that contains an example solution and the same test file with all of the tests unskipped.
 
-   To complete an exercise, you will need to go to the exercise directory with `cd exerciseName` in the terminal and run `npm test exerciseName.spec.js`. This should run the test file and show you the output. When you run a test for the first time, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass.
-
-1. Some of the exercises have test conditions defined in their spec file as `test.skip` instead of `test`. This is intentional. Once all `test`s pass, you will change the next `test.skip` to `test` and test your code again. You will do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any instances of `test.skip` in the spec file when you are finished with an exercise.
+   To complete an exercise, you will need to go to the exercise directory with `cd <path to file>` in the terminal and run `npm test exerciseName.spec.js`. For example, to go to the first Foundations exercise "helloWorld", you need to `cd foundations/data_types_and_conditionals/01_helloWorld` then run `npm test helloWorld.spec.js`. This should run the test file and show you the output. When you run a test for the first time, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass.
+1. Some of the exercises have test conditions defined in their spec file as `test.skip` instead of `test`. This is intentional. Once all `test` cases pass, you will change the next `test.skip` to `test` and test your code again. You will do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any instances of `test.skip` in the spec file when you are finished with an exercise.
 1. Once you successfully finish an exercise, check the `solutions` directory within each exercise.
    - You should not be checking the solution for an exercise until you finish it!
    - If your solution differs from TOP's solution (and still passes the exercise's requirements), that is completely fine. The provided solution is only an example and there are always multiple approaches. Feel free to ask in our Discord if there are parts of the example solution you do not understand.
 
 > [!IMPORTANT]
 > Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
-
-> [!NOTE]
-> Due to the way Jest handles failed tests, it may return an exit code of 1 if any tests fail. NPM will interpret this as an error and you may see some `npm ERR!` messages after Jest runs. You can ignore these, or run your test with `npm test exerciseName.spec.js --silent` to suppress the errors.
 
 The first exercise, `helloWorld`, will walk you through the process in-depth.
 
